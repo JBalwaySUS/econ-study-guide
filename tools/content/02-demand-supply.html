@@ -1,0 +1,171 @@
+<p class="kicker">Lecture 6 &middot; Microeconomics I (part 1)</p>
+<h1>Supply, Demand and Elasticity</h1>
+<p class="lede">How prices are set in competitive markets, how equilibrium responds to shocks, and how elasticities measure the strength of those responses.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Goodwin et al., <i>Principles of Economics in Context</i>, Ch. 4 (Supply and Demand) and Ch. 5 (Elasticity).</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 8 (&sect;8.1&ndash;8.7: supply and demand, competitive equilibrium, the world oil market, taxes) and &sect;7.7 (elasticity of demand).</li>
+</ul></div>
+
+<h2>Demand, supply and what is held constant</h2>
+<p>The <span class="term">demand curve</span> shows the quantity buyers are willing and able to buy at each price. The <span class="term">supply curve</span> shows the quantity sellers are willing to offer at each price. Each curve is drawn <b>ceteris paribus</b>: everything except the good's own price is held fixed.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Held constant along the <b>demand</b> curve (shifters)</th><th>Held constant along the <b>supply</b> curve (shifters)</th></tr>
+<tr><td>
+<ul>
+<li>Income (normal vs inferior goods)</li>
+<li>Prices of related goods: <b>substitutes</b> (tea/coffee) and <b>complements</b> (cars/petrol)</li>
+<li>Tastes and preferences</li>
+<li>Expectations, number of buyers</li>
+</ul></td><td>
+<ul>
+<li>Cost of production (input prices, wages)</li>
+<li>Technology</li>
+<li>Availability of natural resources</li>
+<li>Natural or human-induced shocks (war, floods, droughts)</li>
+<li>Number of sellers, expectations</li>
+</ul></td></tr>
+</table></div>
+<div class="box key"><span class="box-h">Key distinction: movement along vs shift of a curve</span>
+<p>A change in the good's <b>own price</b> causes a <b>movement along</b> the curve: a change in <i>quantity demanded</i> or <i>quantity supplied</i>. A change in any <b>shifter</b> <b>shifts the whole curve</b>: a change in <i>demand</i> or <i>supply</i>. "Demand rose because the price fell" is wrong; the quantity demanded rose.</p></div>
+<p>Behind the curves: <b>demand</b> comes from consumers' rational choice (Chapter 3) and <b>supply</b> from firms' costs of production (Chapter 4). The competitive firm's supply curve is its marginal cost curve above minimum AVC, so the market supply curve is the horizontal sum of the firms' MC curves.</p>
+
+<h2>Market equilibrium</h2>
+<p>Equilibrium is the price at which <b>quantity demanded equals quantity supplied</b>. At that price there is no pressure to change. CORE (&sect;8.2) notes that the competitive equilibrium is a <b>Nash equilibrium</b>: given what everyone else does, no buyer or seller can do better by acting differently.</p>
+{{fig:sd_eq|Equilibrium in the course's example market (Welfare class 1): demand P = 10 − Q and supply P = 2 + Q meet at Q* = 4, P* = 6.}}
+<p><b>Adjustment</b> (the invisible hand's feedback loop from Welfare class 1): if the price is too high (P = 8), quantity supplied (6) exceeds quantity demanded (2). Unsold stock piles up and sellers cut prices. If the price is too low (P = 4), there is a <b>shortage</b> (Qd = 6 &gt; Qs = 2). Buyers compete for the good and sellers raise prices. Price settles where demand = supply. No planner is needed; every participant reacts only to price.</p>
+
+<div class="box derivation"><span class="box-h">Derivation: equilibrium in the general linear model</span>
+<p>Let demand be \(Q_d = a - bP\) and supply \(Q_s = c + dP\), with \(a, b, d &gt; 0\).</p>
+<div class="steps">
+<p class="step">Set \(Q_d = Q_s\): \(a - bP = c + dP\).</p>
+<p class="step">Solve for price: \(a - c = (b + d)P\) &rArr; \(\boxed{P^* = \dfrac{a - c}{b + d}}\).</p>
+<p class="step">Substitute into either curve: \(Q^* = a - b\dfrac{a-c}{b+d} = \dfrac{a(b+d) - b(a-c)}{b+d}\) &rArr; \(\boxed{Q^* = \dfrac{ad + bc}{b + d}}\).</p>
+<p class="step"><b>Check with the course example.</b> \(P = 10 - Q\) means \(Q_d = 10 - P\) (\(a = 10, b = 1\)). \(P = 2 + Q\) means \(Q_s = -2 + P\) (\(c = -2, d = 1\)). \(P^* = 12/2 = 6\), \(Q^* = (10 - 2)/2 = 4\). ✓</p>
+</div></div>
+
+<h2>Comparative statics: shifts in supply and demand</h2>
+<div class="fig-pair">
+{{fig:sd_shift_d|Demand increases (D₀ → D₁: Qd = 12 − P). New equilibrium: P = 7, Q = 5. Price and quantity both rise.}}
+{{fig:sd_shift_s|Supply decreases (S₀ → S₁: P = 4 + Q, e.g. a drought). New equilibrium: P = 7, Q = 3. Price rises, quantity falls.}}
+</div>
+<div class="box derivation"><span class="box-h">Derivation: comparative statics</span>
+<p>From \(P^* = \dfrac{a-c}{b+d}\) and \(Q^* = \dfrac{ad+bc}{b+d}\):</p>
+<ul>
+<li>Demand shift (\(a\) rises): \(\dfrac{\partial P^*}{\partial a} = \dfrac{1}{b+d} &gt; 0\) and \(\dfrac{\partial Q^*}{\partial a} = \dfrac{d}{b+d} &gt; 0\). Both rise.</li>
+<li>Supply shift (\(c\) rises, i.e. supply increases): \(\dfrac{\partial P^*}{\partial c} = \dfrac{-1}{b+d} &lt; 0\) and \(\dfrac{\partial Q^*}{\partial c} = \dfrac{b}{b+d} &gt; 0\). Price falls, quantity rises.</li>
+<li>The <b>split</b> between price and quantity depends on slopes. A demand shift raises \(Q\) a lot and \(P\) a little when supply is flat (large \(d\)), and the reverse when supply is steep. Hence the importance of <b>elasticity</b>.</li>
+</ul></div>
+<div class="tbl-wrap"><table>
+<tr><th>Change</th><th>Equilibrium price</th><th>Equilibrium quantity</th></tr>
+<tr><td>Demand &uarr;</td><td>&uarr;</td><td>&uarr;</td></tr>
+<tr><td>Demand &darr;</td><td>&darr;</td><td>&darr;</td></tr>
+<tr><td>Supply &uarr;</td><td>&darr;</td><td>&uarr;</td></tr>
+<tr><td>Supply &darr;</td><td>&uarr;</td><td>&darr;</td></tr>
+<tr><td>Demand &uarr; and supply &uarr;</td><td>? (depends on sizes)</td><td>&uarr;</td></tr>
+<tr><td>Demand &uarr; and supply &darr;</td><td>&uarr;</td><td>? (depends on sizes)</td></tr>
+</table></div>
+<div class="box india"><span class="box-h">India focus: onion prices</span>
+<p>Onion prices in India spike when unseasonal rain or delayed monsoons damage the kharif crop: <b>supply shifts left</b>. Because onions are a staple with few substitutes in Indian cooking, demand is <b>price-inelastic</b>, so a modest fall in supply causes a <b>large rise in price</b> (see the elasticity sections below). Government responses such as export bans and releases from buffer stocks try to shift supply back to the right in the domestic market.</p></div>
+
+<h2>Price elasticity of demand</h2>
+<p>Slope depends on the units of measurement; <b>elasticity</b> does not. The <span class="term">price elasticity of demand</span> is the percentage change in quantity demanded caused by a 1% change in price:</p>
+$$\varepsilon_d = \frac{\%\Delta Q_d}{\%\Delta P} = \frac{\Delta Q / Q}{\Delta P / P} = \frac{\Delta Q}{\Delta P}\cdot\frac{P}{Q}\quad\xrightarrow{\text{point}}\quad \varepsilon_d = \frac{dQ}{dP}\cdot\frac{P}{Q}.$$
+<p>It is negative for a downward-sloping demand curve. Books (and CORE) usually quote the absolute value \(|\varepsilon|\) or define \(\varepsilon = -\frac{dQ}{dP}\frac{P}{Q} &gt; 0\).</p>
+<p><b>Midpoint (arc) formula</b> (Goodwin Box 5.2). It gives the same answer whichever direction the price moves:</p>
+$$\varepsilon = \frac{(Q_2 - Q_1)/\big[(Q_1+Q_2)/2\big]}{(P_2 - P_1)/\big[(P_1+P_2)/2\big]}.$$
+<div class="box example"><span class="box-h">Worked example</span>
+<p>Gym memberships fall from 100 to 80 when the monthly fee rises from ₹1,000 to ₹1,200. Midpoint: \(\%\Delta Q = -20/90 = -22.2\%\) and \(\%\Delta P = 200/1100 = 18.2\%\), so \(\varepsilon = -1.22\): elastic. (Using the start point instead gives \(-20\% / 20\% = -1.0\), which is why the midpoint formula is preferred.)</p></div>
+
+<h3>Degrees of elasticity</h3>
+<div class="tbl-wrap"><table>
+<tr><th>\(|\varepsilon|\)</th><th>Name</th><th>Meaning</th><th>Typical goods</th></tr>
+<tr><td>0</td><td>Perfectly inelastic</td><td>Vertical demand; quantity does not respond</td><td>Life-saving drugs (insulin) over a range</td></tr>
+<tr><td>0 &lt; |&epsilon;| &lt; 1</td><td>Inelastic</td><td>%&Delta;Q &lt; %&Delta;P</td><td>Necessities with few substitutes: salt, rice, petrol in the short run</td></tr>
+<tr><td>1</td><td>Unit elastic</td><td>%&Delta;Q = %&Delta;P</td><td>&mdash;</td></tr>
+<tr><td>&gt; 1</td><td>Elastic</td><td>%&Delta;Q &gt; %&Delta;P</td><td>Dispensable/luxury items and goods with close substitutes: one brand of biscuits, restaurant meals</td></tr>
+<tr><td>&infin;</td><td>Perfectly elastic</td><td>Horizontal demand</td><td>Output of a single price-taking firm (Chapter 4)</td></tr>
+</table></div>
+<p><b>Determinants:</b> availability of close substitutes (the most important); necessity vs dispensable; share of the budget; time horizon (demand is more elastic in the long run as people adjust, e.g. buying fuel-efficient cars); and how narrowly the market is defined ("Parle-G biscuits" is much more elastic than "food").</p>
+
+<h3>Elasticity along a linear demand curve</h3>
+<div class="box derivation"><span class="box-h">Derivation: elasticity varies along a straight line</span>
+<div class="steps">
+<p class="step">Linear demand \(Q = a - bP\), so \(dQ/dP = -b\) (constant slope).</p>
+<p class="step">\(\varepsilon = -b\cdot\dfrac{P}{Q} = \dfrac{-bP}{a - bP}\).</p>
+<p class="step">At the vertical intercept (\(Q = 0\)), \(|\varepsilon| \to \infty\). At the horizontal intercept (\(P = 0\)), \(\varepsilon = 0\).</p>
+<p class="step">Unit elasticity: \(bP = a - bP\) &rArr; \(P = \dfrac{a}{2b}\) and \(Q = \dfrac{a}{2}\): the <b>midpoint</b> of the line. Above it demand is elastic; below it, inelastic.</p>
+</div>
+<p><b>Lesson:</b> a straight-line demand curve does <i>not</i> have constant elasticity. Only \(Q = AP^{-\eta}\) (a constant-elasticity curve) has the same elasticity \(\eta\) everywhere.</p></div>
+
+<h3>Elasticity and total revenue</h3>
+<div class="box derivation"><span class="box-h">Derivation: how revenue responds to price</span>
+<div class="steps">
+<p class="step">Total revenue (= consumers' expenditure) \(TR = P\cdot Q(P)\).</p>
+<p class="step">Product rule: \(\dfrac{dTR}{dP} = Q + P\dfrac{dQ}{dP} = Q\left(1 + \dfrac{P}{Q}\dfrac{dQ}{dP}\right) = Q(1 + \varepsilon) = Q(1 - |\varepsilon|)\).</p>
+<p class="step">So: if \(|\varepsilon| &lt; 1\) (inelastic), \(dTR/dP &gt; 0\): <b>raising price raises revenue</b>. If \(|\varepsilon| &gt; 1\) (elastic), raising price <b>lowers</b> revenue. If \(|\varepsilon| = 1\), revenue is at its maximum.</p>
+<p class="step">Equivalently, in terms of quantity: \(MR = \dfrac{dTR}{dQ} = P + Q\dfrac{dP}{dQ} = P\left(1 - \dfrac{1}{|\varepsilon|}\right)\). This formula is central to monopoly (Chapter 5).</p>
+</div></div>
+{{fig:elasticity_linear|Left: demand P = 10 − Q is elastic above the midpoint (P = 5) and inelastic below it. Right: TR = (10 − Q)Q rises while demand is elastic, peaks at Q = 5 (TR = 25, MR = 0) and falls in the inelastic range.}}
+<div class="tbl-wrap"><table>
+<tr><th>Demand is&hellip;</th><th>Price &uarr; &rArr; TR</th><th>Price &darr; &rArr; TR</th></tr>
+<tr><td>Inelastic (0 &lt; |&epsilon;| &lt; 1)</td><td>increases</td><td>decreases</td></tr>
+<tr><td>Unit elastic (|&epsilon;| = 1)</td><td>no change</td><td>no change</td></tr>
+<tr><td>Elastic (|&epsilon;| &gt; 1)</td><td>decreases</td><td>increases</td></tr>
+</table></div>
+<div class="box exam"><span class="box-h">Exam tip: the farmer's paradox</span>
+<p>A bumper harvest (supply shifts right) can <b>reduce</b> farmers' total income because food demand is inelastic: price falls by a larger percentage than quantity rises. This is a standard short-answer question. Draw it, then use \(dTR/dP = Q(1-|\varepsilon|)\).</p></div>
+
+<h2>Income, cross-price and supply elasticities</h2>
+<h3>Income elasticity of demand</h3>
+$$\eta_M = \frac{\%\Delta Q}{\%\Delta M} = \frac{dQ}{dM}\cdot\frac{M}{Q}.$$
+<ul>
+<li>\(\eta_M &gt; 0\): <b>normal good</b>. If \(0 &lt; \eta_M &lt; 1\) it is a <b>necessity</b> (food, so the budget share of food falls as income rises: Engel's law). If \(\eta_M &gt; 1\) it is a <b>luxury</b> (air travel, eating out).</li>
+<li>\(\eta_M &lt; 0\): <b>inferior good</b>. Demand falls as income rises (coarse grains, bus travel replaced by cars as households get richer).</li>
+</ul>
+<h3>Cross-price elasticity</h3>
+$$\varepsilon_{xy} = \frac{\%\Delta Q_x}{\%\Delta P_y}:\qquad \varepsilon_{xy} &gt; 0 \text{ substitutes},\quad \varepsilon_{xy} &lt; 0 \text{ complements},\quad \varepsilon_{xy} = 0 \text{ unrelated}.$$
+<h3>Price elasticity of supply</h3>
+$$\varepsilon_s = \frac{\%\Delta Q_s}{\%\Delta P} \ge 0.$$
+<p>Supply is <b>less elastic in the short run</b>, when capacity, land and plant are fixed (a farmer cannot grow more onions until the next season), and <b>more elastic in the long run</b>, when firms can expand, build plant and enter. Supply of goods using specialised or scarce inputs (land in central Mumbai, Darjeeling tea) stays inelastic even in the long run.</p>
+<div class="box example"><span class="box-h">Worked example: point elasticities from a demand function</span>
+<p>\(Q_x = 120 - 4P_x + 2P_y + 0.01M\), with \(P_x = 10\), \(P_y = 20\), \(M = 2000\). Then \(Q_x = 120 - 40 + 40 + 20 = 140\).</p>
+<ul>
+<li>Own price: \(\varepsilon = -4 \times 10/140 = -0.29\) (inelastic).</li>
+<li>Cross price: \(\varepsilon_{xy} = 2 \times 20/140 = 0.29 &gt; 0\): x and y are substitutes.</li>
+<li>Income: \(\eta_M = 0.01 \times 2000/140 = 0.14\): a normal good and a necessity.</li>
+</ul></div>
+
+<h2>Who bears a tax? Elasticity and incidence</h2>
+<div class="box derivation"><span class="box-h">Derivation: tax incidence with linear curves</span>
+<p>A per-unit tax \(\tau\) is levied on sellers. Buyers pay \(P_b\); sellers receive \(P_s = P_b - \tau\).</p>
+<div class="steps">
+<p class="step">Equilibrium: \(a - bP_b = c + d(P_b - \tau)\) &rArr; \(P_b = \dfrac{a - c + d\tau}{b + d} = P^* + \dfrac{d}{b+d}\tau\).</p>
+<p class="step">\(P_s = P_b - \tau = P^* - \dfrac{b}{b+d}\tau\).</p>
+<p class="step">Buyers' share of the tax is \(\dfrac{d}{b+d}\); sellers' share is \(\dfrac{b}{b+d}\). Dividing, and using the fact that at the initial point \(\varepsilon_s/|\varepsilon_d| = d/b\):
+$$\frac{\text{buyers' burden}}{\text{sellers' burden}} = \frac{d}{b} = \frac{\varepsilon_s}{|\varepsilon_d|}.$$</p>
+</div>
+<p><b>The less elastic side bears more of the tax</b>, whoever legally pays it. Course example: \(b = d = 1\), \(\tau = 2\): buyers pay 1 more (6 &rarr; 7) and sellers receive 1 less (6 &rarr; 5). This is why taxes on cigarettes, alcohol and fuel (inelastic demand) fall mainly on consumers. Welfare effects are in Chapter 7.</p></div>
+
+<h2>Macro application: employment elasticity</h2>
+<p>The <span class="term">employment elasticity of output</span> measures how responsive jobs are to economic growth:</p>
+$$e_{N} = \frac{\%\Delta \text{Employment}}{\%\Delta \text{GDP}}.$$
+<p>With \(e_N = 0.2\) and 7% GDP growth, employment grows only 1.4% a year. Since employment = output / labour productivity, \(\hat N = \hat Y - \hat\lambda\) and so \(e_N = 1 - \hat\lambda/\hat Y\). A low elasticity means growth comes mostly from rising productivity (capital-intensive sectors) rather than from more jobs.</p>
+<div class="box india"><span class="box-h">India focus: "jobless growth"</span>
+<p>Indian studies find low employment elasticities, especially in manufacturing and organised services. In some periods of fast GDP growth (notably the mid-2000s to early 2010s) estimates were close to zero, which gave rise to the phrase <b>jobless growth</b>. Agriculture still employs a large share of workers but has low productivity, so moving labour into industry and services that create jobs is a key policy concern.</p></div>
+
+<h2>Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>Linear model: \(P^* = (a-c)/(b+d)\), \(Q^* = (ad+bc)/(b+d)\). Demand &uarr; raises P and Q; supply &uarr; lowers P and raises Q.</li>
+<li>\(\varepsilon = \frac{dQ}{dP}\frac{P}{Q}\). On a linear demand curve, unit elastic at the midpoint.</li>
+<li>\(dTR/dP = Q(1-|\varepsilon|)\) and \(MR = P(1 - 1/|\varepsilon|)\).</li>
+<li>Income elasticity sorts goods into inferior (&lt;0), necessities (0&ndash;1) and luxuries (&gt;1). Cross elasticity sorts them into substitutes (&gt;0) and complements (&lt;0).</li>
+<li>Tax burden ratio (buyers:sellers) = \(\varepsilon_s : |\varepsilon_d|\).</li>
+</ul></div>
+<details class="q"><summary>Demand \(Q_d = 200 - 5P\), supply \(Q_s = -40 + 3P\). Find equilibrium. Then income rises and demand becomes \(Q_d = 240 - 5P\). Find the new equilibrium.</summary><div class="ans"><p>\(200 - 5P = -40 + 3P\) &rArr; \(P^* = 30\), \(Q^* = 50\). New: \(240 - 5P = -40 + 3P\) &rArr; \(P = 35\), \(Q = 65\). Check with the formula: \(\Delta P = \Delta a/(b+d) = 40/8 = 5\) ✓.</p></div></details>
+<details class="q"><summary>For the demand \(Q = 200 - 5P\), at what price is revenue maximised? Calculate the elasticity at P = 10 and at P = 30.</summary><div class="ans"><p>Unit elastic at the midpoint, \(P = a/(2b) = 20\) (Q = 100, TR = 2000). At \(P = 10\): \(\varepsilon = -5(10)/150 = -0.33\) (inelastic). At \(P = 30\): \(-5(30)/50 = -3\) (elastic).</p></div></details>
+<details class="q"><summary>When the price of petrol rises 10%, sales of two-wheelers fall 3%. Find the cross elasticity and interpret it.</summary><div class="ans"><p>\(\varepsilon_{xy} = -3/10 = -0.3\). The negative sign means complements: petrol and two-wheelers are used together.</p></div></details>
+<details class="q"><summary>Explain why a good harvest can reduce farm incomes. Under what elasticity condition does this happen?</summary><div class="ans"><p>Supply shifts right, price falls and quantity rises. Farm revenue = P&times;Q falls if demand is inelastic (\(|\varepsilon| &lt; 1\)), because \(dTR/dP = Q(1-|\varepsilon|) &gt; 0\): the price fall dominates.</p></div></details>
+<details class="q"><summary>Why is supply more elastic in the long run? Give an example.</summary><div class="ans"><p>In the short run some inputs (land, plant, trees) are fixed, so output can expand only by using fixed capacity more intensively, which pushes up marginal cost. In the long run firms can build capacity and new firms can enter. Example: when the price of coffee rises, new coffee plants take 3&ndash;4 years to bear fruit.</p></div></details>

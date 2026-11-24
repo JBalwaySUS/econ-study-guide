@@ -1,0 +1,245 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Oligopoly and Game Theory · Economics Study Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('sg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Open chapter menu" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+  <a class="brand" href="index.html">Economics Study Guide</a>
+  <div class="top-actions">
+    <a class="pdf-link" href="Economics_Study_Guide_L5-L8_Welfare.pdf" download>PDF</a>
+    <button class="theme-btn" aria-label="Toggle dark mode" onclick="toggleTheme()">&#9680;</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar"><a class="nav-home" href="index.html">Overview &amp; how to use</a>
+<a class="nav-ch" href="inflation.html"><span class="nav-n">1</span><span><span class="nav-k">Lecture 5</span>Inflation, the Phillips Curve and Monetary Policy</span></a>
+<a class="nav-ch" href="demand-supply.html"><span class="nav-n">2</span><span><span class="nav-k">Lecture 6 &middot; Microeconomics I (part 1)</span>Supply, Demand and Elasticity</span></a>
+<a class="nav-ch" href="consumer.html"><span class="nav-n">3</span><span><span class="nav-k">Lecture 6 &middot; Microeconomics I (part 2)</span>Consumer Choice and Labour Supply</span></a>
+<a class="nav-ch" href="firm.html"><span class="nav-n">4</span><span><span class="nav-k">Lecture 7 &middot; Microeconomics II</span>Production, Costs and Perfect Competition</span></a>
+<a class="nav-ch" href="monopoly.html"><span class="nav-n">5</span><span><span class="nav-k">Lecture 8 &middot; Market structures (part 1)</span>Monopoly and Price Discrimination</span></a>
+<a class="nav-ch active" href="oligopoly.html"><span class="nav-n">6</span><span><span class="nav-k">Lecture 8 &middot; Market structures (part 2)</span>Oligopoly and Game Theory</span></a>
+<a class="nav-ch" href="welfare.html"><span class="nav-n">7</span><span><span class="nav-k">Welfare Economics &middot; Classes 1&ndash;2</span>Welfare Economics and Market Failure</span></a>
+<a class="nav-pdf" href="Economics_Study_Guide_L5-L8_Welfare.pdf" download>&#8595; Download the full PDF</a></aside>
+<main class="content">
+<article class="chapter"><p class="kicker">Lecture 8 &middot; Market structures (part 2)</p>
+<h1><span class="chapnum">Chapter 6</span>Oligopoly and Game Theory</h1>
+<p class="lede">When a few firms dominate a market, each must anticipate its rivals. Game theory gives the tools (Nash equilibrium, best responses, backward induction), and the Cournot, Bertrand and Stackelberg duopoly models are the core applications.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Oregon State <i>Intermediate Microeconomics</i>, <a href="https://open.oregonstate.education/intermediatemicroeconomics/chapter/module-18/">Module 18</a>, &sect;18.1&ndash;18.3 (Cournot, Bertrand, Stackelberg), as assigned in Lecture 8.</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 4: &sect;4.1&ndash;4.3 (game theory, the invisible hand game, the prisoners' dilemma), &sect;4.6 (repeated interaction).</li>
+<li>Goodwin et al. Ch. 18, &sect;3&ndash;4 (monopolistic competition and oligopoly).</li>
+</ul></div>
+
+<h2 id="c6-what-is-oligopoly"><span class="secnum">6.1</span> What is oligopoly?</h2>
+<div class="box key"><span class="box-h">Key ideas</span>
+<ul>
+<li>A <b>limited number of sellers</b>, each with some price-making ability.</li>
+<li><b>Difficulty of entry</b> (economies of scale, licences, brand loyalty, network effects).</li>
+<li><b>Strategic interdependence</b>: with few firms, each firm's best choice depends on what the others do. This leaves room for strategic behaviour.</li>
+<li>Simplest case: <b>duopoly</b> (two sellers). Three classic models:
+<ol>
+<li><b>Cournot</b>: firms choose <b>quantities</b> simultaneously.</li>
+<li><b>Bertrand</b>: firms choose <b>prices</b> simultaneously.</li>
+<li><b>Stackelberg</b>: a <b>leader</b> chooses quantity first, then a <b>follower</b>.</li>
+</ol></li>
+</ul>
+<p>Indian examples: telecom (Jio, Airtel, Vi), cement, aviation (IndiGo and Air India group), cola drinks, steel.</p></div>
+
+<h2 id="c6-game-theory-essentials"><span class="secnum">6.2</span> Game theory essentials</h2>
+<p><b>Game theory</b> models strategic interaction as a game: <b>players</b>, the alternative <b>actions (strategies)</b> available to each, and the <b>payoffs</b> each receives for every combination of actions. A simultaneous two-player game is summarised in a <b>payoff matrix</b> (the first number is the row player's payoff).</p>
+<div class="box key"><span class="box-h">Definitions</span>
+<ul>
+<li><span class="term">Best response</span>: the action that gives a player the highest payoff, given the other player's action.</li>
+<li><span class="term">Dominant strategy</span>: an action that is a best response to <i>every</i> action of the other player.</li>
+<li><span class="term">Pure-strategy Nash equilibrium</span> (lecture definition): an action profile \((a_1^*, a_2^*)\) such that player 1 cannot obtain a higher payoff by choosing an action different from \(a_1^*\), given that player 2 adheres to \(a_2^*\), and vice versa. In other words, <b>each player's action is a best response to the other's</b>: no one wants to deviate on their own.</li>
+</ul></div>
+
+<h3 id="c6-example-a-pricing-game-prisoners-dilemma">Example: a pricing game (prisoners' dilemma)</h3>
+<p>Two cement firms choose a High or Low price. Payoffs are profits in ₹ crore (Firm A, Firm B):</p>
+<div class="tbl-wrap"><table class="payoff">
+<tr><th></th><th>B: High price</th><th>B: Low price</th></tr>
+<tr><th>A: High price</th><td>10, 10</td><td>2, 15</td></tr>
+<tr><th>A: Low price</th><td><u>15</u>, 2</td><td><u>5</u>, <u>5</u></td></tr>
+</table></div>
+<div class="box derivation"><span class="box-h">Solving for the Nash equilibrium (best-response method)</span>
+<div class="steps">
+<p class="step">A's best responses: if B plays High, A compares 10 (High) with <b>15 (Low)</b> &rArr; Low. If B plays Low, A compares 2 with <b>5</b> &rArr; Low. Low is a <b>dominant strategy</b> for A (underlined).</p>
+<p class="step">By symmetry Low is dominant for B.</p>
+<p class="step">The cell where both payoffs are best responses is <b>(Low, Low)</b> with payoffs (5, 5): the unique Nash equilibrium.</p>
+<p class="step">But (High, High) gives (10, 10), better for <i>both</i>. The equilibrium is <b>Pareto inefficient</b> for the firms. This is the <span class="term">prisoners' dilemma</span> (CORE &sect;4.3): individually rational choices lead to a collectively worse outcome.</p>
+</div></div>
+<p>Lessons: (1) collusion (cartels) is <b>unstable</b>, because each member has an incentive to cheat; (2) in <b>repeated</b> games, threats such as "I'll match your price cut forever" (tit-for-tat, grim trigger) can sustain cooperation (CORE &sect;4.6); (3) for consumers the firms' dilemma is good news, since competition lowers prices. Explicit cartels are illegal under India's Competition Act 2002; the Competition Commission of India has fined cement makers for cartelisation.</p>
+
+<h2 id="c6-the-cournot-model-quantity-competition"><span class="secnum">6.3</span> The Cournot model (quantity competition)</h2>
+<p><b>Set-up</b> (lecture): market demand \(P = A - BQ\) with \(Q = q_a + q_b\). Both firms have the same cost function \(C(q_i) = cq_i\) (constant MC = c). Each firm chooses its quantity to maximise profit, <b>taking the other's output as given</b>.</p>
+<div class="box derivation"><span class="box-h">Derivation: reaction functions and the Cournot&ndash;Nash equilibrium</span>
+<div class="steps">
+<p class="step">Firm a's profit: \(\pi_a = \big[A - B(q_a + q_b)\big]q_a - cq_a\).</p>
+<p class="step">FOC (treating \(q_b\) as fixed): \(\dfrac{\partial\pi_a}{\partial q_a} = A - 2Bq_a - Bq_b - c = 0\). (This is MR<sub>a</sub> = MC: firm a acts as a monopolist on the residual demand left by b.)</p>
+<p class="step">Solve for firm a's <b>reaction (best-response) function</b>:
+$$R_a:\quad q_a = \frac{A - c - Bq_b}{2B} = \frac{A-c}{2B} - \frac{q_b}{2}.$$
+By symmetry: \(R_b:\ q_b = \dfrac{A - c - Bq_a}{2B}\). Each reaction function slopes down: if your rival produces more, you produce less.</p>
+<p class="step"><b>Nash equilibrium</b>: both are on their reaction functions at once. By symmetry \(q_a = q_b = q\): \(q = \dfrac{A - c - Bq}{2B}\) &rArr; \(2Bq + Bq = A - c\) &rArr;
+$$\boxed{q_a^* = q_b^* = \frac{A-c}{3B}},\qquad Q^* = \frac{2(A-c)}{3B}.$$</p>
+<p class="step">Price: \(P^* = A - B\cdot\dfrac{2(A-c)}{3B} = \boxed{\dfrac{A + 2c}{3}}\). Profit per firm: \(\pi^* = (P^* - c)q^* = \dfrac{A-c}{3}\cdot\dfrac{A-c}{3B} = \boxed{\dfrac{(A-c)^2}{9B}}\).</p>
+</div>
+<p>The Cournot equilibrium <b>is a Nash equilibrium</b>: at \((q_a^*, q_b^*)\) each firm's output is a best response to the other's, so neither wants to change.</p></div>
+<figure class="figure" id="fig-cournot"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Cournot reaction functions intersect at (30, 30). The Stackelberg leader picks the point (45, 22.5) on the follower&#x27;s reaction function." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polyline class="guide" points="62.0,245.1 208.5,245.1 208.5,348.0"/>
+<line class="c4 thin dashed" x1="62.0" y1="193.6" x2="281.8" y2="348.0"/>
+<line class="c3 thin dashed" x1="62.0" y1="39.2" x2="501.6" y2="348.0"/>
+<line class="c1" x1="281.8" y1="348.0" x2="62.0" y2="39.2"/>
+<line class="c2" x1="62.0" y1="193.6" x2="501.6" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="208.5" y="365.0" text-anchor="middle">30</text>
+<text class="tick" x="281.8" y="365.0" text-anchor="middle">45</text>
+<text class="tick" x="501.6" y="365.0" text-anchor="middle">90</text>
+<text class="tick" x="55.0" y="249.1" text-anchor="end">30</text>
+<text class="tick" x="55.0" y="197.6" text-anchor="end">45</text>
+<text class="tick" x="55.0" y="43.2" text-anchor="end">90</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Firm a&#x27;s output, qa</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Firm b&#x27;s output, qb</text>
+<circle class="pt" cx="208.5" cy="245.1" r="4"/>
+<circle class="pt" cx="281.8" cy="270.8" r="4"/>
+<text class="lbl c1-t" x="94.4" y="73.5" text-anchor="start">Ra: qa = (90 − qb)/2</text>
+<text class="lbl c2-t" x="428.3" y="340.3" text-anchor="end">Rb: qb = (90 − qa)/2</text>
+<text class="lbl strong" x="216.5" y="237.1" text-anchor="start">Cournot–Nash</text>
+<text class="lbl strong" x="289.8" y="274.8" text-anchor="start">Stackelberg</text>
+</svg><figcaption><b>Figure 6.1.</b> Reaction functions for A = 100, B = 1, c = 10. Ra: qa = (90 − qb)/2; Rb: qb = (90 − qa)/2. They cross at the Cournot–Nash equilibrium (30, 30). Industry output 60 lies between the monopoly (collusive) output of 45 and the competitive output of 90. The Stackelberg outcome (45, 22.5) lies on the follower's reaction function. Dashed lines show industry output of 45 (monopoly or perfect collusion, purple) and 90 (perfect competition, green).</figcaption></figure>
+<div class="box example"><span class="box-h">Worked example: A = 100, B = 1, c = 10</span>
+<ul>
+<li>Reaction functions: \(q_a = 45 - q_b/2\), \(q_b = 45 - q_a/2\).</li>
+<li>Solve: \(q_a = 45 - (45 - q_a/2)/2 = 22.5 + q_a/4\) &rArr; \(\tfrac34 q_a = 22.5\) &rArr; \(q_a = 30\), so \(q_b = 30\).</li>
+<li>Q = 60, P = 40, each profit = (40 &minus; 10)(30) = 900, industry profit 1800.</li>
+<li>Compare monopoly: \(Q = (A-c)/2B = 45\), P = 55, profit 2025. Competition: P = c = 10, Q = 90, zero profit.</li>
+</ul></div>
+
+<h3 id="c6-why-collusion-breaks-down-in-cournot">Why collusion breaks down in Cournot</h3>
+<div class="box example"><span class="box-h">Collusion as a prisoners' dilemma</span>
+<p>If the duopolists form a cartel and split monopoly output, each produces 22.5 and earns 2025/2 = 1012.5 (&gt; 900). But if b keeps to 22.5, a's best response is \(q_a = 45 - 22.5/2 = 33.75\): P = 100 &minus; 56.25 = 43.75 and \(\pi_a = 33.75^2 = 1139\). Payoffs for "Collude (22.5)" vs "Cournot (30)":</p>
+<div class="tbl-wrap"><table class="payoff">
+<tr><th></th><th>b: 22.5</th><th>b: 30</th></tr>
+<tr><th>a: 22.5</th><td>1012.5, 1012.5</td><td>843.75, <u>1125</u></td></tr>
+<tr><th>a: 30</th><td><u>1125</u>, 843.75</td><td><u>900</u>, <u>900</u></td></tr>
+</table></div>
+<p>Producing 30 is dominant, so the equilibrium is (30, 30), even though (22.5, 22.5) is better for both. Cartels like OPEC face exactly this cheating problem.</p></div>
+
+<div class="box derivation"><span class="box-h">Extension: Cournot with n firms</span>
+<p>Firm i: \(\pi_i = [A - B(q_i + Q_{-i})]q_i - cq_i\). FOC: \(A - 2Bq_i - BQ_{-i} - c = 0\). In a symmetric equilibrium \(Q_{-i} = (n-1)q\): \(A - c = B(n+1)q\) &rArr;
+$$q = \frac{A-c}{(n+1)B},\quad Q = \frac{n}{n+1}\cdot\frac{A-c}{B},\quad P = \frac{A + nc}{n+1}.$$
+For n = 1 this is monopoly and for n = 2 Cournot duopoly. As \(n \to \infty\), \(P \to c\): the <b>competitive outcome</b>. More firms mean less market power.</p></div>
+
+<h2 id="c6-the-bertrand-model-price-competition"><span class="secnum">6.4</span> The Bertrand model (price competition)</h2>
+<p><b>Set-up</b> (lecture): two firms sell an <b>identical</b> product with the same constant marginal cost c and choose <b>prices</b> simultaneously. Consumers buy from the cheaper firm. Demand facing firm 1 is</p>
+$$q_1 = \begin{cases} a - bP_1 & \text{if } P_1 &lt; P_2 \\[2pt] 0 & \text{if } P_1 &gt; P_2 \\[2pt] \dfrac{a - bP}{2} & \text{if } P_1 = P_2 = P \end{cases}$$
+<p>and symmetrically for firm 2.</p>
+<div class="box derivation"><span class="box-h">Derivation: the Bertrand equilibrium is \(P_1 = P_2 = c\)</span>
+<p>Check every other possibility and show that someone wants to deviate:</p>
+<div class="steps">
+<p class="step">\(P_1 &gt; P_2 &gt; c\): firm 1 sells nothing. It can undercut to just below \(P_2\), capture the whole market and earn a positive profit. Not an equilibrium.</p>
+<p class="step">\(P_1 = P_2 = P &gt; c\): each gets half the market. By cutting price slightly to \(P - \epsilon\), a firm gets <i>all</i> the market at almost the same margin, nearly doubling its profit. Not an equilibrium.</p>
+<p class="step">\(P_1 &gt; P_2 = c\): firm 2 makes zero profit and could raise its price a little (still below \(P_1\)) and earn a positive profit. Not an equilibrium.</p>
+<p class="step">Any \(P_i &lt; c\): that firm makes losses on every unit sold and would rather raise its price. Not an equilibrium.</p>
+<p class="step">\(P_1 = P_2 = c\): each earns zero. Raising price loses all customers (still zero); cutting price means losses. <b>No profitable deviation</b>: this is the unique Nash equilibrium.</p>
+</div>
+<p><b>Quantities</b> (the "??" on the slide): total demand at P = c is \(a - bc\), shared equally, so
+$$\boxed{q_1 = q_2 = \frac{a - bc}{2}},\qquad \pi_1 = \pi_2 = 0.$$
+With \(Q = 100 - P\) (\(a = 100\), \(b = 1\)) and c = 10: P = 10 and each firm sells 45.</p></div>
+<div class="box key"><span class="box-h">The Bertrand paradox</span>
+<p>With just <b>two</b> firms the outcome is the same as <b>perfect competition</b>: P = MC and zero profit. Real duopolies usually earn profits, so the model's assumptions are relaxed: <b>capacity constraints</b> (a firm cannot serve the whole market, which brings back Cournot-like results), <b>product differentiation</b> (prices above MC), <b>repeated interaction</b> (tacit collusion), and <b>cost differences</b> (the low-cost firm prices just below the rival's MC).</p></div>
+
+<h2 id="c6-the-stackelberg-model-leader-and-follower"><span class="secnum">6.5</span> The Stackelberg model (leader and follower)</h2>
+<p><b>Set-up:</b> the same demand and costs as Cournot, but firm a (the <b>leader</b>, e.g. a dominant incumbent) chooses its quantity <b>first</b>. Firm b (the <b>follower</b>) observes \(q_a\) and then chooses \(q_b\). The decisions are sequential, reflecting the firms' different stature. The leader produces optimally knowing the follower will make the best of the resulting situation.</p>
+<div class="box derivation"><span class="box-h">Derivation: solving by backward induction</span>
+<div class="steps">
+<p class="step"><b>Stage 2 (follower).</b> Given \(q_a\), b maximises \([A - B(q_a + q_b)]q_b - cq_b\), which gives its Cournot reaction function: \(q_b(q_a) = \dfrac{A - c - Bq_a}{2B}\).</p>
+<p class="step"><b>Stage 1 (leader).</b> a knows b will respond this way, so it substitutes \(q_b(q_a)\) into its own profit:
+$$\pi_a = \Big[A - Bq_a - B\cdot\frac{A - c - Bq_a}{2B}\Big]q_a - cq_a = \Big[\frac{A - c}{2} - \frac{Bq_a}{2}\Big]q_a.$$</p>
+<p class="step">FOC: \(\dfrac{A-c}{2} - Bq_a = 0\) &rArr; \(\boxed{q_a^S = \dfrac{A-c}{2B}}\): the leader produces the monopoly output.</p>
+<p class="step">Follower: \(q_b^S = \dfrac{A - c - (A-c)/2}{2B} = \boxed{\dfrac{A-c}{4B}}\).</p>
+<p class="step">Total \(Q^S = \dfrac{3(A-c)}{4B}\), price \(P^S = A - BQ^S = \boxed{\dfrac{A + 3c}{4}}\).</p>
+<p class="step">Profits: \(\pi_a^S = \dfrac{A-c}{4}\cdot\dfrac{A-c}{2B} = \dfrac{(A-c)^2}{8B}\) and \(\pi_b^S = \dfrac{(A-c)^2}{16B}\).</p>
+</div></div>
+<div class="box example"><span class="box-h">Worked example: A = 100, B = 1, c = 10</span>
+<p>Leader \(q_a = 45\); follower \(q_b = (90 - 45)/2 = 22.5\); Q = 67.5; P = 32.5. Profits: leader (32.5 &minus; 10)(45) = 1012.5; follower 22.5 &times; 22.5 = 506.25.</p>
+<p><b>First-mover advantage:</b> the leader earns 1012.5 &gt; 900 (Cournot) by <b>committing</b> to a large output, which forces the follower to contract. The follower is worse off (506.25 &lt; 900). Consumers gain: Q is higher and P lower than under Cournot.</p></div>
+
+<h2 id="c6-comparing-the-models"><span class="secnum">6.6</span> Comparing the models</h2>
+<p>With \(P = A - BQ\) and constant MC = c (numbers for A = 100, B = 1, c = 10):</p>
+<div class="tbl-wrap"><table>
+<tr><th>Model</th><th>Firm outputs</th><th>Total output</th><th>Price</th><th>Profits</th></tr>
+<tr><td>Monopoly / perfect cartel</td><td>\(\frac{A-c}{2B}\) in total (45)</td><td>45</td><td>\(\frac{A+c}{2}\) = 55</td><td>\(\frac{(A-c)^2}{4B}\) = 2025</td></tr>
+<tr><td>Cournot</td><td>\(\frac{A-c}{3B}\) each (30, 30)</td><td>60</td><td>\(\frac{A+2c}{3}\) = 40</td><td>\(\frac{(A-c)^2}{9B}\) = 900 each</td></tr>
+<tr><td>Stackelberg</td><td>\(\frac{A-c}{2B}\), \(\frac{A-c}{4B}\) (45, 22.5)</td><td>67.5</td><td>\(\frac{A+3c}{4}\) = 32.5</td><td>1012.5 / 506.25</td></tr>
+<tr><td>Bertrand</td><td>\(\frac{A-c}{2B}\) each (45, 45)</td><td>90</td><td>c = 10</td><td>0</td></tr>
+<tr><td>Perfect competition</td><td>&mdash;</td><td>\(\frac{A-c}{B}\) = 90</td><td>c = 10</td><td>0</td></tr>
+</table></div>
+<div class="box exam"><span class="box-h">Exam tips</span>
+<ul>
+<li>Always write the profit function, then the FOC, then the reaction function, then solve. Show the symmetry step explicitly.</li>
+<li>In Stackelberg, the leader does <b>not</b> take the follower's quantity as given: it substitutes the follower's <i>reaction function</i>. That is the whole difference from Cournot.</li>
+<li>Draw the reaction-function diagram with both axes labelled, the intercepts (\((A-c)/B\) and \((A-c)/2B\)) and the equilibrium point.</li>
+<li>Ranking of total output: Monopoly &lt; Cournot &lt; Stackelberg &lt; Bertrand = Competition.</li>
+</ul></div>
+
+<h2 id="c6-summary-and-practice-questions"><span class="secnum">6.7</span> Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>Nash equilibrium: mutual best responses. The prisoners' dilemma shows why cartels are unstable.</li>
+<li>Cournot: \(q_i = (A-c)/3B\), \(P = (A+2c)/3\); with n firms \(P = (A+nc)/(n+1) \to c\).</li>
+<li>Bertrand with identical products: \(P = c\), \(q_i = (a - bc)/2\), zero profit (the Bertrand paradox).</li>
+<li>Stackelberg: leader \((A-c)/2B\), follower \((A-c)/4B\), \(P = (A+3c)/4\): a first-mover advantage.</li>
+</ul></div>
+<details class="q"><summary>Demand P = 120 − Q; two Cournot firms with MC = 0. Find the reaction functions, equilibrium outputs, price and profits.</summary><div class="ans"><p>\(q_1 = (120 - q_2)/2\), \(q_2 = (120 - q_1)/2\). Equilibrium: q₁ = q₂ = 40, Q = 80, P = 40, profit 1600 each.</p></div></details>
+<details class="q"><summary>Same market, but firm 1 is a Stackelberg leader. Find outputs, price and profits. Who gains and who loses compared with Cournot?</summary><div class="ans"><p>Follower: \(q_2 = 60 - q_1/2\). Leader's profit: \((120 - q_1 - 60 + q_1/2)q_1 = (60 - q_1/2)q_1\); FOC 60 &minus; q₁ = 0 &rArr; q₁ = 60, q₂ = 30, Q = 90, P = 30. Profits: 1800 and 900. The leader gains (+200), the follower loses (&minus;700), and consumers gain (lower price).</p></div></details>
+<details class="q"><summary>Cournot duopoly with P = 100 − Q, c₁ = 10, c₂ = 20. Derive the equilibrium.</summary><div class="ans"><p>\(q_1 = (90 - q_2)/2\), \(q_2 = (80 - q_1)/2\). Substitute: \(q_1 = (90 - 40 + q_1/2)/2 = 25 + q_1/4\) &rArr; q₁ = 33.3; q₂ = (80 &minus; 33.3)/2 = 23.3. Q = 56.7, P = 43.3. The general formula is \(q_i = (A - 2c_i + c_j)/3B\). The low-cost firm produces more.</p></div></details>
+<details class="q"><summary>Why do two Bertrand competitors end up pricing at marginal cost? Is this realistic?</summary><div class="ans"><p>At any common price above MC each firm can nearly double its profit by undercutting slightly, so only P = MC survives (show the cases). It is unrealistic when products are differentiated, capacity is limited or firms interact repeatedly, all of which let prices stay above MC.</p></div></details>
+<details class="q"><summary>Find all pure-strategy Nash equilibria: payoffs (row, column): (Up, Left) = (3, 3); (Up, Right) = (0, 2); (Down, Left) = (2, 0); (Down, Right) = (1, 1).</summary><div class="ans"><p>Row's best responses: vs Left &rarr; Up (3 &gt; 2); vs Right &rarr; Down (1 &gt; 0). Column's: vs Up &rarr; Left (3 &gt; 2); vs Down &rarr; Right (1 &gt; 0). Two NE: (Up, Left) and (Down, Right). This is a coordination ("assurance") game: (Up, Left) is better for both, but players may get stuck at (Down, Right).</p></div></details>
+</article>
+<nav class="prevnext"><a class="prev" href="monopoly.html"><small>Previous</small>Monopoly and Price Discrimination</a><a class="next" href="welfare.html"><small>Next</small>Welfare Economics and Market Failure</a></nav>
+</main>
+<nav class="ontoc" aria-label="On this page"><div class="ontoc-h">On this page</div><a href="#c6-what-is-oligopoly"><span>6.1</span> What is oligopoly?</a><a href="#c6-game-theory-essentials"><span>6.2</span> Game theory essentials</a><a href="#c6-the-cournot-model-quantity-competition"><span>6.3</span> The Cournot model (quantity competition)</a><a href="#c6-the-bertrand-model-price-competition"><span>6.4</span> The Bertrand model (price competition)</a><a href="#c6-the-stackelberg-model-leader-and-follower"><span>6.5</span> The Stackelberg model (leader and follower)</a><a href="#c6-comparing-the-models"><span>6.6</span> Comparing the models</a><a href="#c6-summary-and-practice-questions"><span>6.7</span> Summary and practice questions</a></nav>
+</div>
+<script>
+function toggleTheme(){
+  var r=document.documentElement, cur=r.getAttribute('data-theme');
+  var dark = cur ? cur==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var nt = dark ? 'light' : 'dark'; r.setAttribute('data-theme', nt);
+  try{localStorage.setItem('sg-theme', nt);}catch(e){}
+}
+document.querySelectorAll('.sidebar a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('nav-open');});});
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function go() {
+    if (!window.renderMathInElement) return setTimeout(go, 50);
+    renderMathInElement(document.body, {
+      delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\[', right: '\\]', display: true},
+                   {left: '\\(', right: '\\)', display: false}],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'svg'],
+      throwOnError: false
+    });
+    document.documentElement.classList.add('math-ready');
+  }
+  go();
+});
+</script>
+
+</body>
+</html>

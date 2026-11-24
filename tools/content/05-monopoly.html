@@ -1,0 +1,119 @@
+<p class="kicker">Lecture 8 &middot; Market structures (part 1)</p>
+<h1>Monopoly and Price Discrimination</h1>
+<p class="lede">A single price-setting seller: why marginal revenue lies below price, how the monopolist chooses output and price, why this is inefficient, and how price discrimination changes the picture.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Goodwin et al., <i>Principles of Economics in Context</i>, Ch. 18 (Markets with Market Power), &sect;2 (monopoly).</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 7: &sect;7.2&ndash;7.5 (demand, isoprofit curves, MR and MC), &sect;7.6 (gains from trade and deadweight loss), &sect;7.7 (elasticity and the markup), &sect;7.9 (market power and policy). The Leibniz page for &sect;7.8.1 gives the calculus of the markup rule.</li>
+</ul></div>
+
+<h2>Conditions of pure monopoly</h2>
+<div class="box key"><span class="box-h">Key ideas</span>
+<ol>
+<li><b>One seller</b> of the product.</li>
+<li><b>No close substitutes.</b></li>
+<li><b>Strong barriers to entry</b>: legal (patents, licences, state monopoly such as Indian Railways passenger services), control of an essential resource, <b>economies of scale</b> so large that one firm can supply the market more cheaply than two (a <b>natural monopoly</b>: electricity grids, water pipes, metro rail), and network effects.</li>
+</ol>
+<p>Together these make the firm a <b>price-maker</b>: it faces the downward-sloping market demand curve and chooses a point on it.</p></div>
+<ul>
+<li>There is <b>no distinction between firm and industry equilibrium</b>: the firm <i>is</i> the industry.</li>
+<li>Because entry is blocked, <b>supernormal profit can persist</b>: there is no separate short-run and long-run equilibrium analysis of the kind used for perfect competition.</li>
+<li>A monopolist has <b>no supply curve</b>: the quantity it supplies at a given price depends on the shape of demand, not only on MC.</li>
+</ul>
+
+<h2>Marginal revenue under monopoly</h2>
+<p>To sell one more unit the monopolist must <b>lower the price on all units</b> (no price discrimination). So MR has two parts: the price of the extra unit (gain) minus the revenue lost on the units it was already selling (loss).</p>
+<div class="box derivation"><span class="box-h">Derivation: \(MR = P\left(1 - \dfrac{1}{|\varepsilon|}\right)\)</span>
+<div class="steps">
+<p class="step">Inverse demand \(P = P(Q)\), with \(P'(Q) &lt; 0\). Revenue: \(TR = P(Q)\cdot Q\).</p>
+<p class="step">\(MR = \dfrac{dTR}{dQ} = P + Q\,\dfrac{dP}{dQ}\). The first term is the gain from the extra unit; the second (negative) term is the loss on the earlier units.</p>
+<p class="step">Factor out P: \(MR = P\left(1 + \dfrac{Q}{P}\dfrac{dP}{dQ}\right)\). Since \(\varepsilon = \dfrac{dQ}{dP}\dfrac{P}{Q}\), we have \(\dfrac{Q}{P}\dfrac{dP}{dQ} = \dfrac{1}{\varepsilon} = -\dfrac{1}{|\varepsilon|}\).</p>
+<p class="step">\(\boxed{MR = P\left(1 - \dfrac{1}{|\varepsilon|}\right)}\)</p>
+</div>
+<p><b>Implications:</b> \(MR &lt; P\) for any downward-sloping demand. \(MR &gt; 0\) only when \(|\varepsilon| &gt; 1\). Since \(MC &gt; 0\) and the monopolist sets \(MR = MC\), it always produces on the <b>elastic part</b> of the demand curve.</p></div>
+<div class="box derivation"><span class="box-h">Derivation: linear demand</span>
+<p>\(P = a - bQ\) &rArr; \(TR = aQ - bQ^2\) &rArr; \(MR = a - 2bQ\). The MR line has the <b>same intercept</b> as demand and <b>twice the slope</b>, so it cuts the quantity axis at \(a/(2b)\), halfway to demand's intercept. That is the unit-elastic midpoint, where TR is at its maximum.</p></div>
+
+<h2>Profit maximisation and equilibrium</h2>
+<div class="box derivation"><span class="box-h">Derivation: monopoly equilibrium with linear demand and constant MC</span>
+<p>Demand \(P = a - bQ\), constant marginal and average cost \(c\) (so \(TC = cQ\)).</p>
+<div class="steps">
+<p class="step">\(\pi = (a - bQ)Q - cQ\). FOC: \(a - 2bQ - c = 0\) (i.e. MR = MC).</p>
+<p class="step">\(Q_m = \dfrac{a - c}{2b}\); the price is read off the <b>demand curve</b>: \(P_m = a - bQ_m = \dfrac{a + c}{2}\).</p>
+<p class="step">Profit: \(\pi_m = (P_m - c)Q_m = \dfrac{a-c}{2}\cdot\dfrac{a-c}{2b} = \dfrac{(a-c)^2}{4b}\).</p>
+<p class="step">Compare perfect competition (\(P = MC = c\)): \(Q_c = \dfrac{a-c}{b} = 2Q_m\). <b>The monopolist produces half the competitive output</b> (for linear demand and constant MC) and charges a higher price.</p>
+</div></div>
+{{fig:monopoly|Monopoly with demand P = 100 − Q and MC = AC = 20. MR = 100 − 2Q = 20 gives Qm = 40, and the demand curve gives Pm = 60. Profit = (60 − 20) × 40 = 1600. Consumer surplus = 800. The red triangle (800) is the deadweight loss relative to the competitive outcome Qc = 80, P = 20.}}
+<div class="box example"><span class="box-h">Worked example</span>
+<div class="tbl-wrap"><table>
+<tr><th></th><th class="num">Perfect competition</th><th class="num">Monopoly</th></tr>
+<tr><td>Output</td><td class="num">80</td><td class="num">40</td></tr>
+<tr><td>Price</td><td class="num">20</td><td class="num">60</td></tr>
+<tr><td>Consumer surplus</td><td class="num">½(100&minus;20)(80) = 3200</td><td class="num">½(100&minus;60)(40) = 800</td></tr>
+<tr><td>Producer surplus / profit</td><td class="num">0</td><td class="num">(60&minus;20)(40) = 1600</td></tr>
+<tr><td>Total surplus</td><td class="num">3200</td><td class="num">2400</td></tr>
+<tr><td>Deadweight loss</td><td class="num">0</td><td class="num">½(60&minus;20)(80&minus;40) = 800</td></tr>
+</table></div>
+<p>Of the 3200 of competitive surplus, 1600 is <b>transferred</b> from consumers to the monopolist (a distributional effect) and 800 is <b>lost</b> to everyone (an efficiency effect).</p></div>
+
+<h2>The markup and the Lerner index</h2>
+<div class="box derivation"><span class="box-h">Derivation: the inverse-elasticity markup rule (CORE &sect;7.7)</span>
+<div class="steps">
+<p class="step">MR = MC &rArr; \(P\left(1 - \dfrac{1}{|\varepsilon|}\right) = MC\).</p>
+<p class="step">Rearrange: \(P - MC = \dfrac{P}{|\varepsilon|}\) &rArr; \(\boxed{\dfrac{P - MC}{P} = \dfrac{1}{|\varepsilon|}}\). The left side is the <b>Lerner index</b> of market power, the price&ndash;cost margin as a share of price.</p>
+<p class="step">Equivalently \(P = \dfrac{MC}{1 - 1/|\varepsilon|} = \dfrac{|\varepsilon|}{|\varepsilon| - 1}\,MC\).</p>
+</div>
+<p><b>The markup is inversely proportional to the elasticity of demand.</b> CORE's examples: \(|\varepsilon| = 5\) gives a markup of 20% of price; \(|\varepsilon| = 1.25\) gives 80%. In the worked example, at the monopoly point \(|\varepsilon| = P/(bQ) = 60/40 = 1.5\), so the Lerner index = \((60-20)/60 = 2/3 = 1/1.5\). ✓ Under perfect competition \(|\varepsilon| \to \infty\), the Lerner index is 0 and P = MC.</p></div>
+
+<h2>Inefficiency of monopoly</h2>
+<div class="box derivation"><span class="box-h">Derivation: deadweight loss with linear demand</span>
+<p>DWL is the triangle between demand and MC from \(Q_m\) to \(Q_c\):
+$$DWL = \tfrac12\,(P_m - c)(Q_c - Q_m) = \tfrac12\cdot\frac{a-c}{2}\cdot\frac{a-c}{2b} = \frac{(a-c)^2}{8b}.$$
+Check: \((100-20)^2/8 = 800\). ✓ CORE (&sect;7.6): units between \(Q_m\) and \(Q_c\) are valued by buyers above their marginal cost, but they are not produced. Those are mutually beneficial trades that do not happen. The outcome is <b>Pareto inefficient</b>.</p></div>
+<p>Other costs of monopoly: <b>X-inefficiency</b> (without competitive pressure costs may drift above the minimum), <b>rent-seeking</b> (resources spent lobbying to win or protect monopoly), and possibly less innovation.</p>
+<h3>Can monopoly be efficient?</h3>
+<ul>
+<li><b>Natural monopoly:</b> with large economies of scale, one firm has lower average cost than several. Splitting it would raise costs. Regulators then set price at AC (zero profit) or at MC with a subsidy, since MC &lt; AC when AC is falling, so MC pricing makes a loss.</li>
+<li><b>Innovation:</b> patents give temporary monopoly to reward R&amp;D (Schumpeter). The trade-off: higher prices now for more innovation later. Indian drug-pricing debates (Section 3(d) of the Patents Act, compulsory licensing) are about exactly this balance.</li>
+<li>Policy responses (CORE &sect;7.9): competition law (in India, the <b>Competition Commission of India</b> under the Competition Act 2002), regulation of utilities, public ownership (Goodwin Box 18.1 on privatising municipal water).</li>
+</ul>
+
+<h2>Price discrimination</h2>
+<p><span class="term">Price discrimination</span>: charging different prices for different units of the same good, for reasons <b>not</b> related to cost differences. It requires (1) <b>market power</b>; (2) the ability to <b>identify or separate</b> buyers with different willingness to pay or elasticities; and (3) <b>no resale</b> (arbitrage) between buyers.</p>
+<h3>First-degree (perfect) price discrimination</h3>
+<p>Each unit is sold at the buyer's <b>maximum willingness to pay</b>. The demand curve becomes the MR curve, since selling one more unit no longer lowers the price on earlier units. The firm produces until <b>P = MC</b>.</p>
+{{fig:price_disc|Perfect price discrimination with P = 100 − Q and MC = 20: output is 80 (the efficient level), deadweight loss is zero, and the firm captures the entire surplus of 3200 as profit, so consumer surplus is zero.}}
+<div class="box key"><span class="box-h">Key result</span>
+<p>Perfect price discrimination <b>eliminates the deadweight loss</b>: the outcome is Pareto efficient. But all the surplus goes to the producer. This shows again that <b>efficiency and fairness are different questions</b> (Chapter 7).</p></div>
+<h3>Second-degree price discrimination</h3>
+<p>Price depends on the <b>quantity bought</b> or the version chosen, and buyers <b>self-select</b>: bulk discounts, two-part tariffs (fixed charge plus per-unit price), electricity tariff slabs, "economy vs premium" versions.</p>
+<h3>Third-degree price discrimination</h3>
+<p>Different prices for <b>identifiable groups</b>: student and senior-citizen concessions (Indian Railways), tourist vs local entry fees at monuments, different prices in different countries.</p>
+<div class="box derivation"><span class="box-h">Derivation: third-degree price discrimination</span>
+<div class="steps">
+<p class="step">Maximise \(\pi = TR_1(Q_1) + TR_2(Q_2) - C(Q_1 + Q_2)\).</p>
+<p class="step">FOCs: \(MR_1(Q_1) = MC\) and \(MR_2(Q_2) = MC\), so \(\boxed{MR_1 = MR_2 = MC}\). If MR differed across markets, moving a unit from the low-MR market to the high-MR market would raise revenue at the same cost.</p>
+<p class="step">Using \(MR_i = P_i(1 - 1/|\varepsilon_i|)\): \(P_1(1 - 1/|\varepsilon_1|) = P_2(1 - 1/|\varepsilon_2|)\). Hence \(P_1 &gt; P_2\) &hArr; \(|\varepsilon_1| &lt; |\varepsilon_2|\): <b>the less elastic market pays the higher price</b>.</p>
+</div></div>
+<div class="box example"><span class="box-h">Worked example</span>
+<p>Market 1 (business travellers): \(P_1 = 100 - Q_1\). Market 2 (students): \(P_2 = 60 - Q_2\). MC = 20.</p>
+<ul>
+<li>Market 1: \(100 - 2Q_1 = 20\) &rArr; \(Q_1 = 40\), \(P_1 = 60\), \(|\varepsilon_1| = 60/40 = 1.5\).</li>
+<li>Market 2: \(60 - 2Q_2 = 20\) &rArr; \(Q_2 = 20\), \(P_2 = 40\), \(|\varepsilon_2| = 40/20 = 2\).</li>
+<li>Profit = (60 &minus; 20)(40) + (40 &minus; 20)(20) = 1600 + 400 = <b>2000</b>.</li>
+<li><b>Single price:</b> total demand \(Q = 160 - 2P\) (for P &lt; 60) &rArr; \(P = 80 - Q/2\), MR = 80 &minus; Q = 20 &rArr; Q = 60, P = 50. Profit = 30 &times; 60 = 1800 &lt; 2000. Discrimination raises profit; here the students pay less and the business travellers more.</li>
+</ul></div>
+
+<h2>Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>\(MR = P(1 - 1/|\varepsilon|) &lt; P\); with linear demand, MR has twice the slope.</li>
+<li>Equilibrium: MR = MC, price from demand. Linear case: \(Q_m = (a-c)/2b\), \(P_m = (a+c)/2\), \(\pi = (a-c)^2/4b\), \(DWL = (a-c)^2/8b\).</li>
+<li>Lerner index \((P - MC)/P = 1/|\varepsilon|\). A monopolist always operates where demand is elastic.</li>
+<li>Perfect price discrimination: P = MC at the margin, no DWL, zero CS. Third-degree: \(MR_1 = MR_2 = MC\); the less elastic group pays more.</li>
+</ul></div>
+<details class="q"><summary>Demand P = 200 − 2Q, TC = 20Q + 500. Find the monopoly output, price and profit, and the deadweight loss.</summary><div class="ans"><p>MR = 200 &minus; 4Q = 20 &rArr; Q = 45, P = 110, profit = (110 &minus; 20)(45) &minus; 500 = 3550. Competitive Q: 200 &minus; 2Q = 20 &rArr; Q = 90. DWL = ½(110 &minus; 20)(90 &minus; 45) = 2025. (Formula: (a&minus;c)²/8b = 180²/16 = 2025 ✓.)</p></div></details>
+<details class="q"><summary>A firm's MC is ₹30 and the elasticity of demand it faces is −4. What price maximises profit? What if demand were inelastic (−0.8)?</summary><div class="ans"><p>P = MC·|&epsilon;|/(|&epsilon;| &minus; 1) = 30 &times; 4/3 = ₹40 (Lerner index = 25% = 1/4). With |&epsilon;| = 0.8, MR &lt; 0, so no profit-maximising output exists at that point: the firm would raise its price until demand became elastic.</p></div></details>
+<details class="q"><summary>Why does a monopoly cause a deadweight loss but perfect price discrimination does not?</summary><div class="ans"><p>A single-price monopolist must cut the price on all units to sell one more, so MR &lt; P and it stops where P &gt; MC. Units valued above cost go unproduced. A perfectly discriminating monopolist loses nothing on earlier units (MR = P), so it sells every unit whose value exceeds MC, reaching the efficient output. Surplus goes entirely to the firm.</p></div></details>
+<details class="q"><summary>Give three Indian examples of price discrimination and classify each.</summary><div class="ans"><p>(1) Railway concessions for students and seniors: third degree. (2) Electricity slab tariffs: second degree (block pricing). (3) Lower entry fees for Indian citizens than foreign tourists at the Taj Mahal: third degree. (4) Dynamic airline fares by booking time are a mix of second and third degree.</p></div></details>

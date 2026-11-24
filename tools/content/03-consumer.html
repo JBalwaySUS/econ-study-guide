@@ -1,0 +1,191 @@
+<p class="kicker">Lecture 6 &middot; Microeconomics I (part 2)</p>
+<h1>Consumer Choice and Labour Supply</h1>
+<p class="lede">Where the demand curve comes from: preferences, budget constraints, the tangency condition, income and substitution effects, and the same tools applied to the choice between work and leisure.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Goodwin et al., <i>Principles of Economics in Context</i>, Ch. 9 (Consumption and the Consumer Society), &sect;1 on the standard consumer model.</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 3 (Work, scarcity, and choice): &sect;3.3 preferences and the MRS, &sect;3.5 feasible set and the MRT, &sect;3.6 decision making, &sect;3.8 income and substitution effects, &sect;3.10 working hours over time.</li>
+</ul></div>
+
+<h2>How do consumers value goods?</h2>
+<p>Classical economists (Smith, Ricardo, Marx) distinguished <b>use-value</b> (usefulness) from <b>exchange-value</b> (price), and explained exchange-value by costs of production, ultimately labour. Smith's <b>diamond&ndash;water paradox</b> asked why water, very useful, is cheap while diamonds, nearly useless, are dear.</p>
+<p>The <b>marginalist revolution</b> of the 1870s (Jevons, Menger, Walras) answered: value depends on <b>marginal utility</b>, the extra satisfaction from <i>one more</i> unit, not total utility. Water is abundant, so the marginal glass adds little; diamonds are scarce, so the marginal diamond adds a lot.</p>
+<div class="box key"><span class="box-h">Key ideas</span>
+<ul>
+<li><span class="term">Total utility</span> \(U(x)\); <span class="term">marginal utility</span> \(MU_x = \partial U/\partial x\).</li>
+<li><span class="term">Law of diminishing marginal utility</span>: each extra unit adds less satisfaction than the last (\(\partial^2 U/\partial x^2 &lt; 0\)). The fifth samosa is enjoyed less than the first.</li>
+<li><span class="term">Marginalist calculus</span>: do more of an activity as long as its <b>marginal benefit exceeds its marginal cost</b>, and stop where <b>MB = MC</b>. This one rule underlies consumer choice (MU per rupee), firm choice (MR = MC) and efficiency (marginal social benefit = marginal social cost).</li>
+</ul></div>
+
+<h3>The equimarginal principle</h3>
+<div class="box derivation"><span class="box-h">Derivation: MU per rupee must be equal</span>
+<p>Suppose \(\dfrac{MU_x}{P_x} &gt; \dfrac{MU_y}{P_y}\). Take ₹1 away from y: you lose \(MU_y/P_y\) utils. Spend it on x: you gain \(MU_x/P_x\) utils. Total utility rises at the same total spending, so the original bundle was not optimal. Repeat the argument the other way. The only bundle where no reallocation helps (with both goods bought and the budget spent) satisfies
+$$\boxed{\,\frac{MU_x}{P_x} = \frac{MU_y}{P_y}\,}\quad\text{and}\quad P_x x + P_y y = M.$$</p></div>
+<div class="box example"><span class="box-h">Worked example: spending ₹12 when \(P_x = 2\), \(P_y = 1\)</span>
+<div class="tbl-wrap"><table>
+<tr><th>Unit</th><th class="num">MUₓ</th><th class="num">MUₓ/Pₓ</th><th class="num">MU_y</th><th class="num">MU_y/P_y</th></tr>
+<tr><td>1</td><td class="num">24</td><td class="num">12</td><td class="num">14</td><td class="num">14</td></tr>
+<tr><td>2</td><td class="num">20</td><td class="num">10</td><td class="num">12</td><td class="num">12</td></tr>
+<tr><td>3</td><td class="num">16</td><td class="num">8</td><td class="num">11</td><td class="num">11</td></tr>
+<tr><td>4</td><td class="num">12</td><td class="num">6</td><td class="num">10</td><td class="num">10</td></tr>
+<tr><td>5</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">9</td><td class="num">9</td></tr>
+<tr><td>6</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">8</td><td class="num">8</td></tr>
+<tr><td>7</td><td class="num">&mdash;</td><td class="num">&mdash;</td><td class="num">6</td><td class="num">6</td></tr>
+</table></div>
+<p>Spend each rupee where it buys the most utility per rupee: y1 (14), x1 (12), y2 (12), y3 (11), x2 (10), y4 (10), y5 (9), x3 (8), y6 (8). That uses exactly ₹12: <b>x = 3, y = 6</b>, where \(MU_x/P_x = MU_y/P_y = 8\).</p></div>
+
+<h2>Choice and rationality: preferences</h2>
+<p>Modern theory needs only that consumers can <b>rank</b> bundles (ordinal utility). A preference ordering is <b>rational</b> if it satisfies:</p>
+<ol>
+<li><span class="term">Completeness</span>: for any two bundles A and B, either A &#8829; B, or B &#8829; A, or both (indifference). The consumer can always compare.</li>
+<li><span class="term">Transitivity</span>: if A &#8829; B and B &#8829; C, then A &#8829; C. This rules out cycles that could be exploited ("money pump").</li>
+</ol>
+<p>To formulate the choice problem we add:</p>
+<ol start="3">
+<li><span class="term">Monotonicity (non-satiation)</span>: more is better. A bundle with more of at least one good and no less of any other is preferred.</li>
+<li><span class="term">Convexity</span>: averages are preferred to extremes (diminishing MRS). This makes indifference curves bowed toward the origin.</li>
+</ol>
+<p>If preferences are complete, transitive (and continuous), they can be represented by a <b>utility function</b> \(U(x,y)\). Any increasing transformation of \(U\) represents the same preferences: only the ranking matters.</p>
+
+<h2>The price line (budget constraint)</h2>
+<p>With income \(M\) and prices \(P_x, P_y\), the consumer can afford bundles satisfying \(P_x x + P_y y \le M\). The <b>budget line</b> is the boundary:</p>
+$$y = \frac{M}{P_y} - \frac{P_x}{P_y}\,x.$$
+<ul>
+<li>Intercepts: \(M/P_y\) (all on y) and \(M/P_x\) (all on x).</li>
+<li><b>Slope = \(-P_x/P_y\)</b>: the market rate at which y can be traded for x, the opportunity cost of x in units of y. CORE calls this the <b>marginal rate of transformation (MRT)</b> (&sect;3.5).</li>
+<li>An income rise shifts the line out in parallel. A fall in \(P_x\) pivots it outward around the y-intercept.</li>
+</ul>
+
+<h2>Indifference curves and the MRS</h2>
+<p>An <span class="term">indifference curve</span> joins all bundles giving the <b>same utility</b>. Properties under the assumptions above:</p>
+<ul>
+<li><b>Downward sloping</b> (monotonicity): to keep utility constant, more x requires less y.</li>
+<li><b>Higher curves = higher utility</b> (monotonicity).</li>
+<li><b>Never cross.</b> Proof: if two curves crossed at bundle C, then A ~ C (on curve 1) and C ~ B (on curve 2), so A ~ B by transitivity. But one of A and B has more of both goods, which contradicts monotonicity.</li>
+<li><b>Convex to the origin</b>: the MRS diminishes as x increases.</li>
+</ul>
+<div class="box derivation"><span class="box-h">Derivation: the slope of an indifference curve</span>
+<div class="steps">
+<p class="step">Along an indifference curve utility is constant: \(dU = \dfrac{\partial U}{\partial x}dx + \dfrac{\partial U}{\partial y}dy = 0\).</p>
+<p class="step">Rearrange: \(\left.\dfrac{dy}{dx}\right|_{U=\bar U} = -\dfrac{MU_x}{MU_y}\).</p>
+<p class="step">Define the <span class="term">marginal rate of substitution</span> \(MRS_{xy} = -\dfrac{dy}{dx} = \dfrac{MU_x}{MU_y}\): how many units of y the consumer is <i>willing</i> to give up for one more unit of x (CORE &sect;3.3).</p>
+<p class="step">Example: \(U = xy\) gives \(MU_x = y\), \(MU_y = x\), so \(MRS = y/x\). This falls as x rises along a curve: diminishing MRS, hence convexity.</p>
+</div></div>
+
+<h2>Consumer equilibrium</h2>
+{{fig:budget_ic|Utility maximisation for U = xy with M = 80, Pₓ = 4, P_y = 1. The best affordable bundle E (10, 40) is where the budget line just touches the highest attainable indifference curve. At F the indifference curve is steeper than the budget line, so the consumer should buy more x.}}
+<p><b>Intuitive meaning.</b> At the optimum the rate at which the consumer is <i>willing</i> to swap goods (MRS) equals the rate at which the <i>market</i> lets them swap (price ratio):</p>
+$$\boxed{\,MRS_{xy} = \frac{MU_x}{MU_y} = \frac{P_x}{P_y}\,}\qquad (\text{CORE: } MRS = MRT).$$
+<p>If \(MRS &gt; P_x/P_y\) (point F: the indifference curve is steeper than the budget line), the consumer values x more than the market charges for it, so buying more x raises utility. If \(MRS &lt; P_x/P_y\), buy less x. Rearranged, the tangency condition is the equimarginal principle: \(MU_x/P_x = MU_y/P_y\).</p>
+
+<div class="box derivation"><span class="box-h">Derivation: the Lagrangian (mathematical meaning)</span>
+<div class="steps">
+<p class="step">Problem: \(\max_{x,y}\, U(x,y)\) subject to \(P_x x + P_y y = M\).</p>
+<p class="step">Lagrangian: \(\mathcal L = U(x,y) + \lambda\,(M - P_x x - P_y y)\).</p>
+<p class="step">First-order conditions:
+$$\frac{\partial\mathcal L}{\partial x} = MU_x - \lambda P_x = 0,\quad \frac{\partial\mathcal L}{\partial y} = MU_y - \lambda P_y = 0,\quad \frac{\partial\mathcal L}{\partial\lambda} = M - P_x x - P_y y = 0.$$</p>
+<p class="step">From the first two: \(\lambda = \dfrac{MU_x}{P_x} = \dfrac{MU_y}{P_y}\), so \(\dfrac{MU_x}{MU_y} = \dfrac{P_x}{P_y}\). \(\lambda\) is the <b>marginal utility of income</b>: the extra utility from one more rupee.</p>
+<p class="step">The second-order condition holds when indifference curves are strictly convex, so the tangency is a maximum, not a minimum.</p>
+</div></div>
+
+<div class="box derivation"><span class="box-h">Derivation: Cobb-Douglas demand functions</span>
+<p>Let \(U = x^\alpha y^{1-\alpha}\), \(0 &lt; \alpha &lt; 1\).</p>
+<div class="steps">
+<p class="step">\(MU_x = \alpha x^{\alpha-1}y^{1-\alpha} = \alpha U/x\) and \(MU_y = (1-\alpha)U/y\), so \(MRS = \dfrac{\alpha}{1-\alpha}\cdot\dfrac{y}{x}\).</p>
+<p class="step">Tangency: \(\dfrac{\alpha y}{(1-\alpha)x} = \dfrac{P_x}{P_y}\) &rArr; \(P_y y = \dfrac{1-\alpha}{\alpha}P_x x\).</p>
+<p class="step">Substitute into the budget: \(P_x x + \dfrac{1-\alpha}{\alpha}P_x x = M\) &rArr; \(\dfrac{P_x x}{\alpha} = M\).</p>
+<p class="step">Demands: \(\boxed{x^* = \dfrac{\alpha M}{P_x},\quad y^* = \dfrac{(1-\alpha)M}{P_y}}\). The consumer spends a constant share \(\alpha\) of income on x.</p>
+<p class="step">Example (figure above): \(U = xy\) is the case \(\alpha = \tfrac12\) (up to a monotone transformation). With \(M = 80\), \(P_x = 4\), \(P_y = 1\): \(x^* = 40/4 = 10\), \(y^* = 40\), \(U = 400\). Check: \(MRS = y/x = 4 = P_x/P_y\). ✓</p>
+</div></div>
+<p><b>Corner solutions.</b> If even at \(x = 0\) we have \(MRS &lt; P_x/P_y\), the consumer buys none of x. This is common for goods we never buy, and the tangency condition does not apply there.</p>
+
+<h2>Changes in price and income</h2>
+<p>When \(P_x\) falls, the total change in quantity (the <span class="term">price effect</span>) splits into:</p>
+<ul>
+<li>the <span class="term">substitution effect (SE)</span>: x is now <i>relatively</i> cheaper, so the consumer substitutes toward it, holding utility constant (a movement <i>along</i> the original indifference curve). With convex preferences the SE of a price fall is <b>always positive</b> for x.</li>
+<li>the <span class="term">income effect (IE)</span>: the lower price raises <b>real income</b> (purchasing power), a parallel shift. For a normal good this raises x; for an inferior good it lowers x.</li>
+</ul>
+{{fig:price_effect|Hicks decomposition for U = xy, M = 80, P_y = 1, with Pₓ falling from 4 to 1 (budget line BL₀ pivots out to BL₁). A (10, 40) → C (20, 20) is the substitution effect: the dashed compensated budget line BLc has the new price slope and is tangent to the old curve U₀ = 400. C → B (40, 40) is the income effect.}}
+<div class="box derivation"><span class="box-h">Derivation: decomposing the price effect (numbers in the figure)</span>
+<div class="steps">
+<p class="step"><b>Original:</b> \(P_x = 4\): \(x = M/(2P_x) = 10\), \(y = 40\), \(U_0 = 400\). (Point A)</p>
+<p class="step"><b>New:</b> \(P_x = 1\): \(x = 80/2 = 40\), \(y = 40\), \(U_1 = 1600\). (Point B) Total price effect = 40 &minus; 10 = <b>+30</b>.</p>
+<p class="step"><b>Compensated bundle C</b>: the cheapest bundle at the <i>new</i> prices that still gives \(U_0 = 400\). Tangency at new prices: \(y/x = P_x/P_y = 1\) &rArr; \(y = x\). On \(U_0\): \(x^2 = 400\) &rArr; \(x = 20\), \(y = 20\). The compensated income is \(1(20) + 1(20) = 40\), so the consumer could lose ₹40 and be as well off as before.</p>
+<p class="step">SE = 20 &minus; 10 = <b>+10</b>; IE = 40 &minus; 20 = <b>+20</b>; SE + IE = 30 = total. ✓</p>
+<p class="step"><i>Slutsky alternative:</i> compensate to keep the <i>old bundle</i> affordable instead: \(M' = 1(10) + 1(40) = 50\), so \(x = 50/2 = 25\). SE = 15, IE = 15. The signs are the same, but the split differs.</p>
+</div></div>
+<div class="tbl-wrap"><table>
+<tr><th>Type of good</th><th>SE of a price fall</th><th>IE of a price fall</th><th>Total effect</th><th>Demand curve</th></tr>
+<tr><td><b>Normal</b></td><td>+</td><td>+ (same direction)</td><td>+ (reinforced)</td><td>Downward sloping</td></tr>
+<tr><td><b>Inferior</b> (not Giffen)</td><td>+</td><td>&minus; (opposite), but |IE| &lt; |SE|</td><td>+ (weaker)</td><td>Downward sloping</td></tr>
+<tr><td><b>Giffen</b></td><td>+</td><td>&minus; and |IE| &gt; |SE|</td><td>&minus;</td><td><b>Upward sloping</b></td></tr>
+</table></div>
+{{fig:giffen|A Giffen good. When Pₓ falls, the substitution effect (A → C) raises x, but x is so strongly inferior that the income effect (C → B) cuts x by more. Overall, consumption of x falls when its price falls.}}
+<p><b>Conditions for a Giffen good:</b> (1) the good is inferior; (2) it takes a <b>large share of the budget</b>, so price changes have big income effects; (3) there are few close substitutes. Classic cases are staple foods for very poor households: Jensen and Miller (2008) found Giffen behaviour for rice among poor households in Hunan, China. When rice gets cheaper, families can afford more meat and buy less rice.</p>
+<div class="box derivation"><span class="box-h">Advanced: the Slutsky equation</span>
+<p>Let \(x(P_x, M)\) be ordinary (Marshallian) demand and \(h(P_x, \bar U)\) compensated (Hicksian) demand. Then
+$$\frac{\partial x}{\partial P_x} = \underbrace{\frac{\partial h}{\partial P_x}}_{\text{SE}\,\le\,0} \; - \; \underbrace{x\,\frac{\partial x}{\partial M}}_{\text{IE}}.$$
+For a normal good \(\partial x/\partial M &gt; 0\), so both terms are negative and demand slopes down. A Giffen good needs \(x\,\partial x/\partial M\) to be negative <i>and</i> large: strongly inferior, with x large (a big budget share).</p></div>
+
+<h3>Deriving the demand curve</h3>
+<p>Vary \(P_x\), holding \(M\), \(P_y\) and preferences fixed. Record the optimal x each time. Plotting the optimal points in (x, y) space traces the <b>price-consumption curve (PCC)</b>. Plotting (x, \(P_x\)) gives the <b>individual demand curve</b>. The market demand curve is the <b>horizontal sum</b> of individual demands.</p>
+{{fig:demand_derivation|For U = xy, M = 80: Pₓ = 4, 2, 1 give x = 10, 20, 40 while y stays at 40 (the PCC is flat). The demand curve is x = M/(2Pₓ) = 40/Pₓ: unit elastic, because spending on x is always ₹40.}}
+<p>Varying <b>income</b> instead traces the <b>income-consumption curve</b> and the <b>Engel curve</b> (x against M). It slopes up for normal goods and down for inferior goods.</p>
+
+<h2>Labour&ndash;leisure choice</h2>
+<p>The same tools explain how many hours people choose to work (CORE Unit 3). A person has \(N\) hours (e.g. 24 per day), chooses leisure \(l\) and works \(N - l\) hours at wage \(w\), spending the earnings on consumption \(C\) (all other goods):</p>
+$$\max_{l,\,C}\; U(l, C)\quad \text{subject to}\quad C = w(N - l).$$
+<ul>
+<li>The budget line \(C = wN - wl\) has slope \(-w\): <b>the wage is the opportunity cost (price) of an hour of leisure</b>. CORE calls this the MRT between free time and goods.</li>
+<li>Its intercepts are \(wN\) (no leisure) and \(N\) (no work, no consumption).</li>
+</ul>
+<div class="box derivation"><span class="box-h">Derivation: optimal hours</span>
+<div class="steps">
+<p class="step">Lagrangian: \(\mathcal L = U(l, C) + \lambda\,[\,w(N-l) - C\,]\).</p>
+<p class="step">FOCs: \(U_l = \lambda w\) and \(U_C = \lambda\) &rArr; \(\boxed{MRS_{lC} = \dfrac{U_l}{U_C} = w}\). The value of the last hour of leisure, in goods, equals the goods that hour of work would buy.</p>
+<p class="step">Cobb-Douglas \(U = l^\alpha C^{1-\alpha}\): \(\dfrac{\alpha C}{(1-\alpha) l} = w\) &rArr; \(C = \dfrac{1-\alpha}{\alpha}wl\). Substitute into \(C = w(N-l)\): \(\dfrac{1-\alpha}{\alpha}wl = wN - wl\) &rArr; \(\dfrac{wl}{\alpha} = wN\) &rArr; \(\boxed{l^* = \alpha N}\).</p>
+<p class="step">Here leisure, and so hours worked \(h = (1-\alpha)N\), do <b>not depend on the wage</b>: the substitution and income effects <b>exactly cancel</b>. With \(\alpha = \tfrac12\), \(N = 24\): \(l^* = 12\), and \(C = 12w\) (₹60 at w = 5, ₹120 at w = 10). See the figure.</p>
+</div></div>
+{{fig:labour_leisure|Labour–leisure choice with U = l^0.5 C^0.5 and N = 24. Doubling the wage pivots the budget line around (24, 0). The optimum stays at 12 hours of leisure; only consumption rises.}}
+
+<h3>Why income and substitution effects work in opposite directions here</h3>
+<p>For an ordinary good, a <i>fall</i> in its price has a substitution and an income effect that both raise demand (if normal). For leisure, a <b>rise in the wage</b> is a <i>rise</i> in the price of leisure, but it also makes the worker <i>richer</i> because they <b>sell</b> labour:</p>
+<ul>
+<li><b>SE:</b> leisure is now more expensive (each hour off costs more goods), so the worker takes <b>less leisure and works more</b>.</li>
+<li><b>IE:</b> at the same hours the worker earns more. If leisure is a normal good they want <b>more leisure and work less</b>.</li>
+</ul>
+<p>The net effect on hours is ambiguous (CORE &sect;3.8). At low wages the SE usually dominates and labour supply slopes upward. At high wages, where income is already high, the IE can dominate: higher wages lead to <b>fewer</b> hours. The labour supply curve then <b>bends backward</b>.</p>
+{{fig:backward_bending|The backward-bending labour supply curve. Below w̄ the substitution effect dominates (hours rise with the wage); above w̄ the income effect dominates (hours fall).}}
+<div class="box derivation"><span class="box-h">Derivation: a backward-bending case (the "target earner")</span>
+<p>Suppose the worker needs a subsistence level of consumption \(\bar C\) and has \(U = \alpha\ln l + (1-\alpha)\ln(C - \bar C)\).</p>
+<div class="steps">
+<p class="step">Let \(C' = C - \bar C\). The budget becomes \(C' = wN - \bar C - wl\), so "full income" is \(wN - \bar C\).</p>
+<p class="step">By the Cobb-Douglas result, spending on leisure is the share \(\alpha\) of full income: \(wl^* = \alpha(wN - \bar C)\) &rArr; \(l^* = \alpha\left(N - \dfrac{\bar C}{w}\right)\).</p>
+<p class="step">Hours: \(h^* = N - l^* = (1-\alpha)N + \dfrac{\alpha\bar C}{w}\). Then \(\dfrac{dh^*}{dw} = -\dfrac{\alpha\bar C}{w^2} &lt; 0\): hours <b>fall</b> as the wage rises.</p>
+<p class="step">Numbers: \(N = 16\) waking hours, \(\alpha = \tfrac12\), \(\bar C = ₹120\). At \(w = 10\): \(h = 8 + 6 = 14\) hours; at \(w = 20\): 11 hours; at \(w = 60\): 9 hours. A worker who must first earn the subsistence ₹120 works long hours at low wages and cuts back as wages rise.</p>
+</div></div>
+<div class="box india"><span class="box-h">Evidence and applications</span>
+<ul>
+<li>CORE &sect;3.10: in the US (1900&ndash;2013), as wages rose, people took <b>more free time and more goods</b>, so the income effect dominated over the long run. But in Britain between 1600 and 1870, working days per year rose from about 266 to 318 as wages rose, so the substitution effect dominated.</li>
+<li>Backward-bending supply is often discussed for agricultural and informal workers in South Asia who have consumption targets. It also matters for taxation: a higher income tax lowers the net wage, and whether people then work more or less depends on which effect dominates.</li>
+<li>CORE &sect;3.11 extends the model to women's labour force participation, which is low in India. Social norms and unpaid care work change the effective "price" of time and the options available.</li>
+</ul></div>
+
+<h2>Limits of the standard consumer model</h2>
+<p>Goodwin et al. (Ch. 9) caution that the model assumes <b>consumer sovereignty</b> (preferences are the consumer's own and given). In practice preferences are shaped by <b>social comparison</b> (conspicuous consumption, "keeping up with the Joneses"), <b>advertising</b> and habit; consumption has <b>environmental costs</b> that buyers do not pay (externalities, Chapter 7); and beyond a point more income and consumption add little to reported <b>happiness</b>. Behavioural economics also documents departures from transitivity and full rationality. Treat the model as a useful benchmark, not a literal description.</p>
+
+<h2>Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>Rational preferences are complete and transitive; adding monotonicity and convexity gives downward-sloping, convex, non-crossing indifference curves.</li>
+<li>\(MRS = MU_x/MU_y\) is the slope of an indifference curve; the budget line slope is \(P_x/P_y\). At the optimum \(MRS = P_x/P_y\) &hArr; \(MU_x/P_x = MU_y/P_y\).</li>
+<li>Cobb-Douglas: \(x = \alpha M/P_x\).</li>
+<li>Price effect = SE (always opposite in sign to the price change) + IE (sign depends on normal or inferior). Giffen: inferior and |IE| &gt; |SE|.</li>
+<li>Labour supply: \(MRS_{lC} = w\). A wage rise has SE &rArr; more work and IE &rArr; less work, so labour supply can bend backward.</li>
+</ul></div>
+<details class="q"><summary>U = x<sup>0.3</sup>y<sup>0.7</sup>, M = ₹1,000, Pₓ = ₹10, P_y = ₹35. Find the optimal bundle and verify the tangency condition.</summary><div class="ans"><p>\(x = 0.3(1000)/10 = 30\), \(y = 0.7(1000)/35 = 20\). \(MRS = \frac{0.3}{0.7}\cdot\frac{y}{x} = \frac{0.3}{0.7}\cdot\frac{20}{30} = 0.2857 = 10/35\). ✓</p></div></details>
+<details class="q"><summary>Explain why indifference curves cannot cross.</summary><div class="ans"><p>If they crossed at C, then A ~ C and C ~ B, so A ~ B by transitivity. But if A lies on the higher part of one curve it contains more of both goods than B, so by monotonicity A is strictly preferred to B. Contradiction.</p></div></details>
+<details class="q"><summary>U = xy, M = 120, P_y = 1. Pₓ rises from 2 to 8. Decompose the change in x into substitution and income effects (Hicks).</summary><div class="ans"><p>Before: x = 120/4 = 30, y = 60, U = 1800. After: x = 120/16 = 7.5. Compensated: at the new prices tangency needs y = 8x; on U = 1800: 8x² = 1800 &rArr; x = 15 (y = 120). SE = 15 &minus; 30 = &minus;15; IE = 7.5 &minus; 15 = &minus;7.5; total &minus;22.5. ✓</p></div></details>
+<details class="q"><summary>Can a good be inferior without being Giffen? Can a Giffen good be normal?</summary><div class="ans"><p>Yes: most inferior goods have a small income effect that is outweighed by the substitution effect, so their demand still slopes down. No: a Giffen good must be inferior, because only a negative income effect can outweigh the substitution effect.</p></div></details>
+<details class="q"><summary>A worker has U = l·C, N = 16 hours and non-labour income V = ₹80, with C = w(16 − l) + V. Find hours worked as a function of w. Does labour supply rise with the wage?</summary><div class="ans"><p>Full income = 16w + 80; half is spent on leisure: wl = (16w + 80)/2 &rArr; l = 8 + 40/w, so h = 8 &minus; 40/w (for w &gt; 5). Then dh/dw = 40/w² &gt; 0: here labour supply rises with the wage. Non-labour income makes the income effect relatively weaker at higher wages, so the substitution effect dominates.</p></div></details>

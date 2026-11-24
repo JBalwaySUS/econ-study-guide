@@ -1,0 +1,481 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Inflation, the Phillips Curve and Monetary Policy · Economics Study Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('sg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Open chapter menu" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+  <a class="brand" href="index.html">Economics Study Guide</a>
+  <div class="top-actions">
+    <a class="pdf-link" href="Economics_Study_Guide_L5-L8_Welfare.pdf" download>PDF</a>
+    <button class="theme-btn" aria-label="Toggle dark mode" onclick="toggleTheme()">&#9680;</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar"><a class="nav-home" href="index.html">Overview &amp; how to use</a>
+<a class="nav-ch active" href="inflation.html"><span class="nav-n">1</span><span><span class="nav-k">Lecture 5</span>Inflation, the Phillips Curve and Monetary Policy</span></a>
+<a class="nav-ch" href="demand-supply.html"><span class="nav-n">2</span><span><span class="nav-k">Lecture 6 &middot; Microeconomics I (part 1)</span>Supply, Demand and Elasticity</span></a>
+<a class="nav-ch" href="consumer.html"><span class="nav-n">3</span><span><span class="nav-k">Lecture 6 &middot; Microeconomics I (part 2)</span>Consumer Choice and Labour Supply</span></a>
+<a class="nav-ch" href="firm.html"><span class="nav-n">4</span><span><span class="nav-k">Lecture 7 &middot; Microeconomics II</span>Production, Costs and Perfect Competition</span></a>
+<a class="nav-ch" href="monopoly.html"><span class="nav-n">5</span><span><span class="nav-k">Lecture 8 &middot; Market structures (part 1)</span>Monopoly and Price Discrimination</span></a>
+<a class="nav-ch" href="oligopoly.html"><span class="nav-n">6</span><span><span class="nav-k">Lecture 8 &middot; Market structures (part 2)</span>Oligopoly and Game Theory</span></a>
+<a class="nav-ch" href="welfare.html"><span class="nav-n">7</span><span><span class="nav-k">Welfare Economics &middot; Classes 1&ndash;2</span>Welfare Economics and Market Failure</span></a>
+<a class="nav-pdf" href="Economics_Study_Guide_L5-L8_Welfare.pdf" download>&#8595; Download the full PDF</a></aside>
+<main class="content">
+<article class="chapter"><p class="kicker">Lecture 5</p>
+<h1><span class="chapnum">Chapter 1</span>Inflation, the Phillips Curve and Monetary Policy</h1>
+<p class="lede">What inflation is, why it matters, what causes it (too much demand or a fight over who gets what), how it is linked to unemployment, and how central banks such as the RBI use the policy interest rate to control it.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Mitchell, Wray &amp; Watts, <i>Macroeconomics</i>, Ch. 17 (Unemployment and Inflation) and Ch. 18 (The Phillips Curve and Beyond).</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 15: &sect;15.1&ndash;15.7 (inflation, conflicting claims, Phillips curve, supply shocks) and &sect;15.8&ndash;15.11 (<a href="https://books.core-econ.org/the-economy-south-asia/book/text/15.html#158-monetary-policy">monetary policy</a>, exchange-rate channel, demand shocks, inflation targeting). Unit 14 &sect;14.1&ndash;14.5 for the multiplier model.</li>
+</ul></div>
+
+<h2 id="c1-key-concepts-and-measurement"><span class="secnum">1.1</span> Key concepts and measurement</h2>
+<div class="box key"><span class="box-h">Key ideas: definitions</span>
+<ul>
+<li><span class="term">Inflation</span>: a <b>persistent</b> (continuing) increase in the general price level. A one-off price rise is <i>not</i> inflation (Mitchell et al. &sect;17.2).</li>
+<li><span class="term">Zero inflation</span>: the price level is constant from year to year.</li>
+<li><span class="term">Deflation</span>: a <i>fall</i> in the general price level (inflation is negative).</li>
+<li><span class="term">Disinflation</span>: a fall in the <i>rate</i> of inflation. Prices still rise, only more slowly (e.g. 8% &rarr; 5%).</li>
+<li><span class="term">Hyperinflation</span>: extreme, accelerating inflation (the course uses &gt;40&ndash;50%; per month in some definitions). Examples: Weimar Germany in the 1920s, Zimbabwe in the 2000s.</li>
+<li><span class="term">Real interest rate</span> = nominal interest rate &minus; inflation rate (the <b>Fisher equation</b>).</li>
+</ul></div>
+
+<h3 id="c1-measuring-inflation">Measuring inflation</h3>
+<p>The price level is measured by a price index, usually the <b>Consumer Price Index (CPI)</b>: the cost of a fixed basket of goods in year \(t\) relative to its cost in a base year, times 100. The inflation rate between two years is the percentage change in the index:</p>
+$$\pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%.$$
+<p>If the CPI rises from 150 to 159, inflation is \((159-150)/150 = 6\%\). Mitchell et al. also distinguish a <b>stable</b> inflation rate (prices rise 10% every month), an <b>accelerating</b> rate (10%, 11%, 12%&hellip;) and a <b>decelerating</b> rate (10%, 9%, 8%&hellip;, which is disinflation).</p>
+
+<h3 id="c1-the-fisher-equation">The Fisher equation</h3>
+<div class="box derivation"><span class="box-h">Derivation: real and nominal interest rates</span>
+<div class="steps">
+<p class="step">Lend ₹1 today at nominal rate \(i\). Next year you receive \(₹(1+i)\).</p>
+<p class="step">Prices rise by \(\pi\), so ₹1 of goods today costs \(₹(1+\pi)\) next year. The goods your repayment can buy are \(\dfrac{1+i}{1+\pi}\) units of today's goods.</p>
+<p class="step">The real return \(r\) is defined by \(1 + r = \dfrac{1+i}{1+\pi}\), i.e. \((1+r)(1+\pi) = 1+i\).</p>
+<p class="step">Expanding: \(1 + r + \pi + r\pi = 1 + i\). When \(r\) and \(\pi\) are small, \(r\pi\) is negligible (e.g. \(0.04 \times 0.06 = 0.0024\)), so
+$$\boxed{\,r \approx i - \pi\,}$$</p>
+<p class="step">Decisions are made <i>before</i> inflation is known, so they use <b>expected</b> inflation: \(r = i - \pi^e\) (the ex-ante real rate; CORE &sect;15.8).</p>
+</div></div>
+<div class="box example"><span class="box-h">Worked example (CORE &sect;15.1)</span>
+<p>A loan carries a nominal rate of 10% and inflation is 6%. Real rate \(\approx 10 - 6 = 4\%\). Exact: \(1.10/1.06 - 1 = 3.77\%\). If inflation rises to 12%, the real rate is \(-2\%\): the lender is repaid in rupees that buy less than the rupees lent.</p></div>
+
+<h2 id="c1-whats-wrong-with-inflation-and-with-deflation"><span class="secnum">1.2</span> What's wrong with inflation, and with deflation?</h2>
+<h3 id="c1-costs-of-inflation">Costs of inflation</h3>
+<ul>
+<li><b>Fixed nominal incomes lose value.</b> A pensioner on ₹20,000 a month has real income \(20{,}000/P\). With 10% inflation, after one year it buys only \(20{,}000/1.1 \approx ₹18{,}182\) of last year's goods.</li>
+<li><b>Redistribution between debtors and creditors.</b> Unexpected inflation lowers the <i>real</i> value of a fixed nominal debt, \(D/P\). This helps borrowers and hurts lenders (see the box below).</li>
+<li><b>Uncertainty.</b> High inflation is usually also <i>volatile</i>, which makes long-term contracts and investment planning risky.</li>
+<li><b>Confusing price signals.</b> When all prices rise quickly, producers find it hard to tell whether a rise in <i>their</i> price is a change in <b>relative</b> price (a signal to produce more) or just general inflation, so resources are misallocated.</li>
+<li><b>Menu costs.</b> Firms must reprint price lists, relabel and renegotiate more often. Related <b>shoe-leather costs</b> come from people holding less cash and making more trips to the bank.</li>
+</ul>
+<div class="box derivation"><span class="box-h">Derivation: who gains from unexpected inflation?</span>
+<p>A borrower agrees a nominal rate \(i\) expecting inflation \(\pi^e\), so the expected real rate is \(r^e = i - \pi^e\). The <i>realised</i> real rate is \(r = i - \pi\). The difference is
+$$r - r^e = -(\pi - \pi^e).$$
+If inflation turns out higher than expected (\(\pi &gt; \pi^e\)), the realised real rate is <i>lower</i> than agreed. The lender's real wealth is transferred to the borrower. Example: \(i = 8\%\), \(\pi^e = 2\%\) (expected real rate 6%), actual \(\pi = 6\%\): realised real rate 2%. On a ₹1,00,000 loan, about ₹4,000 of real value moves from lender to borrower in one year.</p></div>
+
+<h3 id="c1-costs-of-deflation">Costs of deflation</h3>
+<p>Deflation can be <b>even more damaging</b> than moderate inflation:</p>
+<ol>
+<li><b>Postponed spending.</b> If prices are expected to fall, households delay buying (especially durables like cars and appliances) because they will be cheaper later. This acts like a <b>negative aggregate demand shock</b>, lowering output, which can push prices down further.</li>
+<li><b>Rising real debt burden.</b> The real value of debt \(D/P\) <i>rises</i> when \(P\) falls. Indebted households cut consumption to get back to their <b>target wealth</b> (CORE Unit 14), reinforcing the fall in demand.</li>
+<li><b>Monetary policy gets stuck.</b> Since \(r = i - \pi\), with \(\pi &lt; 0\) the real rate is <i>above</i> the nominal rate. Nominal rates cannot go much below zero (the <b>zero lower bound</b>, CORE &sect;15.8), so the central bank cannot bring the real rate down enough to revive spending. Japan's long deflation from the 1990s is the classic case.</li>
+</ol>
+
+<h2 id="c1-demand-pull-inflation-and-the-quantity-theory-of-money"><span class="secnum">1.3</span> Demand-pull inflation and the quantity theory of money</h2>
+<p><b>Demand-side (demand-pull) explanations</b> assume the economy is <b>already at full capacity</b>, including full employment. Then extra spending cannot raise output, so it raises prices. Sources of excess demand listed in the lecture:</p>
+<ul>
+<li>a large increase in <b>government expenditure</b>;</li>
+<li>an abrupt change in behaviour that <b>raises consumption and reduces saving</b>;</li>
+<li><b>easier credit</b> from the banking system to the government or households, typically due to <b>monetary expansion</b> by the central bank.</li>
+</ul>
+<p>Keynes (<i>How to Pay for the War</i>, 1940) called the excess of planned spending over the output available at full capacity the <span class="term">inflationary gap</span>.</p>
+
+<h3 id="c1-the-equation-of-exchange">The equation of exchange</h3>
+$$M V = P Y$$
+<p>\(M\) = money stock, \(V\) = <b>velocity</b> (the average number of times each rupee is spent on final output in a year), \(P\) = price level, \(Y\) = real output. \(PY\) is nominal GDP. As written this is an <b>identity</b>: velocity is <i>defined</i> as \(V = PY/M\), so it is always true and explains nothing on its own (Mitchell et al. &sect;17.4).</p>
+<div class="box example"><span class="box-h">Velocity example (Mitchell et al. Box 17.1)</span>
+<p>An economy has ₹100 of money and two people. A buys ₹100 of goods from B, then B buys ₹100 of goods from A. Total spending is ₹200 with only ₹100 of money, so each rupee was used twice: \(V = 200/100 = 2\).</p></div>
+
+<div class="box derivation"><span class="box-h">Derivation: from identity to the quantity theory, \(\pi = \mu - g\)</span>
+<div class="steps">
+<p class="step">Take natural logs: \(\ln M + \ln V = \ln P + \ln Y\).</p>
+<p class="step">Differentiate with respect to time. The growth rate of a variable is \(d\ln X/dt = \dot X/X\), written \(\hat X\):
+$$\hat M + \hat V = \hat P + \hat Y.$$
+(So: money growth + velocity growth = inflation + real growth.)</p>
+<p class="step"><b>Quantity theory assumptions (classical).</b> (a) \(V\) is constant, set by payment habits, so \(\hat V = 0\). (b) \(Y\) is fixed at full employment by real forces (labour market and technology), so \(\hat Y = g\) is independent of money. This separation of real from nominal is the <b>classical dichotomy</b>.</p>
+<p class="step">Then \(\hat P = \pi\) and
+$$\boxed{\,\pi = \hat M - g = \mu - g\,}$$
+Inflation equals money growth minus real output growth. With \(Y\) also constant, doubling \(M\) doubles \(P\). Causation runs from money to prices: "inflation is always and everywhere a monetary phenomenon" (Friedman, Monetarism).</p>
+</div>
+<p><b>Example:</b> money grows 12% a year and real GDP 7% a year, with stable velocity: predicted inflation = 12 &minus; 7 = 5%.</p></div>
+
+<div class="box exam"><span class="box-h">Critiques you should be able to state (Mitchell et al.)</span>
+<ol>
+<li><b>Velocity is not constant.</b> US M2 velocity swung between about 1.5 and 2.2 between 1960 and 2015, so there is no stable proportional link between \(M\) and \(P\).</li>
+<li><b>Economies are rarely at full employment.</b> With spare capacity, firms meet extra spending by producing more (\(Y\) rises), not by raising prices.</li>
+<li><b>Causation may run the other way.</b> Banks create deposits when they lend, so money responds to demand for credit (endogenous money): rising wages and prices lead firms to borrow more, raising \(M\).</li>
+</ol></div>
+
+<h2 id="c1-cost-push-inflation-and-inflation-as-social-conflict"><span class="secnum">1.4</span> Cost-push inflation and inflation as social conflict</h2>
+<p><b>Supply-side (cost-push) explanations</b>: inflation starts when costs rise, for example</p>
+<ul>
+<li>higher prices of <b>raw materials</b> (oil) or of <b>wage goods</b> such as food, which push up wage demands;</li>
+<li>an <b>autonomous push</b> by firms to raise their profit margin (mark-up), or by unionised workers to raise wages.</li>
+</ul>
+<p>The process then evolves as a <span class="term">wage&ndash;price spiral</span> (workers push first) or a <span class="term">price&ndash;wage spiral</span> (firms push first). Its course depends on the <b>relative bargaining power</b> of firms (capitalists) and workers. On this view inflation is essentially <b>social conflict over the shares of the value produced</b> (Kalecki, Lerner, Rowthorn; Mitchell et al. &sect;17.3; CORE &sect;15.2).</p>
+
+<h3 id="c1-mark-up-pricing">Mark-up pricing</h3>
+<div class="box derivation"><span class="box-h">Derivation: prices, wages and productivity</span>
+<div class="steps">
+<p class="step">Let \(W\) be the money wage, \(\lambda = Y/N\) labour productivity (output per worker). Unit labour cost is \(W/\lambda\).</p>
+<p class="step">Firms with price-setting power add a mark-up \(\mu\) to unit cost: \(P = (1+\mu)\dfrac{W}{\lambda}\).</p>
+<p class="step">Take logs and growth rates: \(\hat P = \widehat{(1+\mu)} + \hat W - \hat\lambda\). With a constant mark-up,
+$$\boxed{\,\pi = \hat W - \hat\lambda\,}$$
+Wages can grow as fast as productivity without causing inflation. This is the basis of incomes policies that tie wage growth to productivity growth.</p>
+<p class="step">The <b>wage share</b> in output is \(\omega = \dfrac{WN}{PY} = \dfrac{W}{P\lambda} = \dfrac{1}{1+\mu}\). A higher mark-up means a lower wage share. The mark-up <i>is</i> the distribution of income between profits and wages.</p>
+</div></div>
+
+<h3 id="c1-a-simple-conflicting-claims-model">A simple conflicting-claims model</h3>
+<div class="box derivation"><span class="box-h">Derivation: incompatible claims generate steady inflation</span>
+<p>Workers want a wage share \(\omega_w\). Firms, through their target mark-up, want to leave workers only \(\omega_f = 1/(1+\mu_f)\). Claims are <b>incompatible</b> when \(\omega_w &gt; \omega_f\): together they claim more than 100% of output.</p>
+<div class="steps">
+<p class="step"><b>Wage setting.</b> Workers push money wages up faster the further the actual share \(\omega\) is below their target, with bargaining strength \(\theta_w &gt; 0\): \(\hat W = \theta_w(\omega_w - \omega)\).</p>
+<p class="step"><b>Price setting.</b> Firms raise prices faster the further the actual share exceeds what their mark-up allows, with strength \(\theta_f &gt; 0\): \(\hat P = \theta_f(\omega - \omega_f)\).</p>
+<p class="step">The wage share changes as \(\hat\omega = \hat W - \hat P - \hat\lambda\). Assume \(\hat\lambda = 0\) for simplicity. In a <b>steady state</b> the share is constant, \(\hat\omega = 0\), so \(\hat W = \hat P\):
+$$\theta_w(\omega_w - \omega^*) = \theta_f(\omega^* - \omega_f).$$</p>
+<p class="step">Solve for the distribution:
+$$\omega^* = \frac{\theta_w\,\omega_w + \theta_f\,\omega_f}{\theta_w + \theta_f},$$
+a weighted average of the two targets, weighted by bargaining power.</p>
+<p class="step">Substitute back to get inflation:
+$$\boxed{\,\pi^* = \theta_f(\omega^* - \omega_f) = \frac{\theta_w\,\theta_f}{\theta_w + \theta_f}\,(\omega_w - \omega_f)\,}$$</p>
+</div>
+<p><b>Interpretation.</b> (i) Inflation is positive only if claims are incompatible (\(\omega_w &gt; \omega_f\)); its size is proportional to this <b>aspiration gap</b>. (ii) Neither side gets its target. The actual share lies between them, closer to the stronger side. (iii) Stronger unions (higher \(\theta_w\)) raise both the wage share and inflation. (iv) Anything that lowers bargaining power, such as unemployment, reduces inflation. That is the link to the Phillips curve.</p>
+<p><b>Example:</b> \(\omega_w = 0.65\), \(\omega_f = 0.60\), \(\theta_w = \theta_f = 1\). Then \(\omega^* = 0.625\) and \(\pi^* = \tfrac12(0.05) = 2.5\%\) per period. If unions strengthen to \(\theta_w = 3\): \(\omega^* = (1.95 + 0.6)/4 = 0.6375\), \(\pi^* = \tfrac34(0.05) = 3.75\%\).</p></div>
+
+<h3 id="c1-the-core-version-wage-setting-price-setting-and-the-bargaini">The CORE version: wage-setting, price-setting and the bargaining gap</h3>
+<p>CORE (&sect;15.2&ndash;15.3, building on Unit 9) puts the same idea in a labour-market diagram:</p>
+<ul>
+<li>The <b>wage-setting curve (WS)</b> gives the real wage employers must pay to get workers to work hard. It <b>rises with employment</b>: with fewer unemployed, losing your job costs less, so a higher wage is needed.</li>
+<li>The <b>price-setting curve (PS)</b> gives the real wage that remains once firms set their profit-maximising mark-up. It is <b>flat</b> (it depends on productivity and the degree of competition).</li>
+<li>Labour-market equilibrium is where WS = PS. The corresponding unemployment rate is the <b>inflation-stabilising rate</b> \(u^*\).</li>
+</ul>
+<figure class="figure" id="fig-ws_ps"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Wage-setting curve rises with employment; price-setting curve is flat. At employment above the equilibrium the WS lies above PS creating a bargaining gap." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polyline class="guide" points="62.0,152.4 387.6,152.4 387.6,348.0"/>
+<line class="guide" x1="453.5" y1="348.0" x2="453.5" y2="152.4"/>
+<line class="c2" x1="62.0" y1="152.4" x2="526.0" y2="152.4"/>
+<path class="c1" d="M62.0,282.8 L64.6,282.8 L67.2,282.8 L69.7,282.7 L72.3,282.7 L74.9,282.6 L77.5,282.5 L80.1,282.4 L82.7,282.3 L85.2,282.1 L87.8,282.0 L90.4,281.8 L93.0,281.6 L95.6,281.4 L98.2,281.2 L100.7,281.0 L103.3,280.7 L105.9,280.4 L108.5,280.1 L111.1,279.8 L113.7,279.5 L116.2,279.2 L118.8,278.8 L121.4,278.5 L124.0,278.1 L126.6,277.7 L129.2,277.3 L131.7,276.8 L134.3,276.4 L136.9,275.9 L139.5,275.4 L142.1,274.9 L144.6,274.4 L147.2,273.9 L149.8,273.3 L152.4,272.7 L155.0,272.2 L157.6,271.6 L160.1,270.9 L162.7,270.3 L165.3,269.7 L167.9,269.0 L170.5,268.3 L173.1,267.6 L175.6,266.9 L178.2,266.2 L180.8,265.4 L183.4,264.7 L186.0,263.9 L188.6,263.1 L191.1,262.3 L193.7,261.5 L196.3,260.6 L198.9,259.7 L201.5,258.9 L204.1,258.0 L206.6,257.1 L209.2,256.1 L211.8,255.2 L214.4,254.2 L217.0,253.3 L219.6,252.3 L222.1,251.3 L224.7,250.2 L227.3,249.2 L229.9,248.1 L232.5,247.1 L235.0,246.0 L237.6,244.9 L240.2,243.7 L242.8,242.6 L245.4,241.4 L248.0,240.3 L250.5,239.1 L253.1,237.9 L255.7,236.6 L258.3,235.4 L260.9,234.1 L263.5,232.9 L266.0,231.6 L268.6,230.3 L271.2,229.0 L273.8,227.6 L276.4,226.3 L279.0,224.9 L281.5,223.5 L284.1,222.1 L286.7,220.7 L289.3,219.2 L291.9,217.8 L294.5,216.3 L297.0,214.8 L299.6,213.3 L302.2,211.8 L304.8,210.3 L307.4,208.7 L310.0,207.2 L312.5,205.6 L315.1,204.0 L317.7,202.4 L320.3,200.7 L322.9,199.1 L325.4,197.4 L328.0,195.7 L330.6,194.0 L333.2,192.3 L335.8,190.6 L338.4,188.8 L340.9,187.1 L343.5,185.3 L346.1,183.5 L348.7,181.7 L351.3,179.9 L353.9,178.0 L356.4,176.1 L359.0,174.3 L361.6,172.4 L364.2,170.5 L366.8,168.5 L369.4,166.6 L371.9,164.6 L374.5,162.6 L377.1,160.7 L379.7,158.6 L382.3,156.6 L384.9,154.6 L387.4,152.5 L390.0,150.4 L392.6,148.3 L395.2,146.2 L397.8,144.1 L400.3,142.0 L402.9,139.8 L405.5,137.6 L408.1,135.4 L410.7,133.2 L413.3,131.0 L415.8,128.8 L418.4,126.5 L421.0,124.2 L423.6,122.0 L426.2,119.6 L428.8,117.3 L431.3,115.0 L433.9,112.6 L436.5,110.3 L439.1,107.9 L441.7,105.5 L444.3,103.0 L446.8,100.6 L449.4,98.2 L452.0,95.7 L454.6,93.2 L457.2,90.7 L459.8,88.2 L462.3,85.6 L464.9,83.1 L467.5,80.5 L470.1,77.9 L472.7,75.3 L475.2,72.7"/>
+<line class="gap" x1="453.5" y1="152.4" x2="453.5" y2="94.2"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="387.6" y="365.0" text-anchor="middle">N* (u = u*)</text>
+<text class="tick" x="453.5" y="365.0" text-anchor="middle">N₁</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Employment rate (%)</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Real wage, w/P</text>
+<circle class="pt" cx="387.6" cy="152.4" r="4"/>
+<circle class="pt" cx="453.5" cy="94.2" r="4"/>
+<circle class="pt" cx="453.5" cy="152.4" r="4"/>
+<text class="lbl c2-t" x="69.2" y="144.4" text-anchor="start">Price-setting curve (PS)</text>
+<text class="lbl c1-t" x="288.0" y="206.6" text-anchor="end">Wage-setting curve (WS)</text>
+<text class="lbl strong" x="381.6" y="142.4" text-anchor="end">X</text>
+<text class="lbl strong" x="439.5" y="94.2" text-anchor="start">B</text>
+<text class="lbl small strong" x="461.5" y="123.3" text-anchor="start">bargaining</text>
+<text class="lbl small strong" x="461.5" y="138.0" text-anchor="start">gap</text>
+<text class="lbl small" x="207.0" y="315.4" text-anchor="middle">u &gt; u*: gap &lt; 0, inflation falls</text>
+</svg><figcaption><b>Figure 1.1.</b> CORE's conflicting-claims model. At employment N₁ above equilibrium, the real wage workers need (B on WS) exceeds what firms' mark-up leaves (on PS). Firms raise money wages, then raise prices to restore the mark-up, then wages rise again: a wage–price spiral.</figcaption></figure>
+<div class="box key"><span class="box-h">Key result: the bargaining gap</span>
+$$\text{bargaining gap (\%)} = \frac{w_{WS} - w_{PS}}{w_{PS}}\times 100$$
+<p>Example (CORE &sect;15.3): WS wage 101, PS wage 100 &rArr; gap 1%. Money wages rise 1% and prices then rise 1% to restore the mark-up, so inflation is 1% a period for as long as the gap persists. With expectations built in (CORE &sect;15.6):</p>
+$$\boxed{\,\text{inflation} = \text{expected inflation} + \text{bargaining gap}\,}$$
+<p>Below \(u^*\) the gap is positive and inflation <b>rises</b>; at \(u^*\) the gap is zero and inflation is <b>constant</b>; above \(u^*\) the gap is negative and inflation <b>falls</b>.</p></div>
+
+<h3 id="c1-supply-shocks">Supply shocks</h3>
+<p>A rise in the world price of an imported input (oil) is a loss of real income to the nation: there is less output left to share between domestic wages and profits (CORE &sect;15.7; Mitchell et al. &sect;17.3). In WS&ndash;PS terms, the <b>PS curve shifts down</b>. At the old unemployment rate a positive bargaining gap opens, so inflation rises <i>and</i>, if policy tightens, unemployment rises. This is <b>stagflation</b>, as after the 1973 OPEC oil shock (US inflation rose from 6.2% to 9.1% and unemployment from 4.9% to 8.5% between 1973 and 1975). The question is <b>who bears the loss</b>. If each side tries to pass it on to the other, a spiral follows.</p>
+
+<h3 id="c1-policy-responses-to-a-wagendashprice-spiral">Policy responses to a wage&ndash;price spiral</h3>
+<ul>
+<li><b>Accommodate:</b> keep interest rates and fiscal policy unchanged. Banks keep lending, money growth follows the spiral, and inflation persists. Note that money is the <i>fuel</i> here, not the <i>spark</i>.</li>
+<li><b>Discipline with unemployment</b> (the NAIRU strategy): tighten monetary and fiscal policy. Higher unemployment weakens workers' bargaining power and the spiral is "choked off", at the cost of lost output and jobs.</li>
+<li><b>Incomes policies:</b> negotiated or imposed guidelines tying wage and price growth to productivity (US wage&ndash;price guideposts in 1962, the Nixon freezes in 1971&ndash;74, the Scandinavian model of centralised bargaining). These worked best where tripartite bargaining institutions were strong.</li>
+</ul>
+
+<h2 id="c1-the-phillips-curve"><span class="secnum">1.5</span> The Phillips curve</h2>
+<p><b>Bill Phillips (1958)</b> plotted British data for 1861&ndash;1957 and found an <b>inverse, non-linear relationship between unemployment and the rate of change of money wages</b>. Later economists restated it as a relationship between <b>price inflation</b> and unemployment.</p>
+<p><b>Intuition:</b> as the economy expands and unemployment falls, demand for labour outstrips supply. Wages are bid up and passed into prices through a wage&ndash;price spiral. Inflationary pressure actually started once unemployment fell below a <i>positive</i> threshold, not zero. This threshold later became known as the <b>natural rate of unemployment</b>.</p>
+<figure class="figure" id="fig-pc_basic"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Downward-sloping, convex Phillips curve: inflation falls as unemployment rises." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<path class="c1" d="M129.7,68.6 L132.1,78.4 L134.6,87.6 L137.1,96.2 L139.6,104.3 L142.1,111.8 L144.5,118.9 L147.0,125.6 L149.5,131.9 L152.0,137.8 L154.4,143.5 L156.9,148.8 L159.4,153.9 L161.9,158.7 L164.3,163.3 L166.8,167.6 L169.3,171.8 L171.8,175.8 L174.3,179.6 L176.7,183.2 L179.2,186.7 L181.7,190.0 L184.2,193.2 L186.6,196.3 L189.1,199.3 L191.6,202.1 L194.1,204.8 L196.5,207.5 L199.0,210.0 L201.5,212.5 L204.0,214.8 L206.5,217.1 L208.9,219.3 L211.4,221.4 L213.9,223.5 L216.4,225.5 L218.8,227.4 L221.3,229.3 L223.8,231.1 L226.3,232.9 L228.8,234.6 L231.2,236.3 L233.7,237.9 L236.2,239.4 L238.7,241.0 L241.1,242.4 L243.6,243.9 L246.1,245.3 L248.6,246.7 L251.0,248.0 L253.5,249.3 L256.0,250.5 L258.5,251.8 L261.0,253.0 L263.4,254.1 L265.9,255.3 L268.4,256.4 L270.9,257.5 L273.3,258.5 L275.8,259.6 L278.3,260.6 L280.8,261.6 L283.2,262.5 L285.7,263.5 L288.2,264.4 L290.7,265.3 L293.2,266.2 L295.6,267.1 L298.1,267.9 L300.6,268.7 L303.1,269.6 L305.5,270.4 L308.0,271.1 L310.5,271.9 L313.0,272.7 L315.4,273.4 L317.9,274.1 L320.4,274.8 L322.9,275.5 L325.4,276.2 L327.8,276.9 L330.3,277.5 L332.8,278.2 L335.3,278.8 L337.7,279.4 L340.2,280.0 L342.7,280.6 L345.2,281.2 L347.6,281.8 L350.1,282.4 L352.6,282.9 L355.1,283.5 L357.6,284.0 L360.0,284.6 L362.5,285.1 L365.0,285.6 L367.5,286.1 L369.9,286.6 L372.4,287.1 L374.9,287.6 L377.4,288.0 L379.9,288.5 L382.3,289.0 L384.8,289.4 L387.3,289.9 L389.8,290.3 L392.2,290.7 L394.7,291.2 L397.2,291.6 L399.7,292.0 L402.1,292.4 L404.6,292.8 L407.1,293.2 L409.6,293.6 L412.1,294.0 L414.5,294.4 L417.0,294.7 L419.5,295.1 L422.0,295.5 L424.4,295.8 L426.9,296.2 L429.4,296.5 L431.9,296.9 L434.3,297.2 L436.8,297.6 L439.3,297.9 L441.8,298.2 L444.3,298.5 L446.7,298.9 L449.2,299.2 L451.7,299.5 L454.2,299.8 L456.6,300.1 L459.1,300.4 L461.6,300.7 L464.1,301.0 L466.6,301.3 L469.0,301.5 L471.5,301.8 L474.0,302.1 L476.5,302.4 L478.9,302.7 L481.4,302.9 L483.9,303.2 L486.4,303.4 L488.8,303.7 L491.3,304.0 L493.8,304.2 L496.3,304.5 L498.8,304.7 L501.2,305.0 L503.7,305.2 L506.2,305.4 L508.7,305.7 L511.1,305.9 L513.6,306.1 L516.1,306.4 L518.6,306.6 L521.0,306.8 L523.5,307.0 L526.0,307.2"/>
+<line class="ax-soft" x1="62.0" y1="293.7" x2="526.0" y2="293.7"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="139.3" y="365.0" text-anchor="middle">2</text>
+<text class="tick" x="216.7" y="365.0" text-anchor="middle">4</text>
+<text class="tick" x="294.0" y="365.0" text-anchor="middle">6</text>
+<text class="tick" x="371.3" y="365.0" text-anchor="middle">8</text>
+<text class="tick" x="448.7" y="365.0" text-anchor="middle">10</text>
+<text class="tick" x="55.0" y="297.7" text-anchor="end">0</text>
+<text class="tick" x="55.0" y="189.0" text-anchor="end">4</text>
+<text class="tick" x="55.0" y="80.3" text-anchor="end">8</text>
+<text class="tick" x="55.0" y="352.0" text-anchor="end">−2</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Unemployment rate, u (%)</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Inflation, π (%)</text>
+<circle class="pt" cx="178.0" cy="185.0" r="4"/>
+<circle class="pt" cx="352.0" cy="282.8" r="4"/>
+<text class="lbl c1-t" x="247.9" y="233.7" text-anchor="start">Phillips curve</text>
+<text class="lbl strong" x="185.0" y="178.0" text-anchor="start">A: low u, high π</text>
+<text class="lbl strong" x="359.0" y="275.8" text-anchor="start">B: high u, low π</text>
+</svg><figcaption><b>Figure 1.2.</b> The original Phillips curve, \(\pi = \alpha + \beta/u\): convex, because wages rise quickly when labour is scarce but fall only slowly when unemployment is high. Samuelson and Solow (1960) read it as a "menu": a government could choose A (low unemployment, high inflation) or B.</figcaption></figure>
+
+<div class="box derivation"><span class="box-h">Derivation: Phillips curve algebra (Mitchell et al. &sect;18.2)</span>
+<div class="steps">
+<p class="step">Original <b>wage</b> Phillips curve (non-linear): \(\hat W_t = \alpha_0 + \beta\,u_t^{-1}\), with \(\beta &gt; 0\) and \(\alpha_0 &lt; 0\). As \(u \to \infty\), wage inflation approaches \(\alpha_0\).</p>
+<p class="step">Use the mark-up result \(\pi = \hat W - \hat\lambda\). Write productivity growth as \(\gamma\):
+$$\pi_t = \alpha_0 - \gamma + \beta u_t^{-1} = \alpha + \beta u_t^{-1},\qquad \alpha = \alpha_0 - \gamma.$$</p>
+<p class="step">Linear version: \(\hat W_t = \alpha_0 - \beta u_t\), so the <b>price</b> Phillips curve is
+$$\pi_t = \alpha - \beta u_t,\qquad \alpha = \alpha_0 - \gamma &gt; 0.$$
+Inflation is higher when unemployment is lower <i>and</i> when productivity growth is lower.</p>
+</div></div>
+
+<h3 id="c1-instability-and-stagflation">Instability and stagflation</h3>
+<p>US data fit a stable downward-sloping curve for 1948&ndash;69. But in <b>1970&ndash;80</b> high inflation and high unemployment occurred <i>together</i>. This <span class="term">stagflation</span> violated the supposed trade-off, and after 1981 no stable relationship was visible at all. Explanations: (1) the curve <b>shifted</b> because inflation expectations rose (Friedman, next section); (2) <b>supply shocks</b> (OPEC oil prices quadrupled in 1973) shifted the PS curve; (3) conflict over income shares intensified as productivity growth slowed (Mitchell et al. &sect;17.3). Lerner had already noted in 1951 that high inflation and high unemployment could co-exist.</p>
+
+<h2 id="c1-expectations-and-the-phillips-curve"><span class="secnum">1.6</span> Expectations and the Phillips curve</h2>
+<p><b>Milton Friedman (1968)</b> and Edmund Phelps argued from a monetarist standpoint that the inflation&ndash;unemployment trade-off is only <b>short-run</b>. The key assumptions:</p>
+<ul>
+<li>Workers care about the <b>real wage</b> \(W/P\), not the money wage.</li>
+<li>In an inflationary episode, <b>money wages rise less than prices</b>, so the real wage falls and firms (who know prices) hire more.</li>
+<li>Through <b>imperfect information</b> (money illusion), workers initially see only their higher money wage and supply the same or more labour.</li>
+<li>Soon workers realise that their real wage has fallen, revise their <b>expected inflation</b> upwards and cut labour supply, so unemployment returns to its natural rate.</li>
+</ul>
+
+<h3 id="c1-the-mechanism-stage-by-stage">The mechanism, stage by stage</h3>
+<figure class="figure" id="fig-pc_eapc"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Expectations-augmented Phillips curves shift up as expected inflation rises; the long-run Phillips curve is vertical at the natural rate." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<path class="c1" d="M97.7,152.4 L98.9,153.5 L100.1,154.6 L101.4,155.8 L102.6,156.9 L103.8,158.0 L105.1,159.1 L106.3,160.2 L107.5,161.4 L108.7,162.5 L110.0,163.6 L111.2,164.7 L112.4,165.8 L113.6,167.0 L114.9,168.1 L116.1,169.2 L117.3,170.3 L118.6,171.5 L119.8,172.6 L121.0,173.7 L122.2,174.8 L123.5,175.9 L124.7,177.1 L125.9,178.2 L127.1,179.3 L128.4,180.4 L129.6,181.5 L130.8,182.7 L132.0,183.8 L133.3,184.9 L134.5,186.0 L135.7,187.1 L137.0,188.3 L138.2,189.4 L139.4,190.5 L140.6,191.6 L141.9,192.7 L143.1,193.9 L144.3,195.0 L145.5,196.1 L146.8,197.2 L148.0,198.3 L149.2,199.5 L150.4,200.6 L151.7,201.7 L152.9,202.8 L154.1,203.9 L155.4,205.1 L156.6,206.2 L157.8,207.3 L159.0,208.4 L160.3,209.6 L161.5,210.7 L162.7,211.8 L163.9,212.9 L165.2,214.0 L166.4,215.2 L167.6,216.3 L168.9,217.4 L170.1,218.5 L171.3,219.6 L172.5,220.8 L173.8,221.9 L175.0,223.0 L176.2,224.1 L177.4,225.2 L178.7,226.4 L179.9,227.5 L181.1,228.6 L182.4,229.7 L183.6,230.8 L184.8,232.0 L186.0,233.1 L187.3,234.2 L188.5,235.3 L189.7,236.4 L190.9,237.6 L192.2,238.7 L193.4,239.8 L194.6,240.9 L195.8,242.1 L197.1,243.2 L198.3,244.3 L199.5,245.4 L200.8,246.5 L202.0,247.7 L203.2,248.8 L204.4,249.9 L205.7,251.0 L206.9,252.1 L208.1,253.3 L209.3,254.4 L210.6,255.5 L211.8,256.6 L213.0,257.7 L214.2,258.9 L215.5,260.0 L216.7,261.1 L217.9,262.2 L219.2,263.3 L220.4,264.5 L221.6,265.6 L222.8,266.7 L224.1,267.8 L225.3,268.9 L226.5,270.1 L227.7,271.2 L229.0,272.3 L230.2,273.4 L231.4,274.5 L232.7,275.7 L233.9,276.8 L235.1,277.9 L236.3,279.0 L237.6,280.2 L238.8,281.3 L240.0,282.4 L241.2,283.5 L242.5,284.6 L243.7,285.8 L244.9,286.9 L246.1,288.0 L247.4,289.1 L248.6,290.2 L249.8,291.4 L251.1,292.5 L252.3,293.6 L253.5,294.7 L254.7,295.8 L256.0,297.0 L257.2,298.1 L258.4,299.2 L259.6,300.3 L260.9,301.4 L262.1,302.6 L263.3,303.7 L264.6,304.8 L265.8,305.9 L267.0,307.0 L268.2,308.2 L269.5,309.3 L270.7,310.4 L271.9,311.5 L273.1,312.6 L274.4,313.8 L275.6,314.9 L276.8,316.0 L278.0,317.1 L279.3,318.3 L280.5,319.4 L281.7,320.5 L283.0,321.6 L284.2,322.7 L285.4,323.9 L286.6,325.0 L287.9,326.1 L289.1,327.2 L290.3,328.3 L291.5,329.5 L292.8,330.6 L294.0,331.7"/>
+<path class="c3" d="M97.7,54.6 L99.6,56.3 L101.5,58.1 L103.4,59.8 L105.3,61.5 L107.2,63.3 L109.1,65.0 L111.0,66.7 L112.9,68.5 L114.8,70.2 L116.7,71.9 L118.6,73.7 L120.4,75.4 L122.3,77.1 L124.2,78.8 L126.1,80.6 L128.0,82.3 L129.9,84.0 L131.8,85.8 L133.7,87.5 L135.6,89.2 L137.5,91.0 L139.4,92.7 L141.3,94.4 L143.2,96.2 L145.1,97.9 L147.0,99.6 L148.9,101.4 L150.8,103.1 L152.7,104.8 L154.6,106.6 L156.5,108.3 L158.4,110.0 L160.3,111.8 L162.2,113.5 L164.1,115.2 L166.0,116.9 L167.9,118.7 L169.7,120.4 L171.6,122.1 L173.5,123.9 L175.4,125.6 L177.3,127.3 L179.2,129.1 L181.1,130.8 L183.0,132.5 L184.9,134.3 L186.8,136.0 L188.7,137.7 L190.6,139.5 L192.5,141.2 L194.4,142.9 L196.3,144.7 L198.2,146.4 L200.1,148.1 L202.0,149.9 L203.9,151.6 L205.8,153.3 L207.7,155.0 L209.6,156.8 L211.5,158.5 L213.4,160.2 L215.3,162.0 L217.1,163.7 L219.0,165.4 L220.9,167.2 L222.8,168.9 L224.7,170.6 L226.6,172.4 L228.5,174.1 L230.4,175.8 L232.3,177.6 L234.2,179.3 L236.1,181.0 L238.0,182.8 L239.9,184.5 L241.8,186.2 L243.7,188.0 L245.6,189.7 L247.5,191.4 L249.4,193.2 L251.3,194.9 L253.2,196.6 L255.1,198.3 L257.0,200.1 L258.9,201.8 L260.8,203.5 L262.7,205.3 L264.6,207.0 L266.5,208.7 L268.3,210.5 L270.2,212.2 L272.1,213.9 L274.0,215.7 L275.9,217.4 L277.8,219.1 L279.7,220.9 L281.6,222.6 L283.5,224.3 L285.4,226.1 L287.3,227.8 L289.2,229.5 L291.1,231.3 L293.0,233.0 L294.9,234.7 L296.8,236.4 L298.7,238.2 L300.6,239.9 L302.5,241.6 L304.4,243.4 L306.3,245.1 L308.2,246.8 L310.1,248.6 L312.0,250.3 L313.9,252.0 L315.8,253.8 L317.6,255.5 L319.5,257.2 L321.4,259.0 L323.3,260.7 L325.2,262.4 L327.1,264.2 L329.0,265.9 L330.9,267.6 L332.8,269.4 L334.7,271.1 L336.6,272.8 L338.5,274.5 L340.4,276.3 L342.3,278.0 L344.2,279.7 L346.1,281.5 L348.0,283.2 L349.9,284.9 L351.8,286.7 L353.7,288.4 L355.6,290.1 L357.5,291.9 L359.4,293.6 L361.3,295.3 L363.2,297.1 L365.0,298.8 L366.9,300.5 L368.8,302.3 L370.7,304.0 L372.6,305.7 L374.5,307.5 L376.4,309.2 L378.3,310.9 L380.2,312.6 L382.1,314.4 L384.0,316.1 L385.9,317.8 L387.8,319.6 L389.7,321.3 L391.6,323.0 L393.5,324.8 L395.4,326.5 L397.3,328.2 L399.2,330.0 L401.1,331.7"/>
+<path class="c4" d="M161.9,15.5 L163.9,17.3 L166.0,19.1 L168.0,21.0 L170.0,22.8 L172.0,24.6 L174.0,26.5 L176.0,28.3 L178.0,30.2 L180.0,32.0 L182.0,33.8 L184.0,35.7 L186.0,37.5 L188.0,39.3 L190.0,41.2 L192.1,43.0 L194.1,44.8 L196.1,46.7 L198.1,48.5 L200.1,50.3 L202.1,52.2 L204.1,54.0 L206.1,55.8 L208.1,57.7 L210.1,59.5 L212.1,61.3 L214.1,63.2 L216.1,65.0 L218.2,66.8 L220.2,68.7 L222.2,70.5 L224.2,72.3 L226.2,74.2 L228.2,76.0 L230.2,77.8 L232.2,79.7 L234.2,81.5 L236.2,83.3 L238.2,85.2 L240.2,87.0 L242.2,88.8 L244.3,90.7 L246.3,92.5 L248.3,94.3 L250.3,96.2 L252.3,98.0 L254.3,99.8 L256.3,101.7 L258.3,103.5 L260.3,105.3 L262.3,107.2 L264.3,109.0 L266.3,110.8 L268.3,112.7 L270.4,114.5 L272.4,116.3 L274.4,118.2 L276.4,120.0 L278.4,121.8 L280.4,123.7 L282.4,125.5 L284.4,127.3 L286.4,129.2 L288.4,131.0 L290.4,132.8 L292.4,134.7 L294.4,136.5 L296.5,138.3 L298.5,140.2 L300.5,142.0 L302.5,143.8 L304.5,145.7 L306.5,147.5 L308.5,149.3 L310.5,151.2 L312.5,153.0 L314.5,154.8 L316.5,156.7 L318.5,158.5 L320.5,160.3 L322.6,162.2 L324.6,164.0 L326.6,165.8 L328.6,167.7 L330.6,169.5 L332.6,171.3 L334.6,173.2 L336.6,175.0 L338.6,176.8 L340.6,178.7 L342.6,180.5 L344.6,182.4 L346.6,184.2 L348.7,186.0 L350.7,187.9 L352.7,189.7 L354.7,191.5 L356.7,193.4 L358.7,195.2 L360.7,197.0 L362.7,198.9 L364.7,200.7 L366.7,202.5 L368.7,204.4 L370.7,206.2 L372.7,208.0 L374.8,209.9 L376.8,211.7 L378.8,213.5 L380.8,215.4 L382.8,217.2 L384.8,219.0 L386.8,220.9 L388.8,222.7 L390.8,224.5 L392.8,226.4 L394.8,228.2 L396.8,230.0 L398.8,231.9 L400.9,233.7 L402.9,235.5 L404.9,237.4 L406.9,239.2 L408.9,241.0 L410.9,242.9 L412.9,244.7 L414.9,246.5 L416.9,248.4 L418.9,250.2"/>
+<line class="c2" x1="240.5" y1="348.0" x2="240.5" y2="28.5"/>
+<line class="arr" marker-end="url(#ah)" x1="235.1" y1="273.0" x2="142.3" y2="193.2"/>
+<line class="arr" marker-end="url(#ah)" x1="140.5" y1="185.0" x2="231.5" y2="185.0"/>
+<line class="arr" marker-end="url(#ah)" x1="235.1" y1="175.2" x2="142.3" y2="95.3"/>
+<line class="arr" marker-end="url(#ah)" x1="140.5" y1="87.2" x2="231.5" y2="87.2"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="133.4" y="365.0" text-anchor="middle">u₁</text>
+<text class="tick" x="240.5" y="365.0" text-anchor="middle">u*</text>
+<text class="tick" x="55.0" y="286.8" text-anchor="end">2</text>
+<text class="tick" x="55.0" y="189.0" text-anchor="end">5</text>
+<text class="tick" x="55.0" y="91.2" text-anchor="end">8</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Unemployment rate, u (%)</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Inflation, π (%)</text>
+<circle class="pt" cx="240.5" cy="282.8" r="4"/>
+<circle class="pt" cx="133.4" cy="185.0" r="4"/>
+<circle class="pt" cx="240.5" cy="185.0" r="4"/>
+<circle class="pt" cx="133.4" cy="87.2" r="4"/>
+<circle class="pt" cx="240.5" cy="87.2" r="4"/>
+<text class="lbl c1-t" x="300.0" y="335.7" text-anchor="start">SRPC (πᵉ = 2%)</text>
+<text class="lbl c3-t" x="407.1" y="335.7" text-anchor="start">SRPC (πᵉ = 5%)</text>
+<text class="lbl c4-t" x="424.9" y="254.2" text-anchor="start">SRPC (πᵉ = 8%)</text>
+<text class="lbl c2-t" x="246.5" y="35.0" text-anchor="start">LRPC (vertical at u*)</text>
+<text class="lbl strong" x="248.5" y="296.8" text-anchor="start">A</text>
+<text class="lbl strong" x="117.4" y="178.0" text-anchor="start">B</text>
+<text class="lbl strong" x="248.5" y="199.0" text-anchor="start">C</text>
+<text class="lbl strong" x="117.4" y="80.2" text-anchor="start">D</text>
+<text class="lbl strong" x="248.5" y="101.2" text-anchor="start">E</text>
+</svg><figcaption><b>Figure 1.3.</b> Expectations-augmented Phillips curves. Each short-run curve (SRPC) is drawn for a given expected inflation rate. Trying to hold unemployment at u₁ below u* produces A → B → C → D → E: ever-higher inflation with no lasting fall in unemployment. The long-run Phillips curve (LRPC) is vertical at u*.</figcaption></figure>
+<ol>
+<li><b>Stage 1 (point A).</b> Actual inflation = expected inflation (2%); unemployment is at the natural rate \(u^*\).</li>
+<li><b>Stage 2 (A &rarr; B).</b> The government tries to exploit the trade-off with expansionary policy to cut unemployment to \(u_1\). Inflation rises to 5%. Workers see higher money wages and work more; firms see a lower real wage and hire more.</li>
+<li><b>Stage 3 (B &rarr; C).</b> Workers learn that actual inflation is 5%, revise \(\pi^e\) up to 5% and demand higher money wages. The real wage rises back and employment falls: unemployment returns to \(u^*\) but inflation stays at 5%. The economy is now on a <b>new, higher SRPC</b>.</li>
+<li>Repeating the attempt gives C &rarr; D &rarr; E. <b>In the long run the trade-off disappears</b>: the LRPC is vertical at \(u^*\). Holding \(u &lt; u^*\) requires <b>ever-accelerating inflation</b>; hence the <i>accelerationist hypothesis</i>.</li>
+</ol>
+
+<div class="box derivation"><span class="box-h">Derivation: expectations-augmented Phillips curve and the natural rate</span>
+<div class="steps">
+<p class="step">Add expected inflation to wage bargaining (Mitchell et al. eq. 18.5): \(\hat W_t = \alpha_0 - \beta u_t + \phi\,\pi^e_t\), \(0 \le \phi \le 1\). Here \(\phi\) is the share of expected inflation that workers build into wage claims.</p>
+<p class="step">Price inflation (subtract productivity growth): the <b>EAPC</b>
+$$\pi_t = \alpha - \beta u_t + \phi\,\pi^e_t.$$
+A rise in \(\pi^e\) shifts the short-run curve up by \(\phi\,\Delta\pi^e\).</p>
+<p class="step"><b>Long run</b> means expectations are correct: \(\pi^e_t = \pi_t = \pi\). Substituting: \(\pi(1-\phi) = \alpha - \beta u\), so
+$$\pi = \frac{\alpha}{1-\phi} - \frac{\beta}{1-\phi}\,u.$$
+The long-run slope \(-\beta/(1-\phi)\) is <b>steeper</b> than the short-run slope \(-\beta\).</p>
+<p class="step">If \(0 &lt; \phi &lt; 1\) (the Keynesian position) a steeper long-run trade-off still exists. If \(\phi = 1\) (the monetarist position), \(\pi(1-1) = 0 = \alpha - \beta u\), so the only possible long-run unemployment rate is
+$$\boxed{\,u^* = \frac{\alpha}{\beta}\,}$$
+The LRPC is vertical. \(u^*\) depends only on structural factors: productivity growth (through \(\alpha\)) and wage responsiveness \(\beta\). Higher productivity growth lowers \(\alpha\) and so lowers \(u^*\).</p>
+<p class="step">With \(\phi = 1\) we can rewrite the EAPC around \(u^*\) (since \(\alpha = \beta u^*\)):
+$$\pi_t - \pi^e_t = -\beta\,(u_t - u^*).$$
+Inflation exceeds expectations only when unemployment is below the natural rate.</p>
+</div></div>
+
+<h3 id="c1-how-are-expectations-formed">How are expectations formed?</h3>
+<p><b>Adaptive expectations</b> (Friedman): \(\pi^e_{t+1} = \pi^e_t + \lambda(\pi_t - \pi^e_t)\), \(0 &lt; \lambda \le 1\). People correct a fraction \(\lambda\) of last period's forecast error. With \(\lambda = 1\), \(\pi^e_t = \pi_{t-1}\) (expect last year's inflation), and the EAPC becomes
+$$\pi_t - \pi_{t-1} = -\beta(u_t - u^*) \quad\Rightarrow\quad \Delta\pi_t = -\beta(u_t - u^*).$$
+<p>This is the <b>accelerationist</b> Phillips curve: it is the <i>change</i> in inflation, not its level, that depends on unemployment. That is why \(u^*\) is also called the <span class="term">NAIRU</span> (non-accelerating-inflation rate of unemployment); CORE calls it the <b>inflation-stabilising rate of unemployment</b>.</p>
+<div class="box example"><span class="box-h">Worked example: accelerating inflation</span>
+<p>\(u^* = 5\%\), \(\beta = 1\), inflation starts at 2%. The government holds unemployment at 3% from year 1, so \(\Delta\pi = -1\times(3-5) = +2\) points every year.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Year</th><th class="num">u (%)</th><th class="num">Expected π = last year's π</th><th class="num">Actual π (%)</th></tr>
+<tr><td>0</td><td class="num">5</td><td class="num">2</td><td class="num">2</td></tr>
+<tr><td>1</td><td class="num">3</td><td class="num">2</td><td class="num">4</td></tr>
+<tr><td>2</td><td class="num">3</td><td class="num">4</td><td class="num">6</td></tr>
+<tr><td>3</td><td class="num">3</td><td class="num">6</td><td class="num">8</td></tr>
+<tr><td>4</td><td class="num">5</td><td class="num">8</td><td class="num">8 (stable, but high)</td></tr>
+</table></div>
+<p>Getting back to 2% inflation needs a period of \(u &gt; u^*\): e.g. \(u = 7\%\) for 3 years brings inflation down 2 points a year. This lost output is the <b>cost of disinflation</b>.</p></div>
+<p><b>Rational expectations</b> (New Classical economics, 1970s): people use all available information, including knowledge of the model and of policy, so forecast errors are purely random. A <i>predictable</i> policy cannot fool anyone even in the short run: the economy stays on the vertical LRPC (policy ineffectiveness).</p>
+
+<div class="box exam"><span class="box-h">Critiques (Mitchell et al. &sect;18.3&ndash;18.4)</span>
+<ul>
+<li><b>Quit rates are pro-cyclical.</b> Friedman's story implies workers quit more in recessions, when they wrongly think real-wage offers are too low. In fact quits <i>rise</i> in booms (Thurow).</li>
+<li><b>Hysteresis.</b> Estimates of the NAIRU tend to <i>follow</i> actual unemployment, e.g. jumping after the 1974 recession. Long spells of unemployment erode skills and attachment to work, so the "natural" rate itself depends on demand history and is not independent of policy.</li>
+<li>Rational expectations demand implausible knowledge and ignore genuine uncertainty.</li>
+</ul></div>
+
+<h2 id="c1-the-scope-of-monetary-policy"><span class="secnum">1.7</span> The scope of monetary policy</h2>
+<ul>
+<li><b>Original idea:</b> the central bank (CB) changes the <b>money stock</b> through <b>open market operations</b>: buying government bonds injects money and selling them withdraws it.</li>
+<li><b>From the 1980s:</b> most CBs instead set a short-term <b>policy interest rate</b> (in India the <b>repo rate</b>, at which the RBI lends to banks overnight) and supply whatever reserves are needed at that rate.</li>
+<li><b>Uses:</b> to <b>boost demand</b> and counter recessions, and, in contemporary practice, mainly to <b>control inflation</b>.</li>
+<li><b>Inflation targeting:</b> many CBs (from New Zealand in 1990, then the UK, Canada and others; 28 countries by CORE's count) have an explicit inflation target, often 2% in rich countries. Some give inflation an exclusive mandate, largely giving up the goal of boosting output and employment. The period from the 1980s to 2008 of low, stable inflation is called the <b>Great Moderation</b> (CORE &sect;15.11).</li>
+</ul>
+
+<h3 id="c1-the-transmission-mechanism">The transmission mechanism</h3>
+<p>How does a change in the policy rate reach inflation? Through several channels (CORE Fig. 15.14):</p>
+<div class="flow"><div class="flow-row"><div class="flow-box"><b>Central bank changes the policy rate</b><br>(RBI repo rate)</div></div><div class="flow-arrow">&darr;</div><div class="flow-row"><div class="flow-box">Market interest rates<br>(lending, bond yields)</div><div class="flow-box">Asset prices<br>(shares, housing, bonds)</div><div class="flow-box">Expectations &amp; confidence</div><div class="flow-box">Exchange rate</div></div><div class="flow-arrow">&darr;</div><div class="flow-row"><div class="flow-box">Consumption &amp; investment<br>(domestic demand)</div><div class="flow-box">Wealth effects on consumption</div><div class="flow-box">Spending &amp; price-setting plans</div><div class="flow-box">Net exports &amp; import prices</div></div><div class="flow-arrow">&darr;</div><div class="flow-row"><div class="flow-box"><b>Aggregate demand</b> &rarr; output &amp; employment &rarr; domestic inflationary pressure</div></div><div class="flow-arrow">&darr;</div><div class="flow-row"><div class="flow-box"><b>Inflation</b> (with import prices feeding in directly)</div></div></div>
+<ol>
+<li><b>Market interest rates:</b> banks' lending and deposit rates and bond yields follow the policy rate. Higher rates make borrowing for houses, cars and investment projects more expensive, so \(I(r)\) and part of \(C\) fall.</li>
+<li><b>Asset prices:</b> higher rates lower the present value of future income, so bond, share and house prices fall. Households feel poorer and consume less (wealth effect), and collateral shrinks.</li>
+<li><b>Expectations and confidence:</b> a credible CB that tightens signals that inflation will be controlled, which moderates wage and price setting.</li>
+<li><b>Exchange rate</b> (CORE &sect;15.9): higher domestic rates attract foreign capital and the currency <b>appreciates</b>. Exports become dearer and imports cheaper: net exports fall (less demand) and <b>import prices fall</b>, lowering inflation directly.</li>
+</ol>
+
+<h3 id="c1-monetary-policy-in-the-multiplier-model">Monetary policy in the multiplier model</h3>
+<p>The slide's model is CORE's open-economy multiplier model (Unit 14 &sect;14.5). Aggregate demand is</p>
+$$AD = c_0 + c_1(1-t)Y + I(r) + G + X - mY,$$
+<p>with autonomous consumption \(c_0\), marginal propensity to consume \(c_1\), tax rate \(t\), investment depending negatively on the real interest rate \(I(r)\), government spending \(G\), exports \(X\) and marginal propensity to import \(m\).</p>
+<div class="box derivation"><span class="box-h">Derivation: equilibrium output and the multiplier</span>
+<div class="steps">
+<p class="step">Goods-market equilibrium: output equals planned spending, \(Y = AD\) (the 45&deg; line).</p>
+<p class="step">\(Y = c_0 + c_1(1-t)Y + I(r) + G + X - mY\). Collect the \(Y\) terms:
+$$Y\big[1 - c_1(1-t) + m\big] = c_0 + I(r) + G + X.$$</p>
+<p class="step">Solve:
+$$Y^* = \underbrace{\frac{1}{1 - c_1(1-t) + m}}_{k\ \text{(multiplier)}}\;\big[c_0 + I(r) + G + X\big].$$</p>
+<p class="step">Any change in autonomous spending changes output by \(k\) times as much: \(\Delta Y = k\,\Delta c_0\), \(k\,\Delta G\), or \(k\,\Delta I\). Taxes and imports are <b>leakages</b> that make \(k\) smaller. With no government or trade (\(t = m = 0\)), \(k = 1/(1-c_1)\).</p>
+<p class="step"><b>Monetary policy:</b> a cut in the policy rate lowers \(r\) and raises investment: \(\Delta Y = k\,[I(r') - I(r)]\). With a linear investment function \(I = \bar I - a r\): \(\Delta Y = -k\,a\,\Delta r\).</p>
+</div></div>
+<div class="box example"><span class="box-h">Worked example (CORE &sect;14.2, &sect;14.5)</span>
+<p>Basic model: \(c_1 = 0.6\) gives \(k = 1/(1-0.6) = 2.5\), which CORE calls unrealistically large. Adding \(t = 0.2\) and \(m = 0.1\): \(1 - 0.6(0.8) + 0.1 = 0.62\), so \(k = 1/0.62 \approx 1.6\).</p>
+<p><b>Recession and response.</b> Households' confidence falls and \(c_0\) drops by 10 (₹ thousand crore): \(\Delta Y = -1.6 \times 10 = -16\). If investment rises by 5 for every 1-point cut in \(r\) (\(a = 5\)), the RBI needs \(\Delta r = -\Delta Y_{\text{target}}/(k\,a) = -16/(1.6\times5) = -2\) points to fully offset the shock.</p></div>
+<figure class="figure" id="fig-multiplier"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Keynesian cross: a fall in autonomous consumption shifts AD down from A to B; a cut in the policy rate raises investment and shifts AD back up toward C." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polyline class="guide" points="62.0,87.2 364.4,87.2 364.4,348.0"/>
+<polyline class="guide" points="62.0,152.4 288.8,152.4 288.8,348.0"/>
+<polyline class="guide" points="62.0,113.3 334.2,113.3 334.2,348.0"/>
+<line class="ax-soft" x1="62.0" y1="348.0" x2="424.9" y2="35.0"/>
+<path class="c1" d="M62.0,217.6 L64.2,216.7 L66.3,215.7 L68.5,214.8 L70.7,213.9 L72.9,212.9 L75.0,212.0 L77.2,211.0 L79.4,210.1 L81.6,209.2 L83.7,208.2 L85.9,207.3 L88.1,206.4 L90.3,205.4 L92.4,204.5 L94.6,203.5 L96.8,202.6 L98.9,201.7 L101.1,200.7 L103.3,199.8 L105.5,198.9 L107.6,197.9 L109.8,197.0 L112.0,196.0 L114.2,195.1 L116.3,194.2 L118.5,193.2 L120.7,192.3 L122.9,191.4 L125.0,190.4 L127.2,189.5 L129.4,188.5 L131.6,187.6 L133.7,186.7 L135.9,185.7 L138.1,184.8 L140.2,183.9 L142.4,182.9 L144.6,182.0 L146.8,181.0 L148.9,180.1 L151.1,179.2 L153.3,178.2 L155.5,177.3 L157.6,176.4 L159.8,175.4 L162.0,174.5 L164.2,173.5 L166.3,172.6 L168.5,171.7 L170.7,170.7 L172.8,169.8 L175.0,168.9 L177.2,167.9 L179.4,167.0 L181.5,166.1 L183.7,165.1 L185.9,164.2 L188.1,163.2 L190.2,162.3 L192.4,161.4 L194.6,160.4 L196.8,159.5 L198.9,158.6 L201.1,157.6 L203.3,156.7 L205.5,155.7 L207.6,154.8 L209.8,153.9 L212.0,152.9 L214.1,152.0 L216.3,151.1 L218.5,150.1 L220.7,149.2 L222.8,148.2 L225.0,147.3 L227.2,146.4 L229.4,145.4 L231.5,144.5 L233.7,143.6 L235.9,142.6 L238.1,141.7 L240.2,140.7 L242.4,139.8 L244.6,138.9 L246.7,137.9 L248.9,137.0 L251.1,136.1 L253.3,135.1 L255.4,134.2 L257.6,133.2 L259.8,132.3 L262.0,131.4 L264.1,130.4 L266.3,129.5 L268.5,128.6 L270.7,127.6 L272.8,126.7 L275.0,125.7 L277.2,124.8 L279.4,123.9 L281.5,122.9 L283.7,122.0 L285.9,121.1 L288.0,120.1 L290.2,119.2 L292.4,118.3 L294.6,117.3 L296.7,116.4 L298.9,115.4 L301.1,114.5 L303.3,113.6 L305.4,112.6 L307.6,111.7 L309.8,110.8 L312.0,109.8 L314.1,108.9 L316.3,107.9 L318.5,107.0 L320.6,106.1 L322.8,105.1 L325.0,104.2 L327.2,103.3 L329.3,102.3 L331.5,101.4 L333.7,100.4 L335.9,99.5 L338.0,98.6 L340.2,97.6 L342.4,96.7 L344.6,95.8 L346.7,94.8 L348.9,93.9 L351.1,92.9 L353.2,92.0 L355.4,91.1 L357.6,90.1 L359.8,89.2 L361.9,88.3 L364.1,87.3 L366.3,86.4 L368.5,85.4 L370.6,84.5 L372.8,83.6 L375.0,82.6 L377.2,81.7 L379.3,80.8 L381.5,79.8 L383.7,78.9 L385.9,77.9 L388.0,77.0 L390.2,76.1 L392.4,75.1 L394.5,74.2 L396.7,73.3 L398.9,72.3 L401.1,71.4 L403.2,70.5 L405.4,69.5 L407.6,68.6 L409.8,67.6"/>
+<path class="c3 dashed" d="M62.0,230.6 L64.2,229.7 L66.3,228.8 L68.5,227.8 L70.7,226.9 L72.9,226.0 L75.0,225.0 L77.2,224.1 L79.4,223.1 L81.6,222.2 L83.7,221.3 L85.9,220.3 L88.1,219.4 L90.3,218.5 L92.4,217.5 L94.6,216.6 L96.8,215.6 L98.9,214.7 L101.1,213.8 L103.3,212.8 L105.5,211.9 L107.6,211.0 L109.8,210.0 L112.0,209.1 L114.2,208.1 L116.3,207.2 L118.5,206.3 L120.7,205.3 L122.9,204.4 L125.0,203.5 L127.2,202.5 L129.4,201.6 L131.6,200.6 L133.7,199.7 L135.9,198.8 L138.1,197.8 L140.2,196.9 L142.4,196.0 L144.6,195.0 L146.8,194.1 L148.9,193.2 L151.1,192.2 L153.3,191.3 L155.5,190.3 L157.6,189.4 L159.8,188.5 L162.0,187.5 L164.2,186.6 L166.3,185.7 L168.5,184.7 L170.7,183.8 L172.8,182.8 L175.0,181.9 L177.2,181.0 L179.4,180.0 L181.5,179.1 L183.7,178.2 L185.9,177.2 L188.1,176.3 L190.2,175.3 L192.4,174.4 L194.6,173.5 L196.8,172.5 L198.9,171.6 L201.1,170.7 L203.3,169.7 L205.5,168.8 L207.6,167.8 L209.8,166.9 L212.0,166.0 L214.1,165.0 L216.3,164.1 L218.5,163.2 L220.7,162.2 L222.8,161.3 L225.0,160.3 L227.2,159.4 L229.4,158.5 L231.5,157.5 L233.7,156.6 L235.9,155.7 L238.1,154.7 L240.2,153.8 L242.4,152.8 L244.6,151.9 L246.7,151.0 L248.9,150.0 L251.1,149.1 L253.3,148.2 L255.4,147.2 L257.6,146.3 L259.8,145.4 L262.0,144.4 L264.1,143.5 L266.3,142.5 L268.5,141.6 L270.7,140.7 L272.8,139.7 L275.0,138.8 L277.2,137.9 L279.4,136.9 L281.5,136.0 L283.7,135.0 L285.9,134.1 L288.0,133.2 L290.2,132.2 L292.4,131.3 L294.6,130.4 L296.7,129.4 L298.9,128.5 L301.1,127.5 L303.3,126.6 L305.4,125.7 L307.6,124.7 L309.8,123.8 L312.0,122.9 L314.1,121.9 L316.3,121.0 L318.5,120.0 L320.6,119.1 L322.8,118.2 L325.0,117.2 L327.2,116.3 L329.3,115.4 L331.5,114.4 L333.7,113.5 L335.9,112.5 L338.0,111.6 L340.2,110.7 L342.4,109.7 L344.6,108.8 L346.7,107.9 L348.9,106.9 L351.1,106.0 L353.2,105.0 L355.4,104.1 L357.6,103.2 L359.8,102.2 L361.9,101.3 L364.1,100.4 L366.3,99.4 L368.5,98.5 L370.6,97.6 L372.8,96.6 L375.0,95.7 L377.2,94.7 L379.3,93.8 L381.5,92.9 L383.7,91.9 L385.9,91.0 L388.0,90.1 L390.2,89.1 L392.4,88.2 L394.5,87.2 L396.7,86.3 L398.9,85.4 L401.1,84.4 L403.2,83.5 L405.4,82.6 L407.6,81.6 L409.8,80.7"/>
+<path class="c2" d="M62.0,250.2 L64.2,249.3 L66.3,248.3 L68.5,247.4 L70.7,246.5 L72.9,245.5 L75.0,244.6 L77.2,243.6 L79.4,242.7 L81.6,241.8 L83.7,240.8 L85.9,239.9 L88.1,239.0 L90.3,238.0 L92.4,237.1 L94.6,236.1 L96.8,235.2 L98.9,234.3 L101.1,233.3 L103.3,232.4 L105.5,231.5 L107.6,230.5 L109.8,229.6 L112.0,228.6 L114.2,227.7 L116.3,226.8 L118.5,225.8 L120.7,224.9 L122.9,224.0 L125.0,223.0 L127.2,222.1 L129.4,221.1 L131.6,220.2 L133.7,219.3 L135.9,218.3 L138.1,217.4 L140.2,216.5 L142.4,215.5 L144.6,214.6 L146.8,213.6 L148.9,212.7 L151.1,211.8 L153.3,210.8 L155.5,209.9 L157.6,209.0 L159.8,208.0 L162.0,207.1 L164.2,206.1 L166.3,205.2 L168.5,204.3 L170.7,203.3 L172.8,202.4 L175.0,201.5 L177.2,200.5 L179.4,199.6 L181.5,198.7 L183.7,197.7 L185.9,196.8 L188.1,195.8 L190.2,194.9 L192.4,194.0 L194.6,193.0 L196.8,192.1 L198.9,191.2 L201.1,190.2 L203.3,189.3 L205.5,188.3 L207.6,187.4 L209.8,186.5 L212.0,185.5 L214.1,184.6 L216.3,183.7 L218.5,182.7 L220.7,181.8 L222.8,180.8 L225.0,179.9 L227.2,179.0 L229.4,178.0 L231.5,177.1 L233.7,176.2 L235.9,175.2 L238.1,174.3 L240.2,173.3 L242.4,172.4 L244.6,171.5 L246.7,170.5 L248.9,169.6 L251.1,168.7 L253.3,167.7 L255.4,166.8 L257.6,165.8 L259.8,164.9 L262.0,164.0 L264.1,163.0 L266.3,162.1 L268.5,161.2 L270.7,160.2 L272.8,159.3 L275.0,158.3 L277.2,157.4 L279.4,156.5 L281.5,155.5 L283.7,154.6 L285.9,153.7 L288.0,152.7 L290.2,151.8 L292.4,150.9 L294.6,149.9 L296.7,149.0 L298.9,148.0 L301.1,147.1 L303.3,146.2 L305.4,145.2 L307.6,144.3 L309.8,143.4 L312.0,142.4 L314.1,141.5 L316.3,140.5 L318.5,139.6 L320.6,138.7 L322.8,137.7 L325.0,136.8 L327.2,135.9 L329.3,134.9 L331.5,134.0 L333.7,133.0 L335.9,132.1 L338.0,131.2 L340.2,130.2 L342.4,129.3 L344.6,128.4 L346.7,127.4 L348.9,126.5 L351.1,125.5 L353.2,124.6 L355.4,123.7 L357.6,122.7 L359.8,121.8 L361.9,120.9 L364.1,119.9 L366.3,119.0 L368.5,118.0 L370.6,117.1 L372.8,116.2 L375.0,115.2 L377.2,114.3 L379.3,113.4 L381.5,112.4 L383.7,111.5 L385.9,110.5 L388.0,109.6 L390.2,108.7 L392.4,107.7 L394.5,106.8 L396.7,105.9 L398.9,104.9 L401.1,104.0 L403.2,103.1 L405.4,102.1 L407.6,101.2 L409.8,100.2"/>
+<line class="ax" x1="62.0" y1="348.0" x2="448.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="364.4" y="365.0" text-anchor="middle">Y₀</text>
+<text class="tick" x="288.8" y="365.0" text-anchor="middle">Y₁</text>
+<text class="tick" x="334.2" y="365.0" text-anchor="middle">Y₂</text>
+<text class="axl" x="440.0" y="386.0" text-anchor="end">Output (income), Y</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Aggregate demand, AD</text>
+<circle class="pt" cx="364.4" cy="87.2" r="4"/>
+<circle class="pt" cx="288.8" cy="152.4" r="4"/>
+<circle class="pt" cx="334.2" cy="113.3" r="4"/>
+<text class="lbl small" x="430.9" y="39.0" text-anchor="start">Y = AD (45°)</text>
+<text class="lbl c1-t" x="415.8" y="63.6" text-anchor="start">AD₀</text>
+<text class="lbl c3-t" x="415.8" y="86.7" text-anchor="start">AD₂: c₀′, lower r′</text>
+<text class="lbl c2-t" x="415.8" y="114.2" text-anchor="start">AD₁: lower c₀′</text>
+<text class="lbl strong" x="348.4" y="83.2" text-anchor="start">A</text>
+<text class="lbl strong" x="296.8" y="168.4" text-anchor="start">B</text>
+<text class="lbl strong" x="342.2" y="129.3" text-anchor="start">C</text>
+</svg><figcaption><b>Figure 1.4.</b> Using monetary policy to stabilise a recession (lecture slide). AD₀ = c₀ + I(r) + G + X + [c₁(1−t) − m]Y. A fall in autonomous consumption (c₀ → c₀′) shifts AD down: the economy moves from A to B and output falls from Y₀ to Y₁. Cutting the interest rate to r′ raises I(r′) and shifts AD back up to C.</figcaption></figure>
+<p><b>Limits:</b> (i) the <b>zero lower bound</b>: if \(i\) is already near 0, the CB cannot cut further, so it may turn to quantitative easing (buying bonds to lower long-term rates); (ii) when firms and households are pessimistic, investment may respond weakly to lower rates (Keynes's "pushing on a string"); (iii) countries in a currency union (the Eurozone) have no national monetary policy (CORE &sect;15.8).</p>
+
+<h3 id="c1-demand-shocks-versus-supply-shocks-the-policy-dilemma">Demand shocks versus supply shocks: the policy dilemma</h3>
+<div class="tbl-wrap"><table>
+<tr><th></th><th>Demand shock (e.g. investment collapse)</th><th>Supply shock (e.g. oil price rise)</th></tr>
+<tr><td>Output / unemployment</td><td>Output &darr;, unemployment &uarr;</td><td>Output &darr;, unemployment &uarr;</td></tr>
+<tr><td>Inflation</td><td>&darr;</td><td>&uarr;</td></tr>
+<tr><td>Rate cut?</td><td>Helps both goals: no conflict</td><td>Raises demand but worsens inflation: a genuine trade-off</td></tr>
+</table></div>
+<p>CORE &sect;15.10 shows the US response to the 2001 slowdown: the Federal Reserve cut its rate from 6.24% to 1.13% while fiscal policy added tax cuts and spending. CORE stresses that the policy goal is <b>labour-market equilibrium</b> (inflation stable at target), not "full employment" at any cost.</p>
+
+<h2 id="c1-india-the-rbi-and-flexible-inflation-targeting"><span class="secnum">1.8</span> India: the RBI and flexible inflation targeting</h2>
+<div class="box india"><span class="box-h">India focus</span>
+<ul>
+<li>In May 2016 the <b>RBI Act, 1934 was amended</b> to give <b>flexible inflation targeting (FIT)</b> a statutory basis. The amendment came into force on 27 June 2016, and the target was first notified in August 2016.</li>
+<li>Target: <b>4% CPI (headline) inflation, with a tolerance band of &plusmn;2%</b> (2&ndash;6%). Under Section 45ZA the Central Government sets the target in consultation with the RBI, for five years at a time. It was renewed for 2021&ndash;26, and news reports say it has been renewed for 2026&ndash;31.</li>
+<li>The policy rate (the repo rate) is set by a six-member <b>Monetary Policy Committee</b>: three RBI members and three external members.</li>
+<li>"Flexible" means the RBI also weighs growth: it aims to bring inflation back to target over time rather than at any cost, especially after supply shocks such as food-price spikes.</li>
+<li>Outcomes reported in the RBI's own 2025 review paper: CPI inflation averaged about <b>4.9% under FIT against about 6.8% before it</b>.</li>
+<li><b>Why supply shocks matter so much in India:</b> food has a large weight in the CPI basket, so monsoon failures and vegetable price spikes (onions, tomatoes, pulses) are classic cost-push shocks. Interest-rate policy acts on demand, so it can do little about the first-round effect. The RBI's concern is the <b>second-round effects</b>: higher food prices feeding into wage demands and inflation expectations, the wage&ndash;price spiral of &sect;1.4.</li>
+</ul></div>
+
+<h2 id="c1-summary-and-practice-questions"><span class="secnum">1.9</span> Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>Fisher: \(r \approx i - \pi^e\). Unexpected inflation transfers wealth from lenders to borrowers; deflation does the reverse and can trap the economy.</li>
+<li>Quantity theory: \(\hat M + \hat V = \pi + \hat Y\) &rArr; \(\pi = \mu - g\) only if \(V\) is stable and \(Y\) is at full employment.</li>
+<li>Cost-push / conflict: \(\pi = \hat W - \hat\lambda\) with a fixed mark-up; incompatible claims give \(\pi^* \propto (\omega_w - \omega_f)\). CORE: inflation = expected inflation + bargaining gap.</li>
+<li>Phillips curve: \(\pi = \alpha - \beta u\). Expectations-augmented: \(\pi = \alpha - \beta u + \phi\pi^e\). With \(\phi = 1\) the LRPC is vertical at \(u^* = \alpha/\beta\), and holding \(u &lt; u^*\) makes inflation accelerate.</li>
+<li>Monetary policy works through the policy rate: market rates, asset prices, expectations, exchange rate &rarr; AD. Multiplier \(k = 1/[1 - c_1(1-t) + m]\).</li>
+<li>India: FIT since 2016, 4% &plusmn; 2% CPI target, decided by the MPC.</li>
+</ul></div>
+
+<details class="q"><summary>Distinguish deflation from disinflation, with an example of each.</summary><div class="ans"><p>Deflation is a falling price level (inflation below zero, e.g. CPI 100 &rarr; 98, inflation &minus;2%). Disinflation is a falling <i>rate</i> of inflation while prices still rise, e.g. inflation falls from 7% to 4%. India saw disinflation between 2013–14 and 2015–16, when CPI inflation fell from about 9–10% to about 5%.</p></div></details>
+<details class="q"><summary>Nominal deposit rate 7%, inflation 5.5%. What is the real rate (approximate and exact)? What happens to savers if inflation unexpectedly rises to 9%?</summary><div class="ans"><p>Approx. \(7 - 5.5 = 1.5\%\). Exact \(1.07/1.055 - 1 = 1.42\%\). At 9% inflation the real rate is \(\approx -2\%\): depositors lose purchasing power, and borrowers gain.</p></div></details>
+<details class="q"><summary>Money supply grows at 15%, real GDP at 6%, and velocity falls by 2% a year. What inflation does the equation of exchange imply? Why might the quantity theory still be a poor guide?</summary><div class="ans"><p>\(\pi = \hat M + \hat V - \hat Y = 15 - 2 - 6 = 7\%\). But the identity holds by definition. If the economy has spare capacity, extra spending raises \(Y\) rather than \(P\); velocity is unstable; and money may be responding to demand for credit rather than driving prices.</p></div></details>
+<details class="q"><summary>In the conflicting-claims model, workers target a wage share of 0.70 and firms' mark-up implies 0.60. With \(\theta_w = 1\), \(\theta_f = 2\), find the steady-state wage share and inflation. What happens if firms gain more power?</summary><div class="ans"><p>\(\omega^* = (1\cdot0.70 + 2\cdot0.60)/3 = 0.633\). \(\pi^* = \frac{1\cdot2}{3}(0.10) = 6.67\%\). If \(\theta_f\) rises, \(\omega^*\) moves toward 0.60 and \(\pi^* = \frac{\theta_w\theta_f}{\theta_w+\theta_f}(0.1)\) rises toward \(\theta_w \times 0.1 = 10\%\) (it increases in \(\theta_f\)). Inflation rises and distribution shifts to profits.</p></div></details>
+<details class="q"><summary>Explain, with a diagram, why monetarists argue there is no long-run trade-off between inflation and unemployment.</summary><div class="ans"><p>Draw the expectations-augmented Phillips curve figure (§1.6). Start at A (u = u*, π = πᵉ). Expansionary policy moves the economy along the SRPC to B: actual inflation exceeds expected, real wages fall, firms hire more, and workers are fooled by higher money wages. As expectations adapt (πᵉ rises), the SRPC shifts up and unemployment returns to u* at C with higher inflation. Algebra: \(\pi = \alpha - \beta u + \phi\pi^e\); with \(\phi = 1\) and \(\pi = \pi^e\) in the long run, \(u = \alpha/\beta = u^*\) whatever the inflation rate, so the LRPC is vertical. Mention the critiques (hysteresis, pro-cyclical quits).</p></div></details>
+<details class="q"><summary>With \(\pi_t - \pi_{t-1} = -0.5(u_t - 6)\), inflation is currently 10%. How many point-years of excess unemployment are needed to bring inflation to 4%?</summary><div class="ans"><p>The required fall of 6 points equals \(0.5 \times \sum(u_t - 6)\), so \(\sum(u_t - 6) = 12\) point-years: e.g. unemployment of 10% for 3 years, or 8% for 6 years. (The "sacrifice ratio" here is 2 point-years of unemployment per point of disinflation.)</p></div></details>
+<details class="q"><summary>Compute the multiplier when \(c_1 = 0.8\), \(t = 0.25\), \(m = 0.2\). If a repo-rate cut raises investment by ₹40,000 crore, by how much does output rise?</summary><div class="ans"><p>\(1 - 0.8(0.75) + 0.2 = 0.6\), so \(k = 1.67\). \(\Delta Y = 1.67 \times 40{,}000 \approx ₹66{,}700\) crore.</p></div></details>
+<details class="q"><summary>Why is an oil-price shock harder for a central bank to deal with than a fall in investment?</summary><div class="ans"><p>An investment collapse lowers both output and inflation, so a rate cut helps on both counts. An oil shock lowers output but raises inflation (the PS curve shifts down and a bargaining gap opens). Tightening fights inflation but deepens the slump, while easing supports output but risks a wage&ndash;price spiral and higher expectations. That is the stagflation dilemma of the 1970s.</p></div></details>
+</article>
+<nav class="prevnext"><span></span><a class="next" href="demand-supply.html"><small>Next</small>Supply, Demand and Elasticity</a></nav>
+</main>
+<nav class="ontoc" aria-label="On this page"><div class="ontoc-h">On this page</div><a href="#c1-key-concepts-and-measurement"><span>1.1</span> Key concepts and measurement</a><a href="#c1-whats-wrong-with-inflation-and-with-deflation"><span>1.2</span> What's wrong with inflation, and with deflation?</a><a href="#c1-demand-pull-inflation-and-the-quantity-theory-of-money"><span>1.3</span> Demand-pull inflation and the quantity theory of money</a><a href="#c1-cost-push-inflation-and-inflation-as-social-conflict"><span>1.4</span> Cost-push inflation and inflation as social conflict</a><a href="#c1-the-phillips-curve"><span>1.5</span> The Phillips curve</a><a href="#c1-expectations-and-the-phillips-curve"><span>1.6</span> Expectations and the Phillips curve</a><a href="#c1-the-scope-of-monetary-policy"><span>1.7</span> The scope of monetary policy</a><a href="#c1-india-the-rbi-and-flexible-inflation-targeting"><span>1.8</span> India: the RBI and flexible inflation targeting</a><a href="#c1-summary-and-practice-questions"><span>1.9</span> Summary and practice questions</a></nav>
+</div>
+<script>
+function toggleTheme(){
+  var r=document.documentElement, cur=r.getAttribute('data-theme');
+  var dark = cur ? cur==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var nt = dark ? 'light' : 'dark'; r.setAttribute('data-theme', nt);
+  try{localStorage.setItem('sg-theme', nt);}catch(e){}
+}
+document.querySelectorAll('.sidebar a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('nav-open');});});
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function go() {
+    if (!window.renderMathInElement) return setTimeout(go, 50);
+    renderMathInElement(document.body, {
+      delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\[', right: '\\]', display: true},
+                   {left: '\\(', right: '\\)', display: false}],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'svg'],
+      throwOnError: false
+    });
+    document.documentElement.classList.add('math-ready');
+  }
+  go();
+});
+</script>
+
+</body>
+</html>

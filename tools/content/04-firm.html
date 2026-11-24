@@ -1,0 +1,180 @@
+<p class="kicker">Lecture 7 &middot; Microeconomics II</p>
+<h1>Production, Costs and Perfect Competition</h1>
+<p class="lede">The firm's problem: production functions, the cost curves that follow from them, the MR = MC rule, and the short-run and long-run equilibrium of a perfectly competitive firm and industry.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Goodwin et al., <i>Principles of Economics in Context</i>, Ch. 16 (Production Costs), Ch. 17 (Markets Without Power), Ch. 18 (Markets with Market Power, for the next chapter).</li>
+<li>CORE <i>The Economy: South Asia</i>, &sect;7.1 (economies of scale), &sect;7.5 (MR and MC), &sect;7.8 (costs and output); Unit 8 (price-taking firms and competitive markets).</li>
+</ul></div>
+
+<h2>The firm's problem</h2>
+<p>Traditional microeconomics assumes the firm's objective is <b>profit maximisation</b>. To understand how output is chosen we need two building blocks:</p>
+<div class="box key"><span class="box-h">Key ideas: the two pillars</span>
+<ul>
+<li><span class="term">Production function</span> \(Q = f(L, K)\): the <b>maximum</b> output obtainable from each combination of inputs, given technology. It is a technical relationship.</li>
+<li><span class="term">Cost function</span> \(C(Q)\): the <b>minimum</b> cost of producing each output level, given input prices. It is derived from the production function plus input prices.</li>
+<li>Profit: \(\pi(Q) = TR(Q) - TC(Q)\).</li>
+</ul></div>
+
+<h2>Concepts of cost</h2>
+<ul>
+<li><b>Fixed costs (FC)</b> do not vary with output in the short run: rent, machinery, insurance. <b>Sunk costs</b> are fixed costs that cannot be recovered even by shutting down, so they should not affect current decisions (Goodwin Box 17.2).</li>
+<li><b>Variable costs (VC)</b> rise with output: raw materials, hourly labour, power.</li>
+<li><b>Short run vs long run.</b> In the short run at least one input (usually capital, \(\bar K\)) is fixed. The long run is a period long enough that <b>all inputs, and so all costs, are variable</b>. There are no fixed costs in the long run. (These are defined by flexibility, not calendar time.)</li>
+<li><b>Accounting vs economic cost.</b> Accounting costs are explicit money payments. <b>Economic cost</b> adds <b>opportunity costs</b>: the value of the best alternative use of the firm's own scarce inputs, such as the owner's time and capital.</li>
+</ul>
+<div class="box example"><span class="box-h">Worked example: accounting vs economic profit</span>
+<p>A tea stall earns revenue of ₹6,00,000 a year and pays ₹3,50,000 in explicit costs, so accounting profit is ₹2,50,000. The owner could earn ₹2,00,000 as a salaried employee, and the ₹5,00,000 of savings in the business could earn 8% (₹40,000) in a bank. Economic profit = 2,50,000 &minus; 2,00,000 &minus; 40,000 = <b>₹10,000</b>. Zero economic profit means earning exactly <b>normal profit</b>: just enough to keep resources in their current use.</p></div>
+<p>Goodwin et al. also distinguish <b>private</b> costs (paid by the firm) from <b>external</b> costs (pollution borne by others). That distinction drives Chapter 7.</p>
+
+<h2>Production in the short run</h2>
+<p>With capital fixed, output varies only with labour: \(Q = f(L, \bar K)\).</p>
+<ul>
+<li><span class="term">Marginal product</span> \(MP_L = \dfrac{\partial Q}{\partial L}\): the extra output from one more worker.</li>
+<li><span class="term">Average product</span> \(AP_L = \dfrac{Q}{L}\).</li>
+<li><span class="term">Law of diminishing marginal returns</span>: as more of a variable input is added to a fixed input, MP eventually falls. MP can rise at first (specialisation), then fall, and eventually become <b>negative</b> (too many workers crowding a fixed kitchen).</li>
+</ul>
+{{fig:tp_mp_ap|TP = 6L² − 0.4L³. MP = 12L − 1.2L² peaks at L = 5 (the inflection point of TP), cuts AP at its maximum at L = 7.5 (AP = MP = 22.5), and is zero at L = 10, where TP is at its maximum of 200.}}
+<div class="box derivation"><span class="box-h">Derivation: MP cuts AP at the maximum of AP</span>
+<div class="steps">
+<p class="step">\(\dfrac{d\,AP}{dL} = \dfrac{d}{dL}\left(\dfrac{Q}{L}\right) = \dfrac{L\cdot MP - Q}{L^2} = \dfrac{1}{L}\left(MP - AP\right)\).</p>
+<p class="step">So AP is <b>rising when MP &gt; AP</b>, <b>falling when MP &lt; AP</b>, and at a <b>stationary point (maximum) when MP = AP</b>. (Marginal-average logic: if your next exam mark exceeds your average, your average rises.)</p>
+<p class="step">Check: \(AP = 6L - 0.4L^2\) has its maximum where \(6 - 0.8L = 0\), at L = 7.5. There \(AP = 45 - 22.5 = 22.5\) and \(MP = 90 - 67.5 = 22.5\). ✓</p>
+</div></div>
+
+<h2>Returns to scale (the long run)</h2>
+<p><b>Returns to a factor</b> (MP) is a short-run idea: one input varies. <b>Returns to scale</b> is a long-run idea: <i>all</i> inputs vary together. Multiply all inputs by \(\lambda &gt; 1\):</p>
+<div class="tbl-wrap"><table>
+<tr><th>If \(f(\lambda L, \lambda K)\) is&hellip;</th><th>then there are&hellip;</th><th>Typical cause</th></tr>
+<tr><td>\(&gt; \lambda f(L,K)\)</td><td><b>Increasing returns to scale (IRS)</b></td><td>Specialisation, indivisible equipment, spreading design costs, geometry (a pipe twice as wide carries four times as much)</td></tr>
+<tr><td>\(= \lambda f(L,K)\)</td><td><b>Constant returns to scale (CRS)</b></td><td>Replicating a plant</td></tr>
+<tr><td>\(&lt; \lambda f(L,K)\)</td><td><b>Decreasing returns to scale (DRS)</b></td><td>Managerial and coordination problems in very large organisations</td></tr>
+</table></div>
+<div class="box derivation"><span class="box-h">Derivation: returns to scale of a Cobb-Douglas function</span>
+<p>\(Q = AL^aK^b\). Then \(f(\lambda L, \lambda K) = A(\lambda L)^a(\lambda K)^b = \lambda^{a+b}AL^aK^b = \lambda^{a+b}Q\).</p>
+<p>So the function shows IRS if \(a + b &gt; 1\), CRS if \(a + b = 1\) and DRS if \(a + b &lt; 1\). Note that \(Q = L^{0.7}K^{0.7}\) has <b>diminishing returns to each factor</b> (\(MP_L \propto L^{-0.3}\) falls as L rises) <b>and</b> increasing returns to scale (\(0.7 + 0.7 = 1.4\)). The two ideas are independent: do not confuse them.</p></div>
+
+<h2>Cost curves</h2>
+<div class="tbl-wrap"><table>
+<tr><th>Concept</th><th>Formula</th><th>Shape</th></tr>
+<tr><td>Total cost</td><td>\(TC(Q) = FC + VC(Q)\)</td><td>Starts at FC</td></tr>
+<tr><td>Average fixed cost</td><td>\(AFC = FC/Q\)</td><td>Falls continuously (a rectangular hyperbola)</td></tr>
+<tr><td>Average variable cost</td><td>\(AVC = VC/Q\)</td><td>U-shaped</td></tr>
+<tr><td>Average total cost</td><td>\(ATC = TC/Q = AFC + AVC\)</td><td>U-shaped, minimum to the right of min AVC</td></tr>
+<tr><td>Marginal cost</td><td>\(MC = dTC/dQ = dVC/dQ\)</td><td>U-shaped; cuts AVC and ATC at their minima</td></tr>
+</table></div>
+
+<div class="box derivation"><span class="box-h">Derivation: cost curves mirror product curves</span>
+<p>In the short run with one variable input, \(VC = wL\), where \(w\) is the wage.</p>
+<div class="steps">
+<p class="step">\(MC = \dfrac{dVC}{dQ} = w\dfrac{dL}{dQ} = \dfrac{w}{dQ/dL} = \boxed{\dfrac{w}{MP_L}}\).</p>
+<p class="step">\(AVC = \dfrac{wL}{Q} = \boxed{\dfrac{w}{AP_L}}\).</p>
+<p class="step">So when MP is rising, MC is falling; <b>diminishing marginal returns cause rising marginal cost</b>. Max MP corresponds to min MC, and max AP to min AVC. The U-shapes of the cost curves are the product curves turned upside down.</p>
+</div></div>
+
+<div class="box derivation"><span class="box-h">Derivation: MC passes through the minimum of ATC (and of AVC)</span>
+<div class="steps">
+<p class="step">\(\dfrac{d\,ATC}{dQ} = \dfrac{d}{dQ}\left(\dfrac{TC}{Q}\right) = \dfrac{Q\cdot MC - TC}{Q^2} = \dfrac{1}{Q}\left(MC - ATC\right)\).</p>
+<p class="step">ATC falls when MC &lt; ATC, rises when MC &gt; ATC, and is at its minimum where <b>MC = ATC</b>. The identical argument with VC gives MC = AVC at min AVC.</p>
+<p class="step">Since ATC = AVC + AFC and AFC keeps falling, min ATC occurs at a <b>larger output</b> than min AVC.</p>
+</div></div>
+{{fig:cost_curves|Costs for TC = 60 + 12Q − 2Q² + 0.2Q³. MC = 12 − 4Q + 0.6Q². AVC = 12 − 2Q + 0.2Q² has its minimum of 7 at Q = 5, where it equals MC. ATC has its minimum (≈16.2) at Q ≈ 7.6, also where it equals MC.}}
+<div class="box example"><span class="box-h">Worked example: cubic costs</span>
+<p>\(TC = 60 + 12Q - 2Q^2 + 0.2Q^3\): FC = 60, \(VC = 12Q - 2Q^2 + 0.2Q^3\).</p>
+<ul>
+<li>\(MC = 12 - 4Q + 0.6Q^2\). Its minimum is where \(-4 + 1.2Q = 0\): Q = 3.33, MC = 5.33.</li>
+<li>\(AVC = 12 - 2Q + 0.2Q^2\). Its minimum is where \(-2 + 0.4Q = 0\): <b>Q = 5, AVC = 7</b>. Check MC(5) = 12 &minus; 20 + 15 = 7 ✓.</li>
+<li>\(ATC = 60/Q + AVC\). Minimum where \(-60/Q^2 - 2 + 0.4Q = 0\), i.e. \(Q^3 - 5Q^2 - 150 = 0\): <b>Q &asymp; 7.6, ATC &asymp; 16.2</b>.</li>
+</ul></div>
+
+<h3>Costs in the long run and economies of scale</h3>
+<p>In the long run the firm chooses its plant size. The <b>long-run average cost (LRAC)</b> curve is the lower <b>envelope</b> of all the short-run ATC curves: for each output, the lowest average cost over all plant sizes. Its shape reflects returns to scale: falling with IRS (<b>economies of scale</b>), flat with CRS, rising with DRS (<b>diseconomies of scale</b>). The output at which LRAC first reaches its minimum is the <b>minimum efficient scale (MES)</b>.</p>
+{{fig:lrac|A U-shaped LRAC curve. CORE §7.1 stresses that large firms often enjoy cost advantages from economies of scale, which is one reason many markets are dominated by a few big firms.}}
+
+<h2>Profit maximisation: MR = MC</h2>
+<div class="box derivation"><span class="box-h">Derivation: the profit-maximising rule</span>
+<div class="steps">
+<p class="step">\(\pi(Q) = TR(Q) - TC(Q)\).</p>
+<p class="step">First-order condition: \(\dfrac{d\pi}{dQ} = MR(Q) - MC(Q) = 0\) &rArr; \(\boxed{MR = MC}\).</p>
+<p class="step">Second-order condition: \(\dfrac{d^2\pi}{dQ^2} = \dfrac{dMR}{dQ} - \dfrac{dMC}{dQ} &lt; 0\). The MC curve must cut MR <b>from below</b> (MC rising relative to MR).</p>
+<p class="step">Intuition (CORE &sect;7.5): if MR &gt; MC, one more unit adds more to revenue than to cost, so expand. If MR &lt; MC, contract. Profit peaks where they are equal.</p>
+</div>
+<p>What MR looks like depends on <b>market structure</b>: for a price-taker MR = P (this chapter); for a firm facing a downward-sloping demand curve MR &lt; P (Chapter 5).</p></div>
+
+<h2>Perfect competition</h2>
+<div class="box key"><span class="box-h">Conditions of perfect competition (the benchmark market)</span>
+<ol>
+<li><b>Large numbers</b> of buyers and sellers, each too small to affect the price: all are <b>price-takers</b>.</li>
+<li><b>Free entry and exit</b> for producers.</li>
+<li><b>Identical (homogeneous)</b> products.</li>
+<li><b>Perfect and symmetric information</b>: everyone knows prices and quality.</li>
+</ol>
+<p>Agricultural commodity markets and some financial markets come close; Goodwin et al. (&sect;17.2) note that true examples are rare.</p></div>
+<div class="box derivation"><span class="box-h">Derivation: P = AR = MR for a price-taker</span>
+<p>The firm can sell any quantity at the market price \(P\), so it faces a <b>perfectly elastic (horizontal) demand curve</b>. Then \(TR = P\cdot q\), \(AR = TR/q = P\) and \(MR = dTR/dq = P\). The profit-maximising condition becomes
+$$\boxed{\,P = MC(q)\,}\quad\text{on the rising part of MC.}$$</p></div>
+
+<h2>Short-run equilibrium of the competitive firm</h2>
+{{fig:pc_sr|At P = 20 the firm produces q* ≈ 8.3 where P = MC. ATC there is ≈ 16.4, so it earns supernormal (economic) profit of (20 − 16.4) × 8.3 ≈ ₹30: the shaded rectangle.}}
+<p>In the short run the price can be above ATC (<b>supernormal or economic profit</b>), equal to it (normal profit), or below it (losses). Profit per unit is \(P - ATC\), so total profit is \((P - ATC)\times q\).</p>
+
+<h3>Should a loss-making firm keep producing? The shutdown condition</h3>
+<p>This answers the lecture's question: <i>"Will the competitive firm be producing output if its average cost is not covered by the price?"</i></p>
+<div class="box derivation"><span class="box-h">Derivation: shutdown rule</span>
+<div class="steps">
+<p class="step">If the firm <b>shuts down</b> in the short run, it still pays fixed costs: \(\pi_{\text{shut}} = -FC\).</p>
+<p class="step">If it <b>produces</b> q: \(\pi = Pq - VC(q) - FC\).</p>
+<p class="step">Produce if \(Pq - VC - FC \ge -FC\) &hArr; \(Pq \ge VC\) &hArr; \(\boxed{P \ge AVC(q)}\).</p>
+<p class="step">So the firm produces, even at a loss, as long as price covers <b>average variable cost</b>: revenue then pays all variable costs and contributes something toward fixed costs. It shuts down if \(P &lt; \min AVC\).</p>
+</div>
+<p><b>Answer:</b> yes. If \(\min AVC \le P &lt; \min ATC\) the firm makes a loss but <b>keeps producing in the short run</b>, because the loss is smaller than FC. In the long run, when nothing is fixed, it exits unless \(P \ge \min ATC\).</p></div>
+{{fig:pc_shutdown|Shutdown point at min AVC (P = 7) and break-even point at min ATC (P ≈ 16.2). The firm's short-run supply curve is the MC curve above min AVC (highlighted). Between the two points the firm produces at a loss.}}
+<div class="box example"><span class="box-h">Worked example: firm and market supply</span>
+<p>Cubic firm above: supply \(q(P)\) solves \(P = 12 - 4q + 0.6q^2\) on the rising part, for \(P \ge 7\); \(q = 0\) for \(P &lt; 7\).</p>
+<ul>
+<li>P = 20: q &asymp; 8.28, ATC &asymp; 16.4: profit &asymp; +₹30.</li>
+<li>P = 12: \(0.6q^2 - 4q = 0\) &rArr; q = 6.67, AVC = 12 &minus; 13.3 + 8.9 = 7.6 &lt; 12 &lt; ATC = 16.6. Loss = (12 &minus; 16.6)(6.67) &asymp; &minus;₹30.5, which is smaller than FC = 60, so it keeps producing.</li>
+<li>P = 6 &lt; min AVC = 7: shut down; loss = FC = ₹60.</li>
+</ul>
+<p>With 100 identical firms, market supply is \(Q = 100\,q(P)\): the <b>horizontal sum</b> of the firms' MC curves.</p></div>
+
+<h2>Long-run equilibrium</h2>
+<p>In the long run, firms can enter or exit and adjust plant size:</p>
+<ul>
+<li>If existing firms earn <b>supernormal profit</b>, new firms are lured in. Market supply shifts right and price falls.</li>
+<li>If firms make <b>losses</b>, some exit. Supply shifts left and price rises.</li>
+<li>Entry and exit stop when economic profit is zero: \(\boxed{P = MC = \min LRAC}\). Each firm earns only normal profit and produces at minimum efficient scale.</li>
+</ul>
+{{fig:pc_lr|Left: firm with ATC = 100/q + 4 + q. At the short-run price 27 it earns profit; in long-run equilibrium P = min ATC = 24 at q = 10. Right: market demand D is Q = 1000 − 20P. Entry raises the number of firms from 40 (supply S₀) to 52 (supply S₁).}}
+<div class="box derivation"><span class="box-h">Derivation: long-run equilibrium (numbers in the figure)</span>
+<p>Each firm: \(TC = 100 + 4q + q^2\). Market demand: \(Q_d = 1000 - 20P\).</p>
+<div class="steps">
+<p class="step">Costs: \(MC = 4 + 2q\), \(AVC = 4 + q\), \(ATC = 100/q + 4 + q\).</p>
+<p class="step">Firm supply: \(P = 4 + 2q\) &rArr; \(q = (P-4)/2\) for \(P \ge \min AVC = 4\).</p>
+<p class="step"><b>Short run with 40 firms:</b> \(Q_s = 40(P-4)/2 = 20P - 80\). Setting \(1000 - 20P = 20P - 80\) gives P = 27 and Q = 460, so each firm makes q = 11.5. ATC = 100/11.5 + 4 + 11.5 = 24.2, profit = (27 &minus; 24.2)(11.5) &asymp; ₹32 &gt; 0, which attracts entry.</p>
+<p class="step"><b>Long run:</b> P = min ATC. \(\dfrac{dATC}{dq} = -\dfrac{100}{q^2} + 1 = 0\) &rArr; q = 10 and ATC = 10 + 4 + 10 = 24. (Check: MC(10) = 24 = ATC ✓.)</p>
+<p class="step">Market quantity at P = 24: \(Q = 1000 - 480 = 520\). Number of firms: \(n = 520/10 = 52\).</p>
+<p class="step">With identical firms and constant input prices (a <b>constant-cost industry</b>), the <b>long-run industry supply curve is horizontal at P = 24</b>. A demand increase raises the number of firms, not the long-run price.</p>
+</div></div>
+
+<h3>Why perfect competition is the benchmark</h3>
+<ul>
+<li><b>Allocative efficiency:</b> \(P = MC\). The value consumers place on the last unit equals the cost of producing it, so total surplus is maximised (Chapter 7; CORE &sect;8.4).</li>
+<li><b>Productive efficiency:</b> in the long run \(P = \min LRAC\). Output is produced at the lowest possible cost.</li>
+<li>Goodwin et al. (&sect;17.5) add caveats: real markets show <b>path dependence</b> and <b>network externalities</b> (the QWERTY keyboard), and efficiency says nothing about <b>equity</b>.</li>
+</ul>
+
+<h2>Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>\(MC = w/MP_L\), \(AVC = w/AP_L\): diminishing returns cause rising MC.</li>
+<li>MC cuts AVC and ATC at their minima (\(dATC/dQ = (MC - ATC)/Q\)).</li>
+<li>Cobb-Douglas \(AL^aK^b\): RTS determined by \(a+b\).</li>
+<li>Profit max: MR = MC with MC cutting from below. Under perfect competition MR = P, so P = MC.</li>
+<li>Short run: produce if P &ge; min AVC (supply = MC above min AVC). Long run: P = min LRAC, zero economic profit, n = Q/q*.</li>
+</ul></div>
+<details class="q"><summary>For \(TC = 200 + 2q + 0.5q^2\), find MC, AVC, ATC, the shutdown price and the break-even price. If P = 22, find output and profit.</summary><div class="ans"><p>MC = 2 + q; AVC = 2 + 0.5q (min 2 as q &rarr; 0, so the shutdown price is 2); ATC = 200/q + 2 + 0.5q, minimised where 200/q² = 0.5 &rArr; q = 20, ATC = 22. Break-even price = 22. At P = 22: 22 = 2 + q &rArr; q = 20; profit = 22(20) &minus; (200 + 40 + 200) = 0. The firm earns exactly normal profit.</p></div></details>
+<details class="q"><summary>A firm has \(Q = 10L^{0.5}K^{0.5}\). What returns to scale does it show? Does labour show diminishing returns?</summary><div class="ans"><p>0.5 + 0.5 = 1: constant returns to scale. \(MP_L = 5K^{0.5}L^{-0.5}\) falls as L rises: diminishing returns to labour. Both hold at once.</p></div></details>
+<details class="q"><summary>Explain why the long-run competitive price equals minimum average cost. What happens after a permanent rise in demand?</summary><div class="ans"><p>Profits above normal attract entry and losses cause exit; both shift supply until P = min LRAC and economic profit is zero. After a rise in demand: in the short run price rises above min ATC and existing firms profit; entry follows, supply shifts right, and price returns to min LRAC (in a constant-cost industry) with more firms and higher output.</p></div></details>
+<details class="q"><summary>"A firm making losses should shut down immediately." Evaluate.</summary><div class="ans"><p>Wrong in the short run. Fixed costs must be paid whether or not the firm produces. As long as P &ge; AVC, producing covers variable costs and part of the fixed costs, so the loss is smaller than FC. Shut down only if P &lt; min AVC. In the long run, exit if P &lt; min ATC.</p></div></details>

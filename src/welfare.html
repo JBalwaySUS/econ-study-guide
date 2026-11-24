@@ -1,0 +1,426 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Welfare Economics and Market Failure · Economics Study Guide</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css">
+<link rel="stylesheet" href="assets/style.css">
+<script>try{var t=localStorage.getItem('sg-theme');if(t)document.documentElement.setAttribute('data-theme',t);}catch(e){}</script>
+</head>
+<body>
+<header class="topbar">
+  <button class="menu-btn" aria-label="Open chapter menu" onclick="document.body.classList.toggle('nav-open')">&#9776;</button>
+  <a class="brand" href="index.html">Economics Study Guide</a>
+  <div class="top-actions">
+    <a class="pdf-link" href="Economics_Study_Guide_L5-L8_Welfare.pdf" download>PDF</a>
+    <button class="theme-btn" aria-label="Toggle dark mode" onclick="toggleTheme()">&#9680;</button>
+  </div>
+</header>
+<div class="layout">
+<aside class="sidebar"><a class="nav-home" href="index.html">Overview &amp; how to use</a>
+<a class="nav-ch" href="inflation.html"><span class="nav-n">1</span><span><span class="nav-k">Lecture 5</span>Inflation, the Phillips Curve and Monetary Policy</span></a>
+<a class="nav-ch" href="demand-supply.html"><span class="nav-n">2</span><span><span class="nav-k">Lecture 6 &middot; Microeconomics I (part 1)</span>Supply, Demand and Elasticity</span></a>
+<a class="nav-ch" href="consumer.html"><span class="nav-n">3</span><span><span class="nav-k">Lecture 6 &middot; Microeconomics I (part 2)</span>Consumer Choice and Labour Supply</span></a>
+<a class="nav-ch" href="firm.html"><span class="nav-n">4</span><span><span class="nav-k">Lecture 7 &middot; Microeconomics II</span>Production, Costs and Perfect Competition</span></a>
+<a class="nav-ch" href="monopoly.html"><span class="nav-n">5</span><span><span class="nav-k">Lecture 8 &middot; Market structures (part 1)</span>Monopoly and Price Discrimination</span></a>
+<a class="nav-ch" href="oligopoly.html"><span class="nav-n">6</span><span><span class="nav-k">Lecture 8 &middot; Market structures (part 2)</span>Oligopoly and Game Theory</span></a>
+<a class="nav-ch active" href="welfare.html"><span class="nav-n">7</span><span><span class="nav-k">Welfare Economics &middot; Classes 1&ndash;2</span>Welfare Economics and Market Failure</span></a>
+<a class="nav-pdf" href="Economics_Study_Guide_L5-L8_Welfare.pdf" download>&#8595; Download the full PDF</a></aside>
+<main class="content">
+<article class="chapter"><p class="kicker">Welfare Economics &middot; Classes 1&ndash;2</p>
+<h1><span class="chapnum">Chapter 7</span>Welfare Economics and Market Failure</h1>
+<p class="lede">How markets order themselves, what "good" means (surplus, Pareto efficiency, the welfare theorems), and what goes wrong when the theorems' assumptions fail: market power, externalities, public goods and the commons.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Goodwin et al., <i>Principles of Economics in Context</i>, Ch. 6 (Welfare Analysis): consumer and producer surplus, price ceilings and floors, laissez-faire and market failure.</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 5 (&sect;5.2 the Pareto criterion, &sect;5.3 fairness), &sect;8.4 (competitive equilibrium and gains from trade), &sect;8.7 (taxes), and Unit 12 (Markets, efficiency, and public policy: &sect;12.1&ndash;12.3 external effects, &sect;12.5 public goods). Unit 4 &sect;4.6 and &sect;4.14 cover public goods games and climate change.</li>
+</ul></div>
+
+<h2 id="c7-how-markets-order-themselves"><span class="secnum">7.1</span> How markets order themselves</h2>
+<p>Class 1 opened with the campus <b>mess-coupon market</b>: no formal body governs buying and selling, yet coupons change hands at a fairly stable price. The mechanism is the feedback loop from Chapter 2: too high a price leaves unsold coupons, so sellers cut prices; too low a price creates a shortage, so buyers compete and prices rise. The price settles where demand equals supply, with <b>no planner</b>.</p>
+<div class="box key"><span class="box-h">Adam Smith's invisible hand (assumes perfect competition)</span>
+<p>In <i>The Wealth of Nations</i> (1776) Smith argued that individuals pursuing their own interest in competitive markets are "led by an invisible hand" to serve society. Bakers bake for their own gain, not out of kindness, yet we get bread. Prices signal what is scarce, and resources flow to where they are most wanted. Onion farmers want profit and buyers want a fair price; nobody plans for the city, yet Hyderabad has onions.</p>
+<p><b>What it does not claim:</b> that selfishness is always good. The outcome serves society <i>only with competition and sound rules</i>. The First Welfare Theorem makes this precise; Class 2 covers where it fails.</p></div>
+
+<h2 id="c7-consumer-and-producer-surplus"><span class="secnum">7.2</span> Consumer and producer surplus</h2>
+<ul>
+<li><span class="term">Consumer surplus (CS)</span>: what buyers keep. It is the difference between the maximum each buyer is <b>willing to pay</b> (read off the demand curve) and the price actually paid, summed over all buyers. Tathya would pay up to ₹10 for onions; the price is ₹6; Tathya's surplus is ₹4.</li>
+<li><span class="term">Producer surplus (PS)</span>: what sellers keep. It is the price received minus the <b>marginal cost</b> of each unit (read off the supply curve), summed over all units. Jal can grow onions at ₹2 each and sells at ₹6, so Jal's surplus is ₹4.</li>
+<li><span class="term">Total surplus</span> = CS + PS: the total gains from trade, the "size of the pie".</li>
+</ul>
+$$CS = \int_0^{Q^*}\big[P_d(q) - P^*\big]\,dq,\qquad PS = \int_0^{Q^*}\big[P^* - P_s(q)\big]\,dq.$$
+<figure class="figure" id="fig-surplus"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Consumer surplus is the triangle between demand and price; producer surplus the triangle between price and supply. Each equals 8, total surplus 16." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polygon class="sh-cs" points="62.0,76.3 247.6,185.0 62.0,185.0"/>
+<polygon class="sh-ps" points="62.0,293.7 247.6,185.0 62.0,185.0"/>
+<polyline class="guide" points="62.0,185.0 247.6,185.0 247.6,348.0"/>
+<path class="c1" d="M62.0,76.3 L64.9,78.0 L67.8,79.7 L70.7,81.4 L73.6,83.1 L76.5,84.8 L79.4,86.5 L82.3,88.2 L85.2,89.9 L88.1,91.6 L91.0,93.3 L93.9,95.0 L96.8,96.7 L99.7,98.4 L102.6,100.1 L105.5,101.8 L108.4,103.5 L111.3,105.2 L114.2,106.9 L117.1,108.6 L120.0,110.3 L122.9,112.0 L125.8,113.7 L128.7,115.4 L131.6,117.1 L134.5,118.8 L137.4,120.5 L140.3,122.2 L143.2,123.9 L146.1,125.6 L149.0,127.3 L151.9,129.0 L154.8,130.7 L157.7,132.4 L160.6,134.1 L163.5,135.8 L166.4,137.5 L169.3,139.2 L172.2,140.9 L175.1,142.6 L178.0,144.2 L180.9,145.9 L183.8,147.6 L186.7,149.3 L189.6,151.0 L192.5,152.7 L195.4,154.4 L198.3,156.1 L201.2,157.8 L204.1,159.5 L207.0,161.2 L209.9,162.9 L212.8,164.6 L215.7,166.3 L218.6,168.0 L221.5,169.7 L224.4,171.4 L227.3,173.1 L230.2,174.8 L233.1,176.5 L236.0,178.2 L238.9,179.9 L241.8,181.6 L244.7,183.3 L247.6,185.0 L250.5,186.7 L253.4,188.4 L256.3,190.1 L259.2,191.8 L262.1,193.5 L265.0,195.2 L267.9,196.9 L270.8,198.6 L273.7,200.3 L276.6,202.0 L279.5,203.7 L282.4,205.4 L285.3,207.1 L288.2,208.8 L291.1,210.5 L294.0,212.2 L296.9,213.9 L299.8,215.6 L302.7,217.3 L305.6,219.0 L308.5,220.7 L311.4,222.4 L314.3,224.1 L317.2,225.8 L320.1,227.4 L323.0,229.1 L325.9,230.8 L328.8,232.5 L331.7,234.2 L334.6,235.9 L337.5,237.6 L340.4,239.3 L343.3,241.0 L346.2,242.7 L349.1,244.4 L352.0,246.1 L354.9,247.8 L357.8,249.5 L360.7,251.2 L363.6,252.9 L366.5,254.6 L369.4,256.3 L372.3,258.0 L375.2,259.7 L378.1,261.4 L381.0,263.1 L383.9,264.8 L386.8,266.5 L389.7,268.2 L392.6,269.9 L395.5,271.6 L398.4,273.3 L401.3,275.0 L404.2,276.7 L407.1,278.4 L410.0,280.1 L412.9,281.8 L415.8,283.5 L418.7,285.2 L421.6,286.9 L424.5,288.6 L427.4,290.3 L430.3,292.0 L433.2,293.7 L436.1,295.4 L439.0,297.1 L441.9,298.8 L444.8,300.5 L447.7,302.2 L450.6,303.9 L453.5,305.6 L456.4,307.2 L459.3,308.9 L462.2,310.6 L465.1,312.3 L468.0,314.0 L470.9,315.7 L473.8,317.4 L476.7,319.1 L479.6,320.8 L482.5,322.5 L485.4,324.2 L488.3,325.9 L491.2,327.6 L494.1,329.3 L497.0,331.0 L499.9,332.7 L502.8,334.4 L505.7,336.1 L508.6,337.8 L511.5,339.5 L514.4,341.2 L517.3,342.9 L520.2,344.6 L523.1,346.3 L526.0,348.0"/>
+<path class="c2" d="M62.0,293.7 L64.9,292.0 L67.8,290.3 L70.7,288.6 L73.6,286.9 L76.5,285.2 L79.4,283.5 L82.3,281.8 L85.2,280.1 L88.1,278.4 L91.0,276.7 L93.9,275.0 L96.8,273.3 L99.7,271.6 L102.6,269.9 L105.5,268.2 L108.4,266.5 L111.3,264.8 L114.2,263.1 L117.1,261.4 L120.0,259.7 L122.9,258.0 L125.8,256.3 L128.7,254.6 L131.6,252.9 L134.5,251.2 L137.4,249.5 L140.3,247.8 L143.2,246.1 L146.1,244.4 L149.0,242.7 L151.9,241.0 L154.8,239.3 L157.7,237.6 L160.6,235.9 L163.5,234.2 L166.4,232.5 L169.3,230.8 L172.2,229.1 L175.1,227.4 L178.0,225.8 L180.9,224.1 L183.8,222.4 L186.7,220.7 L189.6,219.0 L192.5,217.3 L195.4,215.6 L198.3,213.9 L201.2,212.2 L204.1,210.5 L207.0,208.8 L209.9,207.1 L212.8,205.4 L215.7,203.7 L218.6,202.0 L221.5,200.3 L224.4,198.6 L227.3,196.9 L230.2,195.2 L233.1,193.5 L236.0,191.8 L238.9,190.1 L241.8,188.4 L244.7,186.7 L247.6,185.0 L250.5,183.3 L253.4,181.6 L256.3,179.9 L259.2,178.2 L262.1,176.5 L265.0,174.8 L267.9,173.1 L270.8,171.4 L273.7,169.7 L276.6,168.0 L279.5,166.3 L282.4,164.6 L285.3,162.9 L288.2,161.2 L291.1,159.5 L294.0,157.8 L296.9,156.1 L299.8,154.4 L302.7,152.7 L305.6,151.0 L308.5,149.3 L311.4,147.6 L314.3,145.9 L317.2,144.2 L320.1,142.6 L323.0,140.9 L325.9,139.2 L328.8,137.5 L331.7,135.8 L334.6,134.1 L337.5,132.4 L340.4,130.7 L343.3,129.0 L346.2,127.3 L349.1,125.6 L352.0,123.9 L354.9,122.2 L357.8,120.5 L360.7,118.8 L363.6,117.1 L366.5,115.4 L369.4,113.7 L372.3,112.0 L375.2,110.3 L378.1,108.6 L381.0,106.9 L383.9,105.2 L386.8,103.5 L389.7,101.8 L392.6,100.1 L395.5,98.4 L398.4,96.7 L401.3,95.0 L404.2,93.3 L407.1,91.6 L410.0,89.9 L412.9,88.2 L415.8,86.5 L418.7,84.8 L421.6,83.1 L424.5,81.4 L427.4,79.7 L430.3,78.0 L433.2,76.3 L436.1,74.6 L439.0,72.9 L441.9,71.2 L444.8,69.5 L447.7,67.8 L450.6,66.1 L453.5,64.4 L456.4,62.8 L459.3,61.1 L462.2,59.4 L465.1,57.7 L468.0,56.0 L470.9,54.3 L473.8,52.6 L476.7,50.9 L479.6,49.2 L482.5,47.5 L485.4,45.8 L488.3,44.1 L491.2,42.4 L494.1,40.7 L497.0,39.0 L499.9,37.3 L502.8,35.6 L505.7,33.9 L508.6,32.2 L511.5,30.5 L514.4,28.8 L517.3,27.1 L520.2,25.4 L523.1,23.7 L526.0,22.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="247.6" y="365.0" text-anchor="middle">4</text>
+<text class="tick" x="55.0" y="189.0" text-anchor="end">6</text>
+<text class="tick" x="55.0" y="80.3" text-anchor="end">10</text>
+<text class="tick" x="55.0" y="297.7" text-anchor="end">2</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Quantity, Q</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Price, P</text>
+<circle class="pt" cx="247.6" cy="185.0" r="4"/>
+<text class="lbl small" x="127.0" y="151.0" text-anchor="middle">CS = 8</text>
+<text class="lbl small" x="127.0" y="224.3" text-anchor="middle">PS = 8</text>
+<text class="lbl c1-t" x="457.8" y="296.5" text-anchor="start">Demand (MB)</text>
+<text class="lbl c2-t" x="464.3" y="46.6" text-anchor="end">Supply (MC)</text>
+<text class="lbl strong" x="255.6" y="183.0" text-anchor="start">E</text>
+</svg><figcaption><b>Figure 7.1.</b> Course example: demand P = 10 − Q, supply P = 2 + Q, equilibrium Q = 4, P = 6. CS = ½ × 4 × (10 − 6) = 8; PS = ½ × 4 × (6 − 2) = 8; total surplus = 16.</figcaption></figure>
+<div class="box derivation"><span class="box-h">Derivation: competitive equilibrium maximises total surplus</span>
+<div class="steps">
+<p class="step">If quantity \(Q\) is traded, the total surplus is the area between demand (marginal benefit) and supply (marginal cost): \(TS(Q) = \int_0^{Q}\big[P_d(q) - P_s(q)\big]dq\). The price only splits this between buyers and sellers; it cancels in the total.</p>
+<p class="step">Maximise: \(\dfrac{dTS}{dQ} = P_d(Q) - P_s(Q) = 0\) &rArr; \(P_d(Q) = P_s(Q)\): exactly the competitive equilibrium quantity.</p>
+<p class="step">For \(Q &lt; Q^*\), \(P_d &gt; P_s\): some trades that would benefit both sides do not happen. For \(Q &gt; Q^*\), \(P_d &lt; P_s\): units cost more to make than they are worth to buyers.</p>
+<p class="step">So at equilibrium <b>every trade where a buyer values the good more than it costs to produce actually happens</b> (CORE &sect;8.4). Anything that blocks trade shrinks the pie.</p>
+</div></div>
+
+<h2 id="c7-taxes-and-deadweight-loss"><span class="secnum">7.3</span> Taxes and deadweight loss</h2>
+<figure class="figure" id="fig-tax"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="A tax of 2 per unit: buyers pay 7, sellers keep 5, quantity falls from 4 to 3; deadweight loss 1." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polygon class="sh-cs" points="62.0,76.3 201.2,157.8 62.0,157.8"/>
+<polygon class="sh-tax" points="62.0,157.8 201.2,157.8 201.2,212.2 62.0,212.2"/>
+<polygon class="sh-ps" points="62.0,293.7 201.2,212.2 62.0,212.2"/>
+<polygon class="sh-dwl" points="201.2,157.8 247.6,185.0 201.2,212.2"/>
+<polyline class="guide" points="62.0,157.8 201.2,157.8 201.2,348.0"/>
+<path class="c1" d="M62.0,76.3 L64.9,78.0 L67.8,79.7 L70.7,81.4 L73.6,83.1 L76.5,84.8 L79.4,86.5 L82.3,88.2 L85.2,89.9 L88.1,91.6 L91.0,93.3 L93.9,95.0 L96.8,96.7 L99.7,98.4 L102.6,100.1 L105.5,101.8 L108.4,103.5 L111.3,105.2 L114.2,106.9 L117.1,108.6 L120.0,110.3 L122.9,112.0 L125.8,113.7 L128.7,115.4 L131.6,117.1 L134.5,118.8 L137.4,120.5 L140.3,122.2 L143.2,123.9 L146.1,125.6 L149.0,127.3 L151.9,129.0 L154.8,130.7 L157.7,132.4 L160.6,134.1 L163.5,135.8 L166.4,137.5 L169.3,139.2 L172.2,140.9 L175.1,142.6 L178.0,144.2 L180.9,145.9 L183.8,147.6 L186.7,149.3 L189.6,151.0 L192.5,152.7 L195.4,154.4 L198.3,156.1 L201.2,157.8 L204.1,159.5 L207.0,161.2 L209.9,162.9 L212.8,164.6 L215.7,166.3 L218.6,168.0 L221.5,169.7 L224.4,171.4 L227.3,173.1 L230.2,174.8 L233.1,176.5 L236.0,178.2 L238.9,179.9 L241.8,181.6 L244.7,183.3 L247.6,185.0 L250.5,186.7 L253.4,188.4 L256.3,190.1 L259.2,191.8 L262.1,193.5 L265.0,195.2 L267.9,196.9 L270.8,198.6 L273.7,200.3 L276.6,202.0 L279.5,203.7 L282.4,205.4 L285.3,207.1 L288.2,208.8 L291.1,210.5 L294.0,212.2 L296.9,213.9 L299.8,215.6 L302.7,217.3 L305.6,219.0 L308.5,220.7 L311.4,222.4 L314.3,224.1 L317.2,225.8 L320.1,227.4 L323.0,229.1 L325.9,230.8 L328.8,232.5 L331.7,234.2 L334.6,235.9 L337.5,237.6 L340.4,239.3 L343.3,241.0 L346.2,242.7 L349.1,244.4 L352.0,246.1 L354.9,247.8 L357.8,249.5 L360.7,251.2 L363.6,252.9 L366.5,254.6 L369.4,256.3 L372.3,258.0 L375.2,259.7 L378.1,261.4 L381.0,263.1 L383.9,264.8 L386.8,266.5 L389.7,268.2 L392.6,269.9 L395.5,271.6 L398.4,273.3 L401.3,275.0 L404.2,276.7 L407.1,278.4 L410.0,280.1 L412.9,281.8 L415.8,283.5 L418.7,285.2 L421.6,286.9 L424.5,288.6 L427.4,290.3 L430.3,292.0 L433.2,293.7 L436.1,295.4 L439.0,297.1 L441.9,298.8 L444.8,300.5 L447.7,302.2 L450.6,303.9 L453.5,305.6 L456.4,307.2 L459.3,308.9 L462.2,310.6 L465.1,312.3 L468.0,314.0 L470.9,315.7 L473.8,317.4 L476.7,319.1 L479.6,320.8 L482.5,322.5 L485.4,324.2 L488.3,325.9 L491.2,327.6 L494.1,329.3 L497.0,331.0 L499.9,332.7 L502.8,334.4 L505.7,336.1 L508.6,337.8 L511.5,339.5 L514.4,341.2 L517.3,342.9 L520.2,344.6 L523.1,346.3 L526.0,348.0"/>
+<path class="c2" d="M62.0,293.7 L64.9,292.0 L67.8,290.3 L70.7,288.6 L73.6,286.9 L76.5,285.2 L79.4,283.5 L82.3,281.8 L85.2,280.1 L88.1,278.4 L91.0,276.7 L93.9,275.0 L96.8,273.3 L99.7,271.6 L102.6,269.9 L105.5,268.2 L108.4,266.5 L111.3,264.8 L114.2,263.1 L117.1,261.4 L120.0,259.7 L122.9,258.0 L125.8,256.3 L128.7,254.6 L131.6,252.9 L134.5,251.2 L137.4,249.5 L140.3,247.8 L143.2,246.1 L146.1,244.4 L149.0,242.7 L151.9,241.0 L154.8,239.3 L157.7,237.6 L160.6,235.9 L163.5,234.2 L166.4,232.5 L169.3,230.8 L172.2,229.1 L175.1,227.4 L178.0,225.8 L180.9,224.1 L183.8,222.4 L186.7,220.7 L189.6,219.0 L192.5,217.3 L195.4,215.6 L198.3,213.9 L201.2,212.2 L204.1,210.5 L207.0,208.8 L209.9,207.1 L212.8,205.4 L215.7,203.7 L218.6,202.0 L221.5,200.3 L224.4,198.6 L227.3,196.9 L230.2,195.2 L233.1,193.5 L236.0,191.8 L238.9,190.1 L241.8,188.4 L244.7,186.7 L247.6,185.0 L250.5,183.3 L253.4,181.6 L256.3,179.9 L259.2,178.2 L262.1,176.5 L265.0,174.8 L267.9,173.1 L270.8,171.4 L273.7,169.7 L276.6,168.0 L279.5,166.3 L282.4,164.6 L285.3,162.9 L288.2,161.2 L291.1,159.5 L294.0,157.8 L296.9,156.1 L299.8,154.4 L302.7,152.7 L305.6,151.0 L308.5,149.3 L311.4,147.6 L314.3,145.9 L317.2,144.2 L320.1,142.6 L323.0,140.9 L325.9,139.2 L328.8,137.5 L331.7,135.8 L334.6,134.1 L337.5,132.4 L340.4,130.7 L343.3,129.0 L346.2,127.3 L349.1,125.6 L352.0,123.9 L354.9,122.2 L357.8,120.5 L360.7,118.8 L363.6,117.1 L366.5,115.4 L369.4,113.7 L372.3,112.0 L375.2,110.3 L378.1,108.6 L381.0,106.9 L383.9,105.2 L386.8,103.5 L389.7,101.8 L392.6,100.1 L395.5,98.4 L398.4,96.7 L401.3,95.0 L404.2,93.3 L407.1,91.6 L410.0,89.9 L412.9,88.2 L415.8,86.5 L418.7,84.8 L421.6,83.1 L424.5,81.4 L427.4,79.7 L430.3,78.0 L433.2,76.3 L436.1,74.6 L439.0,72.9 L441.9,71.2 L444.8,69.5 L447.7,67.8 L450.6,66.1 L453.5,64.4 L456.4,62.8 L459.3,61.1 L462.2,59.4 L465.1,57.7 L468.0,56.0 L470.9,54.3 L473.8,52.6 L476.7,50.9 L479.6,49.2 L482.5,47.5 L485.4,45.8 L488.3,44.1 L491.2,42.4 L494.1,40.7 L497.0,39.0 L499.9,37.3 L502.8,35.6 L505.7,33.9 L508.6,32.2 L511.5,30.5 L514.4,28.8 L517.3,27.1 L520.2,25.4 L523.1,23.7 L526.0,22.0"/>
+<path class="c2 dashed" d="M62.0,239.3 L64.3,238.0 L66.6,236.6 L69.0,235.3 L71.3,233.9 L73.6,232.5 L75.9,231.2 L78.2,229.8 L80.6,228.5 L82.9,227.1 L85.2,225.8 L87.5,224.4 L89.8,223.0 L92.2,221.7 L94.5,220.3 L96.8,219.0 L99.1,217.6 L101.4,216.2 L103.8,214.9 L106.1,213.5 L108.4,212.2 L110.7,210.8 L113.0,209.5 L115.4,208.1 L117.7,206.7 L120.0,205.4 L122.3,204.0 L124.6,202.7 L127.0,201.3 L129.3,199.9 L131.6,198.6 L133.9,197.2 L136.2,195.9 L138.6,194.5 L140.9,193.1 L143.2,191.8 L145.5,190.4 L147.8,189.1 L150.2,187.7 L152.5,186.4 L154.8,185.0 L157.1,183.6 L159.4,182.3 L161.8,180.9 L164.1,179.6 L166.4,178.2 L168.7,176.8 L171.0,175.5 L173.4,174.1 L175.7,172.8 L178.0,171.4 L180.3,170.1 L182.6,168.7 L185.0,167.3 L187.3,166.0 L189.6,164.6 L191.9,163.3 L194.2,161.9 L196.6,160.5 L198.9,159.2 L201.2,157.8 L203.5,156.5 L205.8,155.1 L208.2,153.8 L210.5,152.4 L212.8,151.0 L215.1,149.7 L217.4,148.3 L219.8,147.0 L222.1,145.6 L224.4,144.2 L226.7,142.9 L229.0,141.5 L231.4,140.2 L233.7,138.8 L236.0,137.5 L238.3,136.1 L240.6,134.7 L243.0,133.4 L245.3,132.0 L247.6,130.7 L249.9,129.3 L252.2,128.0 L254.6,126.6 L256.9,125.2 L259.2,123.9 L261.5,122.5 L263.8,121.2 L266.2,119.8 L268.5,118.4 L270.8,117.1 L273.1,115.7 L275.4,114.4 L277.8,113.0 L280.1,111.7 L282.4,110.3 L284.7,108.9 L287.0,107.6 L289.4,106.2 L291.7,104.9 L294.0,103.5 L296.3,102.1 L298.6,100.8 L301.0,99.4 L303.3,98.1 L305.6,96.7 L307.9,95.3 L310.2,94.0 L312.6,92.6 L314.9,91.3 L317.2,89.9 L319.5,88.6 L321.8,87.2 L324.2,85.8 L326.5,84.5 L328.8,83.1 L331.1,81.8 L333.4,80.4 L335.8,79.0 L338.1,77.7 L340.4,76.3 L342.7,75.0 L345.0,73.6 L347.4,72.3 L349.7,70.9 L352.0,69.5 L354.3,68.2 L356.6,66.8 L359.0,65.5 L361.3,64.1 L363.6,62.8 L365.9,61.4 L368.2,60.0 L370.6,58.7 L372.9,57.3 L375.2,56.0 L377.5,54.6 L379.8,53.2 L382.2,51.9 L384.5,50.5 L386.8,49.2 L389.1,47.8 L391.4,46.5 L393.8,45.1 L396.1,43.7 L398.4,42.4 L400.7,41.0 L403.0,39.7 L405.4,38.3 L407.7,36.9 L410.0,35.6 L412.3,34.2 L414.6,32.9 L417.0,31.5 L419.3,30.2 L421.6,28.8 L423.9,27.4 L426.2,26.1 L428.6,24.7 L430.9,23.4 L433.2,22.0"/>
+<line class="guide" x1="62.0" y1="212.2" x2="201.2" y2="212.2"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="201.2" y="365.0" text-anchor="middle">3</text>
+<text class="tick" x="247.6" y="365.0" text-anchor="middle">4</text>
+<text class="tick" x="55.0" y="161.8" text-anchor="end">Pb = 7</text>
+<text class="tick" x="55.0" y="216.2" text-anchor="end">Ps = 5</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Quantity, Q</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Price, P</text>
+<text class="lbl small" x="113.0" y="140.1" text-anchor="middle">CS = 4.5</text>
+<text class="lbl small" x="131.6" y="189.0" text-anchor="middle">tax revenue = 6</text>
+<text class="lbl small" x="113.0" y="240.6" text-anchor="middle">PS = 4.5</text>
+<text class="lbl c1-t" x="457.8" y="296.5" text-anchor="start">Demand (MB)</text>
+<text class="lbl c2-t" x="464.3" y="46.6" text-anchor="end">Supply (MC)</text>
+<text class="lbl c2-t" x="332.4" y="70.3" text-anchor="end">S + tax</text>
+<text class="lbl small strong" x="259.2" y="176.8" text-anchor="start">DWL = 1</text>
+</svg><figcaption><b>Figure 7.2.</b> A ₹2 per-unit tax. Buyers pay 7 (was 6), sellers keep 5 (was 6), and 3 onions are traded (was 4). CS = 4.5, PS = 4.5, tax revenue = 2 × 3 = 6, total = 15. The deadweight loss (red) is 16 − 15 = 1: the trades between 3 and 4 that no longer happen.</figcaption></figure>
+<div class="box derivation"><span class="box-h">Derivation: the deadweight loss of a tax</span>
+<div class="steps">
+<p class="step">With \(Q_d = a - bP_b\) and \(Q_s = c + dP_s\), a tax \(\tau\) drives a wedge \(P_b - P_s = \tau\). From Chapter 2, quantity falls by \(\Delta Q = \dfrac{bd}{b+d}\,\tau\).</p>
+<p class="step">The DWL is a triangle with height \(\tau\) and base \(\Delta Q\):
+$$DWL = \tfrac12\,\tau\,\Delta Q = \tfrac12\cdot\frac{bd}{b+d}\,\tau^2.$$</p>
+<p class="step">Course numbers: \(b = d = 1\), \(\tau = 2\): \(\Delta Q = 1\), DWL = 1. ✓</p>
+<p class="step">Two lessons: (i) DWL rises with the <b>square</b> of the tax, so doubling the tax quadruples the DWL; (ii) DWL is larger when demand and supply are <b>more elastic</b> (larger b, d). Taxing inelastic goods distorts less.</p>
+</div></div>
+<p><b>Onion vs alcohol</b> (class question). For onions the tax is pure inefficiency: lost trades that benefited both sides. For alcohol, the "lost trades" may include consumption that harms others (drunk driving, health costs borne by the public). Then the market quantity was <i>too high</i> to begin with and the tax can <b>raise</b> welfare. That is a Pigouvian tax, covered under externalities below.</p>
+
+<h2 id="c7-price-controls"><span class="secnum">7.4</span> Price controls</h2>
+<h3 id="c7-price-ceiling-cap">Price ceiling (cap)</h3>
+<figure class="figure" id="fig-ceiling"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="A price ceiling of 4 cuts quantity to 2 and creates a shortage of 4 and deadweight loss of 4." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polygon class="sh-cs" points="62.0,76.3 63.5,77.2 65.1,78.1 66.6,79.0 68.2,80.0 69.7,80.9 71.3,81.8 72.8,82.7 74.4,83.6 75.9,84.5 77.5,85.4 79.0,86.3 80.6,87.2 82.1,88.1 83.7,89.0 85.2,89.9 86.7,90.8 88.3,91.7 89.8,92.6 91.4,93.5 92.9,94.4 94.5,95.3 96.0,96.3 97.6,97.2 99.1,98.1 100.7,99.0 102.2,99.9 103.8,100.8 105.3,101.7 106.9,102.6 108.4,103.5 109.9,104.4 111.5,105.3 113.0,106.2 114.6,107.1 116.1,108.0 117.7,108.9 119.2,109.8 120.8,110.7 122.3,111.7 123.9,112.6 125.4,113.5 127.0,114.4 128.5,115.3 130.1,116.2 131.6,117.1 133.1,118.0 134.7,118.9 136.2,119.8 137.8,120.7 139.3,121.6 140.9,122.5 142.4,123.4 144.0,124.3 145.5,125.2 147.1,126.1 148.6,127.0 150.2,128.0 151.7,128.9 153.3,129.8 154.8,130.7 154.8,239.3 153.3,239.3 151.7,239.3 150.2,239.3 148.6,239.3 147.1,239.3 145.5,239.3 144.0,239.3 142.4,239.3 140.9,239.3 139.3,239.3 137.8,239.3 136.2,239.3 134.7,239.3 133.1,239.3 131.6,239.3 130.1,239.3 128.5,239.3 127.0,239.3 125.4,239.3 123.9,239.3 122.3,239.3 120.8,239.3 119.2,239.3 117.7,239.3 116.1,239.3 114.6,239.3 113.0,239.3 111.5,239.3 109.9,239.3 108.4,239.3 106.9,239.3 105.3,239.3 103.8,239.3 102.2,239.3 100.7,239.3 99.1,239.3 97.6,239.3 96.0,239.3 94.5,239.3 92.9,239.3 91.4,239.3 89.8,239.3 88.3,239.3 86.7,239.3 85.2,239.3 83.7,239.3 82.1,239.3 80.6,239.3 79.0,239.3 77.5,239.3 75.9,239.3 74.4,239.3 72.8,239.3 71.3,239.3 69.7,239.3 68.2,239.3 66.6,239.3 65.1,239.3 63.5,239.3 62.0,239.3"/>
+<polygon class="sh-ps" points="62.0,293.7 154.8,239.3 62.0,239.3"/>
+<polygon class="sh-dwl" points="154.8,130.7 247.6,185.0 154.8,239.3"/>
+<polyline class="guide" points="62.0,130.7 154.8,130.7 154.8,348.0"/>
+<path class="c1" d="M62.0,76.3 L64.9,78.0 L67.8,79.7 L70.7,81.4 L73.6,83.1 L76.5,84.8 L79.4,86.5 L82.3,88.2 L85.2,89.9 L88.1,91.6 L91.0,93.3 L93.9,95.0 L96.8,96.7 L99.7,98.4 L102.6,100.1 L105.5,101.8 L108.4,103.5 L111.3,105.2 L114.2,106.9 L117.1,108.6 L120.0,110.3 L122.9,112.0 L125.8,113.7 L128.7,115.4 L131.6,117.1 L134.5,118.8 L137.4,120.5 L140.3,122.2 L143.2,123.9 L146.1,125.6 L149.0,127.3 L151.9,129.0 L154.8,130.7 L157.7,132.4 L160.6,134.1 L163.5,135.8 L166.4,137.5 L169.3,139.2 L172.2,140.9 L175.1,142.6 L178.0,144.2 L180.9,145.9 L183.8,147.6 L186.7,149.3 L189.6,151.0 L192.5,152.7 L195.4,154.4 L198.3,156.1 L201.2,157.8 L204.1,159.5 L207.0,161.2 L209.9,162.9 L212.8,164.6 L215.7,166.3 L218.6,168.0 L221.5,169.7 L224.4,171.4 L227.3,173.1 L230.2,174.8 L233.1,176.5 L236.0,178.2 L238.9,179.9 L241.8,181.6 L244.7,183.3 L247.6,185.0 L250.5,186.7 L253.4,188.4 L256.3,190.1 L259.2,191.8 L262.1,193.5 L265.0,195.2 L267.9,196.9 L270.8,198.6 L273.7,200.3 L276.6,202.0 L279.5,203.7 L282.4,205.4 L285.3,207.1 L288.2,208.8 L291.1,210.5 L294.0,212.2 L296.9,213.9 L299.8,215.6 L302.7,217.3 L305.6,219.0 L308.5,220.7 L311.4,222.4 L314.3,224.1 L317.2,225.8 L320.1,227.4 L323.0,229.1 L325.9,230.8 L328.8,232.5 L331.7,234.2 L334.6,235.9 L337.5,237.6 L340.4,239.3 L343.3,241.0 L346.2,242.7 L349.1,244.4 L352.0,246.1 L354.9,247.8 L357.8,249.5 L360.7,251.2 L363.6,252.9 L366.5,254.6 L369.4,256.3 L372.3,258.0 L375.2,259.7 L378.1,261.4 L381.0,263.1 L383.9,264.8 L386.8,266.5 L389.7,268.2 L392.6,269.9 L395.5,271.6 L398.4,273.3 L401.3,275.0 L404.2,276.7 L407.1,278.4 L410.0,280.1 L412.9,281.8 L415.8,283.5 L418.7,285.2 L421.6,286.9 L424.5,288.6 L427.4,290.3 L430.3,292.0 L433.2,293.7 L436.1,295.4 L439.0,297.1 L441.9,298.8 L444.8,300.5 L447.7,302.2 L450.6,303.9 L453.5,305.6 L456.4,307.2 L459.3,308.9 L462.2,310.6 L465.1,312.3 L468.0,314.0 L470.9,315.7 L473.8,317.4 L476.7,319.1 L479.6,320.8 L482.5,322.5 L485.4,324.2 L488.3,325.9 L491.2,327.6 L494.1,329.3 L497.0,331.0 L499.9,332.7 L502.8,334.4 L505.7,336.1 L508.6,337.8 L511.5,339.5 L514.4,341.2 L517.3,342.9 L520.2,344.6 L523.1,346.3 L526.0,348.0"/>
+<path class="c2" d="M62.0,293.7 L64.9,292.0 L67.8,290.3 L70.7,288.6 L73.6,286.9 L76.5,285.2 L79.4,283.5 L82.3,281.8 L85.2,280.1 L88.1,278.4 L91.0,276.7 L93.9,275.0 L96.8,273.3 L99.7,271.6 L102.6,269.9 L105.5,268.2 L108.4,266.5 L111.3,264.8 L114.2,263.1 L117.1,261.4 L120.0,259.7 L122.9,258.0 L125.8,256.3 L128.7,254.6 L131.6,252.9 L134.5,251.2 L137.4,249.5 L140.3,247.8 L143.2,246.1 L146.1,244.4 L149.0,242.7 L151.9,241.0 L154.8,239.3 L157.7,237.6 L160.6,235.9 L163.5,234.2 L166.4,232.5 L169.3,230.8 L172.2,229.1 L175.1,227.4 L178.0,225.8 L180.9,224.1 L183.8,222.4 L186.7,220.7 L189.6,219.0 L192.5,217.3 L195.4,215.6 L198.3,213.9 L201.2,212.2 L204.1,210.5 L207.0,208.8 L209.9,207.1 L212.8,205.4 L215.7,203.7 L218.6,202.0 L221.5,200.3 L224.4,198.6 L227.3,196.9 L230.2,195.2 L233.1,193.5 L236.0,191.8 L238.9,190.1 L241.8,188.4 L244.7,186.7 L247.6,185.0 L250.5,183.3 L253.4,181.6 L256.3,179.9 L259.2,178.2 L262.1,176.5 L265.0,174.8 L267.9,173.1 L270.8,171.4 L273.7,169.7 L276.6,168.0 L279.5,166.3 L282.4,164.6 L285.3,162.9 L288.2,161.2 L291.1,159.5 L294.0,157.8 L296.9,156.1 L299.8,154.4 L302.7,152.7 L305.6,151.0 L308.5,149.3 L311.4,147.6 L314.3,145.9 L317.2,144.2 L320.1,142.6 L323.0,140.9 L325.9,139.2 L328.8,137.5 L331.7,135.8 L334.6,134.1 L337.5,132.4 L340.4,130.7 L343.3,129.0 L346.2,127.3 L349.1,125.6 L352.0,123.9 L354.9,122.2 L357.8,120.5 L360.7,118.8 L363.6,117.1 L366.5,115.4 L369.4,113.7 L372.3,112.0 L375.2,110.3 L378.1,108.6 L381.0,106.9 L383.9,105.2 L386.8,103.5 L389.7,101.8 L392.6,100.1 L395.5,98.4 L398.4,96.7 L401.3,95.0 L404.2,93.3 L407.1,91.6 L410.0,89.9 L412.9,88.2 L415.8,86.5 L418.7,84.8 L421.6,83.1 L424.5,81.4 L427.4,79.7 L430.3,78.0 L433.2,76.3 L436.1,74.6 L439.0,72.9 L441.9,71.2 L444.8,69.5 L447.7,67.8 L450.6,66.1 L453.5,64.4 L456.4,62.8 L459.3,61.1 L462.2,59.4 L465.1,57.7 L468.0,56.0 L470.9,54.3 L473.8,52.6 L476.7,50.9 L479.6,49.2 L482.5,47.5 L485.4,45.8 L488.3,44.1 L491.2,42.4 L494.1,40.7 L497.0,39.0 L499.9,37.3 L502.8,35.6 L505.7,33.9 L508.6,32.2 L511.5,30.5 L514.4,28.8 L517.3,27.1 L520.2,25.4 L523.1,23.7 L526.0,22.0"/>
+<line class="c4" x1="62.0" y1="239.3" x2="526.0" y2="239.3"/>
+<line class="gap" x1="154.8" y1="239.3" x2="340.4" y2="239.3"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="154.8" y="365.0" text-anchor="middle">2</text>
+<text class="tick" x="340.4" y="365.0" text-anchor="middle">6</text>
+<text class="tick" x="55.0" y="134.7" text-anchor="end">8</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Quantity, Q</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Price, P</text>
+<text class="lbl small" x="103.8" y="183.6" text-anchor="middle">CS = 10</text>
+<text class="lbl small" x="94.5" y="259.6" text-anchor="middle">PS = 2</text>
+<text class="lbl small" x="187.3" y="189.0" text-anchor="middle">DWL = 4</text>
+<text class="lbl c1-t" x="457.8" y="296.5" text-anchor="start">Demand (MB)</text>
+<text class="lbl c2-t" x="464.3" y="46.6" text-anchor="end">Supply (MC)</text>
+<text class="lbl c4-t" x="516.7" y="233.3" text-anchor="end">price cap = 4</text>
+<text class="lbl small" x="247.6" y="257.3" text-anchor="middle">shortage = 4</text>
+</svg><figcaption><b>Figure 7.3.</b> A price cap of 4 (below equilibrium). Sellers supply only 2 while buyers want 6: a shortage of 4. CS = 10 (if the 2 units go to the highest-value buyers), PS = 2, total = 12 (was 16), so DWL = 4, four times the DWL of the ₹2 tax.</figcaption></figure>
+<div class="box derivation"><span class="box-h">Derivation: welfare under the cap</span>
+<div class="steps">
+<p class="step">At P = 4: \(Q_s = 4 - 2 = 2\) and \(Q_d = 10 - 4 = 6\). Trade is limited by the short side: Q = 2.</p>
+<p class="step">PS = \(\tfrac12(4 - 2)(2) = 2\).</p>
+<p class="step">CS (best case, units go to those who value them most) = area between demand and 4 for Q from 0 to 2 = \(\tfrac{(10-4) + (8-4)}{2}\times 2 = 10\).</p>
+<p class="step">Total = 12, so DWL = 16 &minus; 12 = 4: the triangle between demand and supply from Q = 2 to 4, \(\tfrac12(8-4)(4-2) = 4\).</p>
+</div>
+<p><b>Who gets the 2 onions?</b> With a shortage the price no longer rations, so something else does: <b>queues, contacts, black markets</b>, or a ration card system. If the good goes to people with lower willingness to pay, CS is even lower and the DWL larger. The class point: the cap aims to help buyers, but it can make them worse off overall.</p></div>
+<h3 id="c7-price-floor">Price floor</h3>
+<p>A price floor above equilibrium (minimum wage, minimum support prices) creates a <b>surplus</b>: \(Q_s &gt; Q_d\).</p>
+<div class="box india"><span class="box-h">India focus: minimum support prices (MSP)</span>
+<p>Suppose the government guarantees P = 8 in our market. Then \(Q_d = 2\) and \(Q_s = 6\): a surplus of 4 units. If the government does not buy the surplus, only 2 units trade: CS = ½(10&minus;8)(2) = 2, PS = ((8&minus;2)+(8&minus;4))/2 &times; 2 = 10, total = 12, DWL = 4. In India the Food Corporation of India procures much of the surplus wheat and rice at MSP, so farmers sell all 6 units. This supports farm incomes, but it costs the government 8 &times; 4 = 32 and builds large grain stocks, and it encourages over-production of the supported crops (wheat and paddy in Punjab and Haryana, with groundwater depletion: a commons problem, see the commons section). Goodwin Box 6.1 discusses the parallel debate over minimum wages.</p></div>
+
+<h2 id="c7-pareto-efficiency"><span class="secnum">7.5</span> Pareto efficiency</h2>
+<div class="box key"><span class="box-h">Definitions (CORE &sect;5.2)</span>
+<ul>
+<li>An allocation is <span class="term">Pareto efficient</span> if <b>no one can be made better off without making someone else worse off</b>.</li>
+<li>A <span class="term">Pareto improvement</span> makes at least one person better off and nobody worse off.</li>
+<li>The set of Pareto-efficient allocations forms the <b>Pareto efficiency curve</b> (frontier).</li>
+</ul></div>
+<figure class="figure" id="fig-ppf_utility"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Utility possibility frontier: points on the frontier are Pareto efficient; points inside can be improved for both." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polygon class="sh-cs" points="210.5,250.2 210.5,73.8 455.7,250.2"/>
+<path class="c1" d="M62.0,54.6 L64.6,54.6 L67.2,54.6 L69.8,54.7 L72.4,54.7 L75.0,54.7 L77.7,54.8 L80.3,54.9 L82.9,55.0 L85.5,55.1 L88.1,55.2 L90.7,55.3 L93.3,55.4 L95.9,55.6 L98.5,55.7 L101.2,55.9 L103.8,56.1 L106.4,56.3 L109.0,56.5 L111.6,56.7 L114.2,56.9 L116.8,57.1 L119.4,57.4 L122.0,57.6 L124.6,57.9 L127.2,58.2 L129.9,58.5 L132.5,58.8 L135.1,59.1 L137.7,59.5 L140.3,59.8 L142.9,60.2 L145.5,60.5 L148.1,60.9 L150.7,61.3 L153.3,61.7 L156.0,62.1 L158.6,62.6 L161.2,63.0 L163.8,63.4 L166.4,63.9 L169.0,64.4 L171.6,64.9 L174.2,65.4 L176.8,65.9 L179.4,66.4 L182.1,67.0 L184.7,67.5 L187.3,68.1 L189.9,68.7 L192.5,69.3 L195.1,69.9 L197.7,70.5 L200.3,71.2 L202.9,71.8 L205.6,72.5 L208.2,73.2 L210.8,73.8 L213.4,74.6 L216.0,75.3 L218.6,76.0 L221.2,76.8 L223.8,77.5 L226.4,78.3 L229.0,79.1 L231.6,79.9 L234.3,80.7 L236.9,81.6 L239.5,82.4 L242.1,83.3 L244.7,84.2 L247.3,85.1 L249.9,86.0 L252.5,86.9 L255.1,87.9 L257.8,88.8 L260.4,89.8 L263.0,90.8 L265.6,91.8 L268.2,92.9 L270.8,93.9 L273.4,95.0 L276.0,96.1 L278.6,97.2 L281.2,98.3 L283.9,99.4 L286.5,100.6 L289.1,101.8 L291.7,103.0 L294.3,104.2 L296.9,105.4 L299.5,106.7 L302.1,108.0 L304.7,109.3 L307.3,110.6 L310.0,111.9 L312.6,113.3 L315.2,114.7 L317.8,116.1 L320.4,117.5 L323.0,119.0 L325.6,120.4 L328.2,121.9 L330.8,123.5 L333.4,125.0 L336.0,126.6 L338.7,128.2 L341.3,129.9 L343.9,131.5 L346.5,133.2 L349.1,134.9 L351.7,136.7 L354.3,138.5 L356.9,140.3 L359.5,142.1 L362.1,144.0 L364.8,145.9 L367.4,147.9 L370.0,149.9 L372.6,151.9 L375.2,153.9 L377.8,156.0 L380.4,158.2 L383.0,160.4 L385.6,162.6 L388.2,164.9 L390.9,167.2 L393.5,169.5 L396.1,172.0 L398.7,174.4 L401.3,177.0 L403.9,179.5 L406.5,182.2 L409.1,184.9 L411.7,187.7 L414.4,190.5 L417.0,193.4 L419.6,196.4 L422.2,199.5 L424.8,202.7 L427.4,206.0 L430.0,209.3 L432.6,212.8 L435.2,216.4 L437.8,220.1 L440.5,224.0 L443.1,228.0 L445.7,232.2 L448.3,236.5 L450.9,241.1 L453.5,245.9 L456.1,251.0 L458.7,256.4 L461.3,262.2 L463.9,268.4 L466.5,275.2 L469.2,282.8 L471.8,291.5 L474.4,301.8 L477.0,315.2 L479.6,348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Person 1&#x27;s well-being</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Person 2&#x27;s well-being</text>
+<circle class="pt" cx="210.5" cy="250.2" r="4"/>
+<circle class="pt" cx="479.6" cy="348.0" r="4"/>
+<circle class="pt" cx="357.1" cy="140.7" r="4"/>
+<text class="lbl small" x="275.4" y="182.5" text-anchor="middle">Pareto improvements</text>
+<text class="lbl c1-t" x="108.4" y="46.4" text-anchor="start">Pareto frontier (efficient)</text>
+<text class="lbl strong" x="218.5" y="256.2" text-anchor="start">Z (inefficient)</text>
+<text class="lbl strong" x="475.6" y="338.0" text-anchor="end">one person has all</text>
+<text class="lbl strong" x="367.1" y="140.7" text-anchor="start">equal split</text>
+</svg><figcaption><b>Figure 7.4.</b> Points on the frontier are Pareto efficient: helping one person hurts the other. From an inefficient point like Z both can gain "for free" (the shaded set of Pareto improvements). "One person has everything" is also on the frontier, so it is efficient but hardly fair.</figcaption></figure>
+<p><b>Coupon example:</b> the seller values a coupon at ₹20 and the buyer at ₹40. Before trade both could gain, so the situation is not efficient. After a trade at ₹30 (seller gains 10, buyer gains 10) no free gain remains. Any price between 20 and 40 would be efficient; the price only decides the <b>split</b>.</p>
+<div class="box exam"><span class="box-h">Efficient is not the same as fair</span>
+<p>Efficiency says nothing about who gets what. Choosing among points on the frontier is a question of <b>equity</b>, which markets do not settle; society has to (CORE &sect;5.3). This is the same idea as a <b>Pareto front</b> in multi-objective optimisation.</p></div>
+
+<h2 id="c7-the-welfare-theorems"><span class="secnum">7.6</span> The welfare theorems</h2>
+<div class="box key"><span class="box-h">First Fundamental Theorem of Welfare Economics</span>
+<p>Under these assumptions, <b>every competitive equilibrium is Pareto efficient</b>:</p>
+<ol>
+<li><b>Perfect competition</b>: many buyers and sellers; no one can set the price. (If this fails: <i>market power</i>.)</li>
+<li><b>No externalities</b>: every cost and benefit falls on the people trading. (If this fails: <i>externalities</i>.)</li>
+<li><b>Full information</b>: both sides know the price and the quality of what they trade. (If this fails: <i>information asymmetry</i>, e.g. used cars and "lemons", CORE &sect;12.6.)</li>
+<li><b>Private goods with clear property rights</b>: goods are rival, excludable and can be owned and traded. (If this fails: <i>public goods and commons</i>.)</li>
+</ol>
+<p>The mess-coupon market satisfies all four: many students on WhatsApp, no spillovers, everyone knows what a coupon is. Every trade that helps both sides happens.</p></div>
+<div class="box key"><span class="box-h">Second Fundamental Theorem</span>
+<p>Under similar (plus convexity) assumptions, <b>any Pareto-efficient allocation can be achieved as a competitive equilibrium after a suitable lump-sum redistribution of initial endowments</b>. In short: <i>redistribute first, then let markets work.</i> The theorems separate efficiency (left to markets) from equity (a social choice). In practice lump-sum transfers are hard to design: real taxes create DWLs, so there is often an efficiency&ndash;equity trade-off.</p></div>
+<h3 id="c7-positive-vs-normative-economics">Positive vs normative economics</h3>
+<div class="tbl-wrap"><table>
+<tr><th>Positive</th><th>Normative</th></tr>
+<tr><td>What is, or what will be. Can be tested against evidence.<br><i>"A 10% rise in the minimum wage reduces teenage employment by 2%."</i></td><td>What ought to be. Rests on value judgements.<br><i>"The minimum wage should be raised to reduce poverty."</i></td></tr>
+</table></div>
+<p>Welfare economics is <b>normative</b>: "better" needs a value criterion. Even "efficient" assumes that people's own preferences are what count.</p>
+
+<h2 id="c7-market-failure-externalities"><span class="secnum">7.7</span> Market failure: externalities</h2>
+<p>An <span class="term">externality</span> is a cost or benefit that falls on people who are <b>not part of the transaction</b>. Decision-makers count only their own costs and benefits, so <b>the market makes too much of what harms others and too little of what helps them</b>.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Negative externality</th><th>Positive externality</th></tr>
+<tr><td>A factory dumps sludge in a lake; fishermen's catch falls and the factory pays nothing. Also: pollution, congestion, loud neighbours, stubble burning in Punjab affecting Delhi's air.</td><td>You get vaccinated; others are protected too and you are not paid for that benefit. Also: education, a beautiful garden, R&amp;D spillovers.</td></tr>
+</table></div>
+<div class="box derivation"><span class="box-h">Derivation: the externality wedge</span>
+<div class="steps">
+<p class="step">Private producers supply where price = <b>marginal private cost (MPC)</b>. Society's cost includes the <b>marginal external cost (MEC)</b>: \(MSC = MPC + MEC\).</p>
+<p class="step">Market outcome: \(MPB = MPC\). Social optimum: \(MSB = MSC\).</p>
+<p class="step">Course numbers: \(MPB = MSB = 10 - Q\), \(MPC = 2 + Q\), MEC = 2 &rArr; \(MSC = 4 + Q\).
+Market: \(10 - Q = 2 + Q\) &rArr; \(Q_m = 4\), P = 6. Optimum: \(10 - Q = 4 + Q\) &rArr; \(Q^* = 3\), P = 7.</p>
+<p class="step">The 4th unit costs society \(MSC(4) = 8\) but is worth only \(MSB(4) = 6\). The DWL is the triangle \(\tfrac12(8 - 6)(4 - 3) = 1\).</p>
+</div></div>
+<figure class="figure" id="fig-externality"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Negative externality: market output 4 exceeds socially optimal output 3 where marginal social cost equals marginal benefit." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polygon class="sh-dwl" points="201.2,157.8 247.6,130.7 247.6,185.0"/>
+<polyline class="guide" points="62.0,185.0 247.6,185.0 247.6,348.0"/>
+<polyline class="guide" points="62.0,157.8 201.2,157.8 201.2,348.0"/>
+<path class="c1" d="M62.0,76.3 L64.9,78.0 L67.8,79.7 L70.7,81.4 L73.6,83.1 L76.5,84.8 L79.4,86.5 L82.3,88.2 L85.2,89.9 L88.1,91.6 L91.0,93.3 L93.9,95.0 L96.8,96.7 L99.7,98.4 L102.6,100.1 L105.5,101.8 L108.4,103.5 L111.3,105.2 L114.2,106.9 L117.1,108.6 L120.0,110.3 L122.9,112.0 L125.8,113.7 L128.7,115.4 L131.6,117.1 L134.5,118.8 L137.4,120.5 L140.3,122.2 L143.2,123.9 L146.1,125.6 L149.0,127.3 L151.9,129.0 L154.8,130.7 L157.7,132.4 L160.6,134.1 L163.5,135.8 L166.4,137.5 L169.3,139.2 L172.2,140.9 L175.1,142.6 L178.0,144.2 L180.9,145.9 L183.8,147.6 L186.7,149.3 L189.6,151.0 L192.5,152.7 L195.4,154.4 L198.3,156.1 L201.2,157.8 L204.1,159.5 L207.0,161.2 L209.9,162.9 L212.8,164.6 L215.7,166.3 L218.6,168.0 L221.5,169.7 L224.4,171.4 L227.3,173.1 L230.2,174.8 L233.1,176.5 L236.0,178.2 L238.9,179.9 L241.8,181.6 L244.7,183.3 L247.6,185.0 L250.5,186.7 L253.4,188.4 L256.3,190.1 L259.2,191.8 L262.1,193.5 L265.0,195.2 L267.9,196.9 L270.8,198.6 L273.7,200.3 L276.6,202.0 L279.5,203.7 L282.4,205.4 L285.3,207.1 L288.2,208.8 L291.1,210.5 L294.0,212.2 L296.9,213.9 L299.8,215.6 L302.7,217.3 L305.6,219.0 L308.5,220.7 L311.4,222.4 L314.3,224.1 L317.2,225.8 L320.1,227.4 L323.0,229.1 L325.9,230.8 L328.8,232.5 L331.7,234.2 L334.6,235.9 L337.5,237.6 L340.4,239.3 L343.3,241.0 L346.2,242.7 L349.1,244.4 L352.0,246.1 L354.9,247.8 L357.8,249.5 L360.7,251.2 L363.6,252.9 L366.5,254.6 L369.4,256.3 L372.3,258.0 L375.2,259.7 L378.1,261.4 L381.0,263.1 L383.9,264.8 L386.8,266.5 L389.7,268.2 L392.6,269.9 L395.5,271.6 L398.4,273.3 L401.3,275.0 L404.2,276.7 L407.1,278.4 L410.0,280.1 L412.9,281.8 L415.8,283.5 L418.7,285.2 L421.6,286.9 L424.5,288.6 L427.4,290.3 L430.3,292.0 L433.2,293.7 L436.1,295.4 L439.0,297.1 L441.9,298.8 L444.8,300.5 L447.7,302.2 L450.6,303.9 L453.5,305.6 L456.4,307.2 L459.3,308.9 L462.2,310.6 L465.1,312.3 L468.0,314.0 L470.9,315.7 L473.8,317.4 L476.7,319.1 L479.6,320.8 L482.5,322.5 L485.4,324.2 L488.3,325.9 L491.2,327.6 L494.1,329.3 L497.0,331.0 L499.9,332.7 L502.8,334.4 L505.7,336.1 L508.6,337.8 L511.5,339.5 L514.4,341.2 L517.3,342.9 L520.2,344.6 L523.1,346.3 L526.0,348.0"/>
+<path class="c2" d="M62.0,293.7 L64.9,292.0 L67.8,290.3 L70.7,288.6 L73.6,286.9 L76.5,285.2 L79.4,283.5 L82.3,281.8 L85.2,280.1 L88.1,278.4 L91.0,276.7 L93.9,275.0 L96.8,273.3 L99.7,271.6 L102.6,269.9 L105.5,268.2 L108.4,266.5 L111.3,264.8 L114.2,263.1 L117.1,261.4 L120.0,259.7 L122.9,258.0 L125.8,256.3 L128.7,254.6 L131.6,252.9 L134.5,251.2 L137.4,249.5 L140.3,247.8 L143.2,246.1 L146.1,244.4 L149.0,242.7 L151.9,241.0 L154.8,239.3 L157.7,237.6 L160.6,235.9 L163.5,234.2 L166.4,232.5 L169.3,230.8 L172.2,229.1 L175.1,227.4 L178.0,225.8 L180.9,224.1 L183.8,222.4 L186.7,220.7 L189.6,219.0 L192.5,217.3 L195.4,215.6 L198.3,213.9 L201.2,212.2 L204.1,210.5 L207.0,208.8 L209.9,207.1 L212.8,205.4 L215.7,203.7 L218.6,202.0 L221.5,200.3 L224.4,198.6 L227.3,196.9 L230.2,195.2 L233.1,193.5 L236.0,191.8 L238.9,190.1 L241.8,188.4 L244.7,186.7 L247.6,185.0 L250.5,183.3 L253.4,181.6 L256.3,179.9 L259.2,178.2 L262.1,176.5 L265.0,174.8 L267.9,173.1 L270.8,171.4 L273.7,169.7 L276.6,168.0 L279.5,166.3 L282.4,164.6 L285.3,162.9 L288.2,161.2 L291.1,159.5 L294.0,157.8 L296.9,156.1 L299.8,154.4 L302.7,152.7 L305.6,151.0 L308.5,149.3 L311.4,147.6 L314.3,145.9 L317.2,144.2 L320.1,142.6 L323.0,140.9 L325.9,139.2 L328.8,137.5 L331.7,135.8 L334.6,134.1 L337.5,132.4 L340.4,130.7 L343.3,129.0 L346.2,127.3 L349.1,125.6 L352.0,123.9 L354.9,122.2 L357.8,120.5 L360.7,118.8 L363.6,117.1 L366.5,115.4 L369.4,113.7 L372.3,112.0 L375.2,110.3 L378.1,108.6 L381.0,106.9 L383.9,105.2 L386.8,103.5 L389.7,101.8 L392.6,100.1 L395.5,98.4 L398.4,96.7 L401.3,95.0 L404.2,93.3 L407.1,91.6 L410.0,89.9 L412.9,88.2 L415.8,86.5 L418.7,84.8 L421.6,83.1 L424.5,81.4 L427.4,79.7 L430.3,78.0 L433.2,76.3 L436.1,74.6 L439.0,72.9 L441.9,71.2 L444.8,69.5 L447.7,67.8 L450.6,66.1 L453.5,64.4 L456.4,62.8 L459.3,61.1 L462.2,59.4 L465.1,57.7 L468.0,56.0 L470.9,54.3 L473.8,52.6 L476.7,50.9 L479.6,49.2 L482.5,47.5 L485.4,45.8 L488.3,44.1 L491.2,42.4 L494.1,40.7 L497.0,39.0 L499.9,37.3 L502.8,35.6 L505.7,33.9 L508.6,32.2 L511.5,30.5 L514.4,28.8 L517.3,27.1 L520.2,25.4 L523.1,23.7 L526.0,22.0"/>
+<path class="c4" d="M62.0,239.3 L64.3,238.0 L66.6,236.6 L69.0,235.3 L71.3,233.9 L73.6,232.5 L75.9,231.2 L78.2,229.8 L80.6,228.5 L82.9,227.1 L85.2,225.8 L87.5,224.4 L89.8,223.0 L92.2,221.7 L94.5,220.3 L96.8,219.0 L99.1,217.6 L101.4,216.2 L103.8,214.9 L106.1,213.5 L108.4,212.2 L110.7,210.8 L113.0,209.5 L115.4,208.1 L117.7,206.7 L120.0,205.4 L122.3,204.0 L124.6,202.7 L127.0,201.3 L129.3,199.9 L131.6,198.6 L133.9,197.2 L136.2,195.9 L138.6,194.5 L140.9,193.1 L143.2,191.8 L145.5,190.4 L147.8,189.1 L150.2,187.7 L152.5,186.4 L154.8,185.0 L157.1,183.6 L159.4,182.3 L161.8,180.9 L164.1,179.6 L166.4,178.2 L168.7,176.8 L171.0,175.5 L173.4,174.1 L175.7,172.8 L178.0,171.4 L180.3,170.1 L182.6,168.7 L185.0,167.3 L187.3,166.0 L189.6,164.6 L191.9,163.3 L194.2,161.9 L196.6,160.5 L198.9,159.2 L201.2,157.8 L203.5,156.5 L205.8,155.1 L208.2,153.8 L210.5,152.4 L212.8,151.0 L215.1,149.7 L217.4,148.3 L219.8,147.0 L222.1,145.6 L224.4,144.2 L226.7,142.9 L229.0,141.5 L231.4,140.2 L233.7,138.8 L236.0,137.5 L238.3,136.1 L240.6,134.7 L243.0,133.4 L245.3,132.0 L247.6,130.7 L249.9,129.3 L252.2,128.0 L254.6,126.6 L256.9,125.2 L259.2,123.9 L261.5,122.5 L263.8,121.2 L266.2,119.8 L268.5,118.4 L270.8,117.1 L273.1,115.7 L275.4,114.4 L277.8,113.0 L280.1,111.7 L282.4,110.3 L284.7,108.9 L287.0,107.6 L289.4,106.2 L291.7,104.9 L294.0,103.5 L296.3,102.1 L298.6,100.8 L301.0,99.4 L303.3,98.1 L305.6,96.7 L307.9,95.3 L310.2,94.0 L312.6,92.6 L314.9,91.3 L317.2,89.9 L319.5,88.6 L321.8,87.2 L324.2,85.8 L326.5,84.5 L328.8,83.1 L331.1,81.8 L333.4,80.4 L335.8,79.0 L338.1,77.7 L340.4,76.3 L342.7,75.0 L345.0,73.6 L347.4,72.3 L349.7,70.9 L352.0,69.5 L354.3,68.2 L356.6,66.8 L359.0,65.5 L361.3,64.1 L363.6,62.8 L365.9,61.4 L368.2,60.0 L370.6,58.7 L372.9,57.3 L375.2,56.0 L377.5,54.6 L379.8,53.2 L382.2,51.9 L384.5,50.5 L386.8,49.2 L389.1,47.8 L391.4,46.5 L393.8,45.1 L396.1,43.7 L398.4,42.4 L400.7,41.0 L403.0,39.7 L405.4,38.3 L407.7,36.9 L410.0,35.6 L412.3,34.2 L414.6,32.9 L417.0,31.5 L419.3,30.2 L421.6,28.8 L423.9,27.4 L426.2,26.1 L428.6,24.7 L430.9,23.4 L433.2,22.0"/>
+<line class="gap" x1="317.2" y1="144.2" x2="317.2" y2="89.9"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="247.6" y="365.0" text-anchor="middle">Qm = 4</text>
+<text class="tick" x="201.2" y="365.0" text-anchor="middle">Q* = 3</text>
+<text class="tick" x="55.0" y="189.0" text-anchor="end">6</text>
+<text class="tick" x="55.0" y="161.8" text-anchor="end">7</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Quantity, Q</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Price, cost (₹)</text>
+<circle class="pt" cx="247.6" cy="185.0" r="4"/>
+<circle class="pt" cx="201.2" cy="157.8" r="4"/>
+<text class="lbl c1-t" x="411.4" y="269.4" text-anchor="start">MPB = MSB (demand)</text>
+<text class="lbl c2-t" x="487.5" y="55.0" text-anchor="end">MPC (supply)</text>
+<text class="lbl c4-t" x="408.6" y="26.9" text-anchor="end">MSC = MPC + MEC</text>
+<text class="lbl strong" x="255.6" y="195.0" text-anchor="start">market</text>
+<text class="lbl strong" x="193.2" y="145.8" text-anchor="end">social optimum</text>
+<text class="lbl small strong" x="256.9" y="155.1" text-anchor="start">DWL = 1</text>
+<text class="lbl small" x="325.8" y="117.1" text-anchor="start">MEC = 2</text>
+</svg><figcaption><b>Figure 7.5.</b> Negative externality. The market produces Q = 4 where marginal private benefit equals marginal private cost; the social optimum is Q = 3 where MSB = MSC. The red triangle (DWL = 1) shows units whose social cost exceeds their benefit.</figcaption></figure>
+
+<h3 id="c7-three-fixes-for-externalities">Three fixes for externalities</h3>
+<div class="tbl-wrap"><table>
+<tr><th>Pigouvian tax (or subsidy)</th><th>Coase bargaining</th><th>Tradable permits (cap and trade)</th></tr>
+<tr><td>Make the polluter pay the damage, so they <b>internalise</b> it. Works when the damage can be measured.</td><td>Affected parties negotiate a solution themselves. Works when property rights are clear and bargaining is cheap.</td><td>Government caps the total; firms trade permits. Works when total pollution can be capped and cuts should happen where they are cheapest.</td></tr>
+</table></div>
+
+<div class="box derivation"><span class="box-h">Derivation: the Pigouvian tax</span>
+<p>Set a per-unit tax equal to the marginal external cost <b>at the optimum</b>: \(t = MEC(Q^*)\). The firm's private cost becomes \(MPC + t = MSC\), so the market now settles at \(MSB = MSC\), i.e. at \(Q^*\).</p>
+<p>Course numbers: t = 2 shifts supply to P = 4 + Q, and the market moves to Q = 3, P = 7. Compare the ₹2 tax on onions: the same diagram, but there the tax <i>creates</i> a DWL, whereas here it <i>removes</i> one. For a <b>positive</b> externality, a <b>Pigouvian subsidy</b> equal to the marginal external benefit raises output to the social optimum (vaccination drives, scholarships, solar subsidies).</p></div>
+
+<div class="box example"><span class="box-h">Worked example: the Coase theorem</span>
+<p>A factory's dumping causes fishermen ₹70,000 of damage a year. A filter that stops it costs the factory ₹40,000. Efficient outcome: install the filter (40 &lt; 70).</p>
+<ul>
+<li><b>Fishermen own the right to a clean lake:</b> the factory must either pay ₹70,000 in compensation or spend ₹40,000 on the filter. It installs the filter.</li>
+<li><b>The factory has the right to pollute:</b> the fishermen are willing to pay up to ₹70,000 for clean water, and the factory accepts anything above ₹40,000. They agree on a payment between 40 and 70 thousand and the filter is installed.</li>
+</ul>
+<p><b>Coase theorem:</b> if property rights are well defined and bargaining costs are low, private bargaining reaches the <b>efficient</b> outcome <b>whatever the initial allocation of rights</b>. The allocation of rights affects only the <b>distribution</b> (who pays). It fails with many affected parties (thousands of residents near a plant), high transaction costs, unclear rights or asymmetric information, and the poor may be unable to "pay" for clean air (CORE &sect;12.2&ndash;12.3).</p></div>
+
+<div class="box derivation"><span class="box-h">Derivation: cap and trade minimises abatement cost</span>
+<p>Two firms must together cut emissions by 40 tonnes. Marginal abatement costs: \(MAC_1 = A_1\), \(MAC_2 = 3A_2\).</p>
+<div class="steps">
+<p class="step">Total cost \(TC = \int_0^{A_1} a\,da + \int_0^{A_2} 3a\,da = \tfrac12A_1^2 + \tfrac32A_2^2\), subject to \(A_1 + A_2 = 40\).</p>
+<p class="step">Minimising: \(\dfrac{d}{dA_1}\big[\tfrac12A_1^2 + \tfrac32(40 - A_1)^2\big] = A_1 - 3(40 - A_1) = 0\) &rArr; \(\boxed{MAC_1 = MAC_2}\) &rArr; \(A_1 = 30\), \(A_2 = 10\).</p>
+<p class="step">Cost = ½(900) + 1.5(100) = 450 + 150 = <b>600</b>. A uniform rule (20 each) costs ½(400) + 1.5(400) = 200 + 600 = <b>800</b>.</p>
+<p class="step">With tradable permits, each firm abates until its MAC equals the permit price. The market price settles at <b>30</b> where the cap is met. The low-cost firm does more of the cutting and sells permits to the high-cost firm. A carbon tax of 30 per tonne would give the same allocation.</p>
+</div></div>
+<figure class="figure" id="fig-mac_trade"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Cap and trade: trading equalises marginal abatement costs at the permit price." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<polyline class="guide" points="62.0,254.9 268.2,254.9 268.2,348.0"/>
+<line class="guide" x1="268.2" y1="254.9" x2="268.2" y2="68.6"/>
+<path class="c1" d="M62.0,348.0 L64.9,346.7 L67.8,345.4 L70.7,344.1 L73.6,342.8 L76.5,341.5 L79.4,340.1 L82.3,338.8 L85.2,337.5 L88.1,336.2 L91.0,334.9 L93.9,333.6 L96.8,332.3 L99.7,331.0 L102.6,329.7 L105.5,328.4 L108.4,327.0 L111.3,325.7 L114.2,324.4 L117.1,323.1 L120.0,321.8 L122.9,320.5 L125.8,319.2 L128.7,317.9 L131.6,316.6 L134.5,315.3 L137.4,313.9 L140.3,312.6 L143.2,311.3 L146.1,310.0 L149.0,308.7 L151.9,307.4 L154.8,306.1 L157.7,304.8 L160.6,303.5 L163.5,302.2 L166.4,300.8 L169.3,299.5 L172.2,298.2 L175.1,296.9 L178.0,295.6 L180.9,294.3 L183.8,293.0 L186.7,291.7 L189.6,290.4 L192.5,289.1 L195.4,287.7 L198.3,286.4 L201.2,285.1 L204.1,283.8 L207.0,282.5 L209.9,281.2 L212.8,279.9 L215.7,278.6 L218.6,277.3 L221.5,276.0 L224.4,274.6 L227.3,273.3 L230.2,272.0 L233.1,270.7 L236.0,269.4 L238.9,268.1 L241.8,266.8 L244.7,265.5 L247.6,264.2 L250.5,262.9 L253.4,261.6 L256.3,260.2 L259.2,258.9 L262.1,257.6 L265.0,256.3 L267.9,255.0 L270.8,253.7 L273.7,252.4 L276.6,251.1 L279.5,249.8 L282.4,248.5 L285.3,247.1 L288.2,245.8 L291.1,244.5 L294.0,243.2 L296.9,241.9 L299.8,240.6 L302.7,239.3 L305.6,238.0 L308.5,236.7 L311.4,235.4 L314.3,234.0 L317.2,232.7 L320.1,231.4 L323.0,230.1 L325.9,228.8 L328.8,227.5 L331.7,226.2 L334.6,224.9 L337.5,223.6 L340.4,222.3 L343.3,220.9 L346.2,219.6 L349.1,218.3 L352.0,217.0 L354.9,215.7 L357.8,214.4 L360.7,213.1 L363.6,211.8 L366.5,210.5 L369.4,209.2 L372.3,207.8 L375.2,206.5 L378.1,205.2 L381.0,203.9 L383.9,202.6 L386.8,201.3 L389.7,200.0 L392.6,198.7 L395.5,197.4 L398.4,196.1 L401.3,194.8 L404.2,193.4 L407.1,192.1 L410.0,190.8 L412.9,189.5 L415.8,188.2 L418.7,186.9 L421.6,185.6 L424.5,184.3 L427.4,183.0 L430.3,181.7 L433.2,180.3 L436.1,179.0 L439.0,177.7 L441.9,176.4 L444.8,175.1 L447.7,173.8 L450.6,172.5 L453.5,171.2 L456.4,169.9 L459.3,168.6 L462.2,167.2 L465.1,165.9 L468.0,164.6 L470.9,163.3 L473.8,162.0 L476.7,160.7 L479.6,159.4 L482.5,158.1 L485.4,156.8 L488.3,155.5 L491.2,154.1 L494.1,152.8 L497.0,151.5 L499.9,150.2 L502.8,148.9 L505.7,147.6 L508.6,146.3 L511.5,145.0 L514.4,143.7 L517.3,142.4 L520.2,141.0 L523.1,139.7 L526.0,138.4"/>
+<path class="c2" d="M62.0,348.0 L63.5,346.0 L65.0,344.0 L66.4,342.0 L67.9,340.0 L69.4,338.0 L70.9,335.9 L72.4,333.9 L73.9,331.9 L75.3,329.9 L76.8,327.9 L78.3,325.9 L79.8,323.9 L81.3,321.9 L82.8,319.9 L84.2,317.9 L85.7,315.9 L87.2,313.9 L88.7,311.8 L90.2,309.8 L91.6,307.8 L93.1,305.8 L94.6,303.8 L96.1,301.8 L97.6,299.8 L99.1,297.8 L100.5,295.8 L102.0,293.8 L103.5,291.8 L105.0,289.8 L106.5,287.7 L107.9,285.7 L109.4,283.7 L110.9,281.7 L112.4,279.7 L113.9,277.7 L115.4,275.7 L116.8,273.7 L118.3,271.7 L119.8,269.7 L121.3,267.7 L122.8,265.7 L124.3,263.6 L125.7,261.6 L127.2,259.6 L128.7,257.6 L130.2,255.6 L131.7,253.6 L133.1,251.6 L134.6,249.6 L136.1,247.6 L137.6,245.6 L139.1,243.6 L140.6,241.6 L142.0,239.5 L143.5,237.5 L145.0,235.5 L146.5,233.5 L148.0,231.5 L149.5,229.5 L150.9,227.5 L152.4,225.5 L153.9,223.5 L155.4,221.5 L156.9,219.5 L158.3,217.5 L159.8,215.4 L161.3,213.4 L162.8,211.4 L164.3,209.4 L165.8,207.4 L167.2,205.4 L168.7,203.4 L170.2,201.4 L171.7,199.4 L173.2,197.4 L174.6,195.4 L176.1,193.4 L177.6,191.3 L179.1,189.3 L180.6,187.3 L182.1,185.3 L183.5,183.3 L185.0,181.3 L186.5,179.3 L188.0,177.3 L189.5,175.3 L191.0,173.3 L192.4,171.3 L193.9,169.3 L195.4,167.2 L196.9,165.2 L198.4,163.2 L199.8,161.2 L201.3,159.2 L202.8,157.2 L204.3,155.2 L205.8,153.2 L207.3,151.2 L208.7,149.2 L210.2,147.2 L211.7,145.2 L213.2,143.1 L214.7,141.1 L216.2,139.1 L217.6,137.1 L219.1,135.1 L220.6,133.1 L222.1,131.1 L223.6,129.1 L225.0,127.1 L226.5,125.1 L228.0,123.1 L229.5,121.1 L231.0,119.0 L232.5,117.0 L233.9,115.0 L235.4,113.0 L236.9,111.0 L238.4,109.0 L239.9,107.0 L241.3,105.0 L242.8,103.0 L244.3,101.0 L245.8,99.0 L247.3,97.0 L248.8,94.9 L250.2,92.9 L251.7,90.9 L253.2,88.9 L254.7,86.9 L256.2,84.9 L257.7,82.9 L259.1,80.9 L260.6,78.9 L262.1,76.9 L263.6,74.9 L265.1,72.9 L266.5,70.8 L268.0,68.8 L269.5,66.8 L271.0,64.8 L272.5,62.8 L274.0,60.8 L275.4,58.8 L276.9,56.8 L278.4,54.8 L279.9,52.8 L281.4,50.8 L282.9,48.7 L284.3,46.7 L285.8,44.7 L287.3,42.7 L288.8,40.7 L290.3,38.7 L291.7,36.7 L293.2,34.7 L294.7,32.7 L296.2,30.7 L297.7,28.7 L299.2,26.7"/>
+<line class="c4" x1="62.0" y1="208.3" x2="526.0" y2="208.3"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="268.2" y="365.0" text-anchor="middle">20</text>
+<text class="tick" x="165.1" y="365.0" text-anchor="middle">10</text>
+<text class="tick" x="371.3" y="365.0" text-anchor="middle">30</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Abatement, A (tonnes)</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Marginal abatement cost (₹)</text>
+<circle class="pt" cx="371.3" cy="208.3" r="4"/>
+<circle class="pt" cx="165.1" cy="208.3" r="4"/>
+<circle class="pt" cx="268.2" cy="254.9" r="4"/>
+<circle class="pt" cx="268.2" cy="68.6" r="4"/>
+<text class="lbl c1-t" x="509.7" y="135.1" text-anchor="end">MAC₁ = A₁</text>
+<text class="lbl c2-t" x="282.8" y="34.6" text-anchor="end">MAC₂ = 3A₂</text>
+<text class="lbl c4-t" x="515.7" y="202.3" text-anchor="end">permit price = 30</text>
+<text class="lbl strong" x="377.3" y="224.3" text-anchor="start">firm 1 abates 30</text>
+<text class="lbl strong" x="159.1" y="200.3" text-anchor="end">firm 2 abates 10</text>
+<text class="lbl strong" x="276.2" y="268.9" text-anchor="start">uniform rule: MAC₁ = 20</text>
+<text class="lbl strong" x="276.2" y="61.6" text-anchor="start">MAC₂ = 60</text>
+</svg><figcaption><b>Figure 7.6.</b> Cap and trade. At a permit price of 30, firm 1 abates 30 and firm 2 abates 10, equalising marginal abatement costs. Under a uniform 20-each rule, firm 2's MAC (60) is far above firm 1's (20), which is wasteful.</figcaption></figure>
+<div class="tbl-wrap"><table>
+<tr><th>Case</th><th>Best tool</th><th>Why</th></tr>
+<tr><td>Traffic congestion at peak hours</td><td>Tax (congestion charge)</td><td>Damage per car is measurable; many drivers</td></tr>
+<tr><td>Vaccination campaign</td><td>Subsidy</td><td>Positive externality; free provision</td></tr>
+<tr><td>Factory smoke reaching thousands of residents</td><td>Tradable permits or regulation</td><td>Too many parties for Coase bargaining</td></tr>
+<tr><td>A loud neighbour</td><td>Coase bargaining</td><td>Two parties, rights clear, cheap to negotiate</td></tr>
+<tr><td>Data privacy</td><td>Regulation</td><td>Harms hard to measure; information asymmetry</td></tr>
+</table></div>
+<p>At a global scale the tools are the same: <b>carbon taxes</b> (Pigouvian), <b>emissions trading</b> (the EU ETS; India's Carbon Credit Trading Scheme, notified in 2023), <b>subsidies</b> for solar and wind whose learning benefits spill over, and <b>international agreements</b> (the Montreal Protocol worked for ozone; the Paris Agreement relies on voluntary national pledges). <i>The tools are the same; the hard part is getting everyone to use them.</i></p>
+
+<h2 id="c7-types-of-goods-public-goods-and-the-commons"><span class="secnum">7.8</span> Types of goods, public goods and the commons</h2>
+<div class="tbl-wrap"><table>
+<tr><th></th><th><b>Rival</b> (one person's use leaves less for others)</th><th><b>Non-rival</b> (my use does not reduce yours)</th></tr>
+<tr><th><b>Excludable</b> (non-payers can be stopped)</th><td><b>Private goods</b>: onions, mess coupons, a phone.<br><i>Markets work well (First Welfare Theorem).</i></td><td><b>Club goods</b>: streaming subscription, toll road, paid coaching app.<br><i>Markets can supply them, but pricing shuts out people who would gain at no cost.</i></td></tr>
+<tr><th><b>Non-excludable</b> (cannot stop anyone using it)</th><td><b>Common-pool resources</b>: Hyderabad's lakes, groundwater, fish stocks, campus Wi-Fi on exam night.<br><i>Problem: overuse, the tragedy of the commons.</i></td><td><b>Public goods</b>: street lighting, open-source software, national defence.<br><i>Problem: free-riding, so markets under-provide them.</i></td></tr>
+</table></div>
+
+<h3 id="c7-public-goods-and-free-riding">Public goods and free-riding</h3>
+<div class="box derivation"><span class="box-h">Derivation: the efficient quantity of a public good (Samuelson condition)</span>
+<div class="steps">
+<p class="step">Because the good is non-rival, every unit benefits <i>all</i> users at once. The social marginal benefit is the <b>vertical sum</b> of individual marginal benefits: \(MSB(Q) = \sum_i MB_i(Q)\). (For private goods we sum demand curves <i>horizontally</i>.)</p>
+<p class="step">Efficiency: \(\boxed{\sum_i MB_i = MC}\).</p>
+<p class="step">Example: three residents value street lights at \(MB_1 = 60 - Q\), \(MB_2 = 40 - Q\), \(MB_3 = 20 - Q\); MC = 75 per light. \(\sum MB = 120 - 3Q = 75\) &rArr; \(Q^* = 15\).</p>
+<p class="step">Private provision: even resident 1, who values lights most, would buy only where \(60 - Q = 75\), i.e. none. And because the good is non-excludable, each resident hopes the others will pay and <b>free-rides</b>. Result: <b>under-provision</b>, often zero.</p>
+</div>
+<p>Solutions: tax-financed public provision; community norms with peer punishment of free-riders (CORE &sect;4.7 shows experimentally that punishment sustains contributions); making the good excludable (turning it into a club good).</p></div>
+
+<h3 id="c7-the-tragedy-of-the-commons">The tragedy of the commons</h3>
+<p>A shared lake with one fish stock: each user keeps the whole gain from fishing more but shares the cost (fewer fish for everyone), so each over-uses and <b>everyone ends worse off</b>. It is a negative externality with no owner to charge for it, and a many-player prisoners' dilemma.</p>
+<div class="box derivation"><span class="box-h">Derivation: open access vs the efficient number of boats</span>
+<div class="steps">
+<p class="step">With \(N\) boats, total catch value is \(N\cdot AP(N)\) with \(AP = 100 - N\) (₹ thousand per boat, falling because the boats share a fixed stock). Each boat costs 20.</p>
+<p class="step"><b>Open access:</b> a new boat enters as long as <i>its own</i> catch covers its cost: \(AP(N) \ge 20\) &rArr; entry until \(100 - N = 20\) &rArr; \(N_{open} = 80\). Total rent = \(80(20 - 20) = 0\): the resource's value is completely dissipated.</p>
+<p class="step"><b>Efficient:</b> maximise total rent \(R = N(100 - N) - 20N\). \(dR/dN = 100 - 2N - 20 = 0\) &rArr; \(N^* = 40\). Equivalently set the <b>marginal product</b> \(MP = 100 - 2N\) equal to cost. Rent = \(40(60 - 20) = 1600\).</p>
+<p class="step">Why the gap: the entrant compares its <i>average</i> catch with cost and ignores that it lowers every other boat's catch by \(|dAP/dN| = 1\) each. That is an external cost of \(N\) per entrant. Open access gives <b>twice</b> the efficient effort here.</p>
+</div></div>
+<figure class="figure" id="fig-commons"><svg class="fig" viewBox="0 0 560 400" role="img" aria-label="Open access fishery: entry continues until average product equals cost (80 boats) versus the efficient 40 where marginal product equals cost." xmlns="http://www.w3.org/2000/svg">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path class="ahead" d="M0,0 L10,5 L0,10 z"/></marker></defs>
+<path class="c1" d="M62.0,51.6 L64.9,53.3 L67.8,55.0 L70.7,56.6 L73.6,58.3 L76.5,60.0 L79.4,61.6 L82.3,63.3 L85.2,65.0 L88.1,66.6 L91.0,68.3 L93.9,70.0 L96.8,71.6 L99.7,73.3 L102.6,75.0 L105.5,76.6 L108.4,78.3 L111.3,80.0 L114.2,81.6 L117.1,83.3 L120.0,85.0 L122.9,86.6 L125.8,88.3 L128.7,90.0 L131.6,91.6 L134.5,93.3 L137.4,95.0 L140.3,96.6 L143.2,98.3 L146.1,100.0 L149.0,101.6 L151.9,103.3 L154.8,105.0 L157.7,106.6 L160.6,108.3 L163.5,110.0 L166.4,111.7 L169.3,113.3 L172.2,115.0 L175.1,116.7 L178.0,118.3 L180.9,120.0 L183.8,121.7 L186.7,123.3 L189.6,125.0 L192.5,126.7 L195.4,128.3 L198.3,130.0 L201.2,131.7 L204.1,133.3 L207.0,135.0 L209.9,136.7 L212.8,138.3 L215.7,140.0 L218.6,141.7 L221.5,143.3 L224.4,145.0 L227.3,146.7 L230.2,148.3 L233.1,150.0 L236.0,151.7 L238.9,153.3 L241.8,155.0 L244.7,156.7 L247.6,158.3 L250.5,160.0 L253.4,161.7 L256.3,163.3 L259.2,165.0 L262.1,166.7 L265.0,168.3 L267.9,170.0 L270.8,171.7 L273.7,173.3 L276.6,175.0 L279.5,176.7 L282.4,178.3 L285.3,180.0 L288.2,181.7 L291.1,183.3 L294.0,185.0 L296.9,186.7 L299.8,188.3 L302.7,190.0 L305.6,191.7 L308.5,193.3 L311.4,195.0 L314.3,196.7 L317.2,198.3 L320.1,200.0 L323.0,201.7 L325.9,203.3 L328.8,205.0 L331.7,206.7 L334.6,208.3 L337.5,210.0 L340.4,211.7 L343.3,213.3 L346.2,215.0 L349.1,216.7 L352.0,218.3 L354.9,220.0 L357.8,221.7 L360.7,223.3 L363.6,225.0 L366.5,226.7 L369.4,228.3 L372.3,230.0 L375.2,231.7 L378.1,233.3 L381.0,235.0 L383.9,236.7 L386.8,238.3 L389.7,240.0 L392.6,241.7 L395.5,243.3 L398.4,245.0 L401.3,246.7 L404.2,248.3 L407.1,250.0 L410.0,251.7 L412.9,253.3 L415.8,255.0 L418.7,256.7 L421.6,258.4 L424.5,260.0 L427.4,261.7 L430.3,263.4 L433.2,265.0 L436.1,266.7 L439.0,268.4 L441.9,270.0 L444.8,271.7 L447.7,273.4 L450.6,275.0 L453.5,276.7 L456.4,278.4 L459.3,280.0 L462.2,281.7 L465.1,283.4 L468.0,285.0 L470.9,286.7 L473.8,288.4 L476.7,290.0 L479.6,291.7 L482.5,293.4 L485.4,295.0 L488.3,296.7 L491.2,298.4 L494.1,300.0 L497.0,301.7 L499.9,303.4 L502.8,305.0 L505.7,306.7 L508.6,308.4 L511.5,310.0 L514.4,311.7 L517.3,313.4 L520.2,315.0 L523.1,316.7 L526.0,318.4"/>
+<path class="c3" d="M62.0,51.6 L63.6,53.5 L65.2,55.3 L66.8,57.2 L68.4,59.0 L70.1,60.9 L71.7,62.8 L73.3,64.6 L74.9,66.5 L76.5,68.3 L78.1,70.2 L79.7,72.0 L81.3,73.9 L82.9,75.7 L84.6,77.6 L86.2,79.4 L87.8,81.3 L89.4,83.1 L91.0,85.0 L92.6,86.8 L94.2,88.7 L95.8,90.5 L97.4,92.4 L99.1,94.2 L100.7,96.1 L102.3,97.9 L103.9,99.8 L105.5,101.6 L107.1,103.5 L108.7,105.4 L110.3,107.2 L111.9,109.1 L113.6,110.9 L115.2,112.8 L116.8,114.6 L118.4,116.5 L120.0,118.3 L121.6,120.2 L123.2,122.0 L124.8,123.9 L126.4,125.7 L128.1,127.6 L129.7,129.4 L131.3,131.3 L132.9,133.1 L134.5,135.0 L136.1,136.8 L137.7,138.7 L139.3,140.5 L140.9,142.4 L142.6,144.2 L144.2,146.1 L145.8,148.0 L147.4,149.8 L149.0,151.7 L150.6,153.5 L152.2,155.4 L153.8,157.2 L155.4,159.1 L157.1,160.9 L158.7,162.8 L160.3,164.6 L161.9,166.5 L163.5,168.3 L165.1,170.2 L166.7,172.0 L168.3,173.9 L169.9,175.7 L171.6,177.6 L173.2,179.4 L174.8,181.3 L176.4,183.1 L178.0,185.0 L179.6,186.9 L181.2,188.7 L182.8,190.6 L184.4,192.4 L186.1,194.3 L187.7,196.1 L189.3,198.0 L190.9,199.8 L192.5,201.7 L194.1,203.5 L195.7,205.4 L197.3,207.2 L198.9,209.1 L200.6,210.9 L202.2,212.8 L203.8,214.6 L205.4,216.5 L207.0,218.3 L208.6,220.2 L210.2,222.0 L211.8,223.9 L213.4,225.8 L215.1,227.6 L216.7,229.5 L218.3,231.3 L219.9,233.2 L221.5,235.0 L223.1,236.9 L224.7,238.7 L226.3,240.6 L227.9,242.4 L229.6,244.3 L231.2,246.1 L232.8,248.0 L234.4,249.8 L236.0,251.7 L237.6,253.5 L239.2,255.4 L240.8,257.2 L242.4,259.1 L244.1,260.9 L245.7,262.8 L247.3,264.6 L248.9,266.5 L250.5,268.4 L252.1,270.2 L253.7,272.1 L255.3,273.9 L256.9,275.8 L258.6,277.6 L260.2,279.5 L261.8,281.3 L263.4,283.2 L265.0,285.0 L266.6,286.9 L268.2,288.7 L269.8,290.6 L271.4,292.4 L273.1,294.3 L274.7,296.1 L276.3,298.0 L277.9,299.8 L279.5,301.7 L281.1,303.5 L282.7,305.4 L284.3,307.2 L285.9,309.1 L287.6,311.0 L289.2,312.8 L290.8,314.7 L292.4,316.5 L294.0,318.4 L295.6,320.2 L297.2,322.1 L298.8,323.9 L300.4,325.8 L302.1,327.6 L303.7,329.5 L305.3,331.3 L306.9,333.2 L308.5,335.0 L310.1,336.9 L311.7,338.7 L313.3,340.6 L314.9,342.4 L316.6,344.3 L318.2,346.1 L319.8,348.0"/>
+<line class="c2" x1="62.0" y1="288.7" x2="526.0" y2="288.7"/>
+<line class="ax" x1="62.0" y1="348.0" x2="534.0" y2="348.0"/>
+<line class="ax" x1="62.0" y1="348.0" x2="62.0" y2="14.0"/>
+<text class="tick" x="268.2" y="365.0" text-anchor="middle">40</text>
+<text class="tick" x="474.4" y="365.0" text-anchor="middle">80</text>
+<text class="axl" x="526.0" y="386.0" text-anchor="end">Number of boats, N</text>
+<text class="axl" x="52.0" y="12.0" text-anchor="start">Value per boat (₹)</text>
+<circle class="pt" cx="474.4" cy="288.7" r="4"/>
+<circle class="pt" cx="268.2" cy="288.7" r="4"/>
+<text class="lbl c1-t" x="387.6" y="229.4" text-anchor="start">AP = 100 − N</text>
+<text class="lbl c3-t" x="198.9" y="199.8" text-anchor="start">MP = 100 − 2N</text>
+<text class="lbl c2-t" x="67.2" y="282.7" text-anchor="start">cost per boat = 20</text>
+<text class="lbl strong" x="468.4" y="306.7" text-anchor="end">open access N = 80</text>
+<text class="lbl strong" x="262.2" y="306.7" text-anchor="end">N* = 40</text>
+</svg><figcaption><b>Figure 7.7.</b> Open-access fishery. Boats enter until the average catch equals cost (N = 80, zero rent). The efficient fleet sets the marginal product equal to cost (N* = 40), earning a rent of 1600.</figcaption></figure>
+<div class="tbl-wrap"><table>
+<tr><th></th><th>State</th><th>Market</th><th>Community</th></tr>
+<tr><td>How</td><td>Government sets and enforces the rules, or runs the resource itself</td><td>Create ownership or tradable rights, so someone bears the full cost</td><td>Users make and enforce their own rules</td></tr>
+<tr><td>Lake example</td><td>Lake authority bans untreated inflows and fines polluters</td><td>Lease the lake to an operator who earns from clean boating and fishing; or user fees</td><td>A lake group monitors inflows, sets use rules and shares upkeep</td></tr>
+<tr><td>Watch out</td><td>Needs funds and enforcement; agencies can overlap or be captured</td><td>May shut out the poor; hard to price flood control and biodiversity</td><td>Works best for small, close-knit groups; struggles with outsiders</td></tr>
+</table></div>
+<p>Elinor Ostrom (Nobel 2009) documented many successful community-managed commons, such as irrigation systems in Nepal and forest panchayats in India's hills. She showed that the "tragedy" is not inevitable when users can communicate, monitor and sanction one another.</p>
+
+<h3 id="c7-why-climate-change-is-harder">Why climate change is harder</h3>
+<ul>
+<li><b>No world government</b>: no one can enforce rules across countries, so agreements rely on voluntary compliance.</li>
+<li><b>Free-riding by countries</b>: every country gains from others' cuts, so each is tempted to wait (CORE &sect;4.14).</li>
+<li><b>Costs now, benefits later</b>: cuts pay off decades away, mostly for people not yet born.</li>
+<li><b>Unequal responsibility</b>: countries differ in who caused the problem, who is hurt most and who can afford to act. This is India's "common but differentiated responsibilities" position.</li>
+<li><b>Uncertainty and tipping points</b>: damage is hard to measure, and some changes may be irreversible.</li>
+</ul>
+
+<h2 id="c7-summary-and-practice-questions"><span class="secnum">7.9</span> Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>CS = area under demand above price; PS = area above supply below price. A competitive equilibrium maximises CS + PS.</li>
+<li>Tax DWL = ½τΔQ = ½τ²·bd/(b+d). Price ceilings and floors create shortages or surpluses and DWL, plus rationing problems.</li>
+<li>Pareto efficiency: no free improvements. Efficient &ne; fair.</li>
+<li>First Welfare Theorem: competition + no externalities + full information + private goods &rArr; Pareto efficiency. Second: any efficient allocation is reachable via redistribution plus markets.</li>
+<li>Externalities: market Q where MPB = MPC; optimum where MSB = MSC. Fixes: Pigouvian tax t = MEC(Q*), Coase bargaining, cap and trade (equalises MACs).</li>
+<li>Public goods: \(\sum MB_i = MC\), so free-riding leads to under-provision. Commons: open access leads to over-use (AP = cost instead of MP = cost).</li>
+</ul></div>
+<details class="q"><summary>Demand P = 20 − Q, supply P = 4 + Q. Compute the equilibrium, CS, PS, and the effects of a ₹4 per-unit tax (prices, quantity, revenue, DWL).</summary><div class="ans"><p>Equilibrium: 20 &minus; Q = 4 + Q &rArr; Q = 8, P = 12. CS = ½(8)(8) = 32, PS = 32, TS = 64. Tax 4: 20 &minus; Q = 8 + Q &rArr; Q = 6, buyers pay 14, sellers get 10. CS = ½(6)(6) = 18, PS = 18, revenue = 24, total 60, DWL = 4 (= ½ &times; 4 &times; 2 ✓).</p></div></details>
+<details class="q"><summary>In the same market a price ceiling of ₹8 is imposed. Find the shortage and the DWL (assume efficient rationing).</summary><div class="ans"><p>Qs = 8 &minus; 4 = 4, Qd = 20 &minus; 8 = 12: shortage 8. Trade 4. PS = ½(8 &minus; 4)(4) = 8. CS = area between demand and 8 over 0&ndash;4 = ((12 + 8)/2)(4) = 40. Total 48 vs 64: DWL = 16 = ½(16 &minus; 8)(8 &minus; 4) ✓.</p></div></details>
+<details class="q"><summary>State the First Welfare Theorem and give one real example for the failure of each assumption.</summary><div class="ans"><p>Competitive equilibria are Pareto efficient if there is (1) perfect competition (failure: a pharmaceutical patent monopoly), (2) no externalities (failure: stubble burning and Delhi's air), (3) full information (failure: used-car "lemons", health insurance), (4) private goods with clear property rights (failure: groundwater over-extraction, street lighting).</p></div></details>
+<details class="q"><summary>Explain why the Coase theorem says the allocation of property rights does not matter for efficiency. Why might it still matter in practice?</summary><div class="ans"><p>With costless bargaining the parties will always strike the deal that maximises joint surplus, and the rights only decide who pays whom. In practice transaction costs, many affected parties, unclear rights, information problems and wealth constraints (the poor cannot pay polluters) prevent efficient bargains, and the distribution of rights is itself a fairness question.</p></div></details>
+<details class="q"><summary>Exit question from Class 1: give an example where a market outcome is efficient but you would call it unfair.</summary><div class="ans"><p>Sample answer: during a flood, bottled water sells at a very high competitive price; every trade is voluntary and the allocation may be efficient, but poorer families go without. Or: perfect price discrimination is efficient but leaves consumers no surplus. Efficiency concerns the size of the pie, fairness its division.</p></div></details>
+</article>
+<nav class="prevnext"><a class="prev" href="oligopoly.html"><small>Previous</small>Oligopoly and Game Theory</a><span></span></nav>
+</main>
+<nav class="ontoc" aria-label="On this page"><div class="ontoc-h">On this page</div><a href="#c7-how-markets-order-themselves"><span>7.1</span> How markets order themselves</a><a href="#c7-consumer-and-producer-surplus"><span>7.2</span> Consumer and producer surplus</a><a href="#c7-taxes-and-deadweight-loss"><span>7.3</span> Taxes and deadweight loss</a><a href="#c7-price-controls"><span>7.4</span> Price controls</a><a href="#c7-pareto-efficiency"><span>7.5</span> Pareto efficiency</a><a href="#c7-the-welfare-theorems"><span>7.6</span> The welfare theorems</a><a href="#c7-market-failure-externalities"><span>7.7</span> Market failure: externalities</a><a href="#c7-types-of-goods-public-goods-and-the-commons"><span>7.8</span> Types of goods, public goods and the commons</a><a href="#c7-summary-and-practice-questions"><span>7.9</span> Summary and practice questions</a></nav>
+</div>
+<script>
+function toggleTheme(){
+  var r=document.documentElement, cur=r.getAttribute('data-theme');
+  var dark = cur ? cur==='dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+  var nt = dark ? 'light' : 'dark'; r.setAttribute('data-theme', nt);
+  try{localStorage.setItem('sg-theme', nt);}catch(e){}
+}
+document.querySelectorAll('.sidebar a').forEach(function(a){a.addEventListener('click',function(){document.body.classList.remove('nav-open');});});
+</script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.js"></script>
+<script defer src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/auto-render.min.js"></script>
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  function go() {
+    if (!window.renderMathInElement) return setTimeout(go, 50);
+    renderMathInElement(document.body, {
+      delimiters: [{left: '$$', right: '$$', display: true}, {left: '\\[', right: '\\]', display: true},
+                   {left: '\\(', right: '\\)', display: false}],
+      ignoredTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code', 'svg'],
+      throwOnError: false
+    });
+    document.documentElement.classList.add('math-ready');
+  }
+  go();
+});
+</script>
+
+</body>
+</html>

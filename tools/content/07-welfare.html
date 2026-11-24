@@ -1,0 +1,203 @@
+<p class="kicker">Welfare Economics &middot; Classes 1&ndash;2</p>
+<h1>Welfare Economics and Market Failure</h1>
+<p class="lede">How markets order themselves, what "good" means (surplus, Pareto efficiency, the welfare theorems), and what goes wrong when the theorems' assumptions fail: market power, externalities, public goods and the commons.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Goodwin et al., <i>Principles of Economics in Context</i>, Ch. 6 (Welfare Analysis): consumer and producer surplus, price ceilings and floors, laissez-faire and market failure.</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 5 (&sect;5.2 the Pareto criterion, &sect;5.3 fairness), &sect;8.4 (competitive equilibrium and gains from trade), &sect;8.7 (taxes), and Unit 12 (Markets, efficiency, and public policy: &sect;12.1&ndash;12.3 external effects, &sect;12.5 public goods). Unit 4 &sect;4.6 and &sect;4.14 cover public goods games and climate change.</li>
+</ul></div>
+
+<h2>How markets order themselves</h2>
+<p>Class 1 opened with the campus <b>mess-coupon market</b>: no formal body governs buying and selling, yet coupons change hands at a fairly stable price. The mechanism is the feedback loop from Chapter 2: too high a price leaves unsold coupons, so sellers cut prices; too low a price creates a shortage, so buyers compete and prices rise. The price settles where demand equals supply, with <b>no planner</b>.</p>
+<div class="box key"><span class="box-h">Adam Smith's invisible hand (assumes perfect competition)</span>
+<p>In <i>The Wealth of Nations</i> (1776) Smith argued that individuals pursuing their own interest in competitive markets are "led by an invisible hand" to serve society. Bakers bake for their own gain, not out of kindness, yet we get bread. Prices signal what is scarce, and resources flow to where they are most wanted. Onion farmers want profit and buyers want a fair price; nobody plans for the city, yet Hyderabad has onions.</p>
+<p><b>What it does not claim:</b> that selfishness is always good. The outcome serves society <i>only with competition and sound rules</i>. The First Welfare Theorem makes this precise; Class 2 covers where it fails.</p></div>
+
+<h2>Consumer and producer surplus</h2>
+<ul>
+<li><span class="term">Consumer surplus (CS)</span>: what buyers keep. It is the difference between the maximum each buyer is <b>willing to pay</b> (read off the demand curve) and the price actually paid, summed over all buyers. Tathya would pay up to ₹10 for onions; the price is ₹6; Tathya's surplus is ₹4.</li>
+<li><span class="term">Producer surplus (PS)</span>: what sellers keep. It is the price received minus the <b>marginal cost</b> of each unit (read off the supply curve), summed over all units. Jal can grow onions at ₹2 each and sells at ₹6, so Jal's surplus is ₹4.</li>
+<li><span class="term">Total surplus</span> = CS + PS: the total gains from trade, the "size of the pie".</li>
+</ul>
+$$CS = \int_0^{Q^*}\big[P_d(q) - P^*\big]\,dq,\qquad PS = \int_0^{Q^*}\big[P^* - P_s(q)\big]\,dq.$$
+{{fig:surplus|Course example: demand P = 10 − Q, supply P = 2 + Q, equilibrium Q = 4, P = 6. CS = ½ × 4 × (10 − 6) = 8; PS = ½ × 4 × (6 − 2) = 8; total surplus = 16.}}
+<div class="box derivation"><span class="box-h">Derivation: competitive equilibrium maximises total surplus</span>
+<div class="steps">
+<p class="step">If quantity \(Q\) is traded, the total surplus is the area between demand (marginal benefit) and supply (marginal cost): \(TS(Q) = \int_0^{Q}\big[P_d(q) - P_s(q)\big]dq\). The price only splits this between buyers and sellers; it cancels in the total.</p>
+<p class="step">Maximise: \(\dfrac{dTS}{dQ} = P_d(Q) - P_s(Q) = 0\) &rArr; \(P_d(Q) = P_s(Q)\): exactly the competitive equilibrium quantity.</p>
+<p class="step">For \(Q &lt; Q^*\), \(P_d &gt; P_s\): some trades that would benefit both sides do not happen. For \(Q &gt; Q^*\), \(P_d &lt; P_s\): units cost more to make than they are worth to buyers.</p>
+<p class="step">So at equilibrium <b>every trade where a buyer values the good more than it costs to produce actually happens</b> (CORE &sect;8.4). Anything that blocks trade shrinks the pie.</p>
+</div></div>
+
+<h2>Taxes and deadweight loss</h2>
+{{fig:tax|A ₹2 per-unit tax. Buyers pay 7 (was 6), sellers keep 5 (was 6), and 3 onions are traded (was 4). CS = 4.5, PS = 4.5, tax revenue = 2 × 3 = 6, total = 15. The deadweight loss (red) is 16 − 15 = 1: the trades between 3 and 4 that no longer happen.}}
+<div class="box derivation"><span class="box-h">Derivation: the deadweight loss of a tax</span>
+<div class="steps">
+<p class="step">With \(Q_d = a - bP_b\) and \(Q_s = c + dP_s\), a tax \(\tau\) drives a wedge \(P_b - P_s = \tau\). From Chapter 2, quantity falls by \(\Delta Q = \dfrac{bd}{b+d}\,\tau\).</p>
+<p class="step">The DWL is a triangle with height \(\tau\) and base \(\Delta Q\):
+$$DWL = \tfrac12\,\tau\,\Delta Q = \tfrac12\cdot\frac{bd}{b+d}\,\tau^2.$$</p>
+<p class="step">Course numbers: \(b = d = 1\), \(\tau = 2\): \(\Delta Q = 1\), DWL = 1. ✓</p>
+<p class="step">Two lessons: (i) DWL rises with the <b>square</b> of the tax, so doubling the tax quadruples the DWL; (ii) DWL is larger when demand and supply are <b>more elastic</b> (larger b, d). Taxing inelastic goods distorts less.</p>
+</div></div>
+<p><b>Onion vs alcohol</b> (class question). For onions the tax is pure inefficiency: lost trades that benefited both sides. For alcohol, the "lost trades" may include consumption that harms others (drunk driving, health costs borne by the public). Then the market quantity was <i>too high</i> to begin with and the tax can <b>raise</b> welfare. That is a Pigouvian tax, covered under externalities below.</p>
+
+<h2>Price controls</h2>
+<h3>Price ceiling (cap)</h3>
+{{fig:ceiling|A price cap of 4 (below equilibrium). Sellers supply only 2 while buyers want 6: a shortage of 4. CS = 10 (if the 2 units go to the highest-value buyers), PS = 2, total = 12 (was 16), so DWL = 4, four times the DWL of the ₹2 tax.}}
+<div class="box derivation"><span class="box-h">Derivation: welfare under the cap</span>
+<div class="steps">
+<p class="step">At P = 4: \(Q_s = 4 - 2 = 2\) and \(Q_d = 10 - 4 = 6\). Trade is limited by the short side: Q = 2.</p>
+<p class="step">PS = \(\tfrac12(4 - 2)(2) = 2\).</p>
+<p class="step">CS (best case, units go to those who value them most) = area between demand and 4 for Q from 0 to 2 = \(\tfrac{(10-4) + (8-4)}{2}\times 2 = 10\).</p>
+<p class="step">Total = 12, so DWL = 16 &minus; 12 = 4: the triangle between demand and supply from Q = 2 to 4, \(\tfrac12(8-4)(4-2) = 4\).</p>
+</div>
+<p><b>Who gets the 2 onions?</b> With a shortage the price no longer rations, so something else does: <b>queues, contacts, black markets</b>, or a ration card system. If the good goes to people with lower willingness to pay, CS is even lower and the DWL larger. The class point: the cap aims to help buyers, but it can make them worse off overall.</p></div>
+<h3>Price floor</h3>
+<p>A price floor above equilibrium (minimum wage, minimum support prices) creates a <b>surplus</b>: \(Q_s &gt; Q_d\).</p>
+<div class="box india"><span class="box-h">India focus: minimum support prices (MSP)</span>
+<p>Suppose the government guarantees P = 8 in our market. Then \(Q_d = 2\) and \(Q_s = 6\): a surplus of 4 units. If the government does not buy the surplus, only 2 units trade: CS = ½(10&minus;8)(2) = 2, PS = ((8&minus;2)+(8&minus;4))/2 &times; 2 = 10, total = 12, DWL = 4. In India the Food Corporation of India procures much of the surplus wheat and rice at MSP, so farmers sell all 6 units. This supports farm incomes, but it costs the government 8 &times; 4 = 32 and builds large grain stocks, and it encourages over-production of the supported crops (wheat and paddy in Punjab and Haryana, with groundwater depletion: a commons problem, see the commons section). Goodwin Box 6.1 discusses the parallel debate over minimum wages.</p></div>
+
+<h2>Pareto efficiency</h2>
+<div class="box key"><span class="box-h">Definitions (CORE &sect;5.2)</span>
+<ul>
+<li>An allocation is <span class="term">Pareto efficient</span> if <b>no one can be made better off without making someone else worse off</b>.</li>
+<li>A <span class="term">Pareto improvement</span> makes at least one person better off and nobody worse off.</li>
+<li>The set of Pareto-efficient allocations forms the <b>Pareto efficiency curve</b> (frontier).</li>
+</ul></div>
+{{fig:ppf_utility|Points on the frontier are Pareto efficient: helping one person hurts the other. From an inefficient point like Z both can gain "for free" (the shaded set of Pareto improvements). "One person has everything" is also on the frontier, so it is efficient but hardly fair.}}
+<p><b>Coupon example:</b> the seller values a coupon at ₹20 and the buyer at ₹40. Before trade both could gain, so the situation is not efficient. After a trade at ₹30 (seller gains 10, buyer gains 10) no free gain remains. Any price between 20 and 40 would be efficient; the price only decides the <b>split</b>.</p>
+<div class="box exam"><span class="box-h">Efficient is not the same as fair</span>
+<p>Efficiency says nothing about who gets what. Choosing among points on the frontier is a question of <b>equity</b>, which markets do not settle; society has to (CORE &sect;5.3). This is the same idea as a <b>Pareto front</b> in multi-objective optimisation.</p></div>
+
+<h2>The welfare theorems</h2>
+<div class="box key"><span class="box-h">First Fundamental Theorem of Welfare Economics</span>
+<p>Under these assumptions, <b>every competitive equilibrium is Pareto efficient</b>:</p>
+<ol>
+<li><b>Perfect competition</b>: many buyers and sellers; no one can set the price. (If this fails: <i>market power</i>.)</li>
+<li><b>No externalities</b>: every cost and benefit falls on the people trading. (If this fails: <i>externalities</i>.)</li>
+<li><b>Full information</b>: both sides know the price and the quality of what they trade. (If this fails: <i>information asymmetry</i>, e.g. used cars and "lemons", CORE &sect;12.6.)</li>
+<li><b>Private goods with clear property rights</b>: goods are rival, excludable and can be owned and traded. (If this fails: <i>public goods and commons</i>.)</li>
+</ol>
+<p>The mess-coupon market satisfies all four: many students on WhatsApp, no spillovers, everyone knows what a coupon is. Every trade that helps both sides happens.</p></div>
+<div class="box key"><span class="box-h">Second Fundamental Theorem</span>
+<p>Under similar (plus convexity) assumptions, <b>any Pareto-efficient allocation can be achieved as a competitive equilibrium after a suitable lump-sum redistribution of initial endowments</b>. In short: <i>redistribute first, then let markets work.</i> The theorems separate efficiency (left to markets) from equity (a social choice). In practice lump-sum transfers are hard to design: real taxes create DWLs, so there is often an efficiency&ndash;equity trade-off.</p></div>
+<h3>Positive vs normative economics</h3>
+<div class="tbl-wrap"><table>
+<tr><th>Positive</th><th>Normative</th></tr>
+<tr><td>What is, or what will be. Can be tested against evidence.<br><i>"A 10% rise in the minimum wage reduces teenage employment by 2%."</i></td><td>What ought to be. Rests on value judgements.<br><i>"The minimum wage should be raised to reduce poverty."</i></td></tr>
+</table></div>
+<p>Welfare economics is <b>normative</b>: "better" needs a value criterion. Even "efficient" assumes that people's own preferences are what count.</p>
+
+<h2>Market failure: externalities</h2>
+<p>An <span class="term">externality</span> is a cost or benefit that falls on people who are <b>not part of the transaction</b>. Decision-makers count only their own costs and benefits, so <b>the market makes too much of what harms others and too little of what helps them</b>.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Negative externality</th><th>Positive externality</th></tr>
+<tr><td>A factory dumps sludge in a lake; fishermen's catch falls and the factory pays nothing. Also: pollution, congestion, loud neighbours, stubble burning in Punjab affecting Delhi's air.</td><td>You get vaccinated; others are protected too and you are not paid for that benefit. Also: education, a beautiful garden, R&amp;D spillovers.</td></tr>
+</table></div>
+<div class="box derivation"><span class="box-h">Derivation: the externality wedge</span>
+<div class="steps">
+<p class="step">Private producers supply where price = <b>marginal private cost (MPC)</b>. Society's cost includes the <b>marginal external cost (MEC)</b>: \(MSC = MPC + MEC\).</p>
+<p class="step">Market outcome: \(MPB = MPC\). Social optimum: \(MSB = MSC\).</p>
+<p class="step">Course numbers: \(MPB = MSB = 10 - Q\), \(MPC = 2 + Q\), MEC = 2 &rArr; \(MSC = 4 + Q\).
+Market: \(10 - Q = 2 + Q\) &rArr; \(Q_m = 4\), P = 6. Optimum: \(10 - Q = 4 + Q\) &rArr; \(Q^* = 3\), P = 7.</p>
+<p class="step">The 4th unit costs society \(MSC(4) = 8\) but is worth only \(MSB(4) = 6\). The DWL is the triangle \(\tfrac12(8 - 6)(4 - 3) = 1\).</p>
+</div></div>
+{{fig:externality|Negative externality. The market produces Q = 4 where marginal private benefit equals marginal private cost; the social optimum is Q = 3 where MSB = MSC. The red triangle (DWL = 1) shows units whose social cost exceeds their benefit.}}
+
+<h3>Three fixes for externalities</h3>
+<div class="tbl-wrap"><table>
+<tr><th>Pigouvian tax (or subsidy)</th><th>Coase bargaining</th><th>Tradable permits (cap and trade)</th></tr>
+<tr><td>Make the polluter pay the damage, so they <b>internalise</b> it. Works when the damage can be measured.</td><td>Affected parties negotiate a solution themselves. Works when property rights are clear and bargaining is cheap.</td><td>Government caps the total; firms trade permits. Works when total pollution can be capped and cuts should happen where they are cheapest.</td></tr>
+</table></div>
+
+<div class="box derivation"><span class="box-h">Derivation: the Pigouvian tax</span>
+<p>Set a per-unit tax equal to the marginal external cost <b>at the optimum</b>: \(t = MEC(Q^*)\). The firm's private cost becomes \(MPC + t = MSC\), so the market now settles at \(MSB = MSC\), i.e. at \(Q^*\).</p>
+<p>Course numbers: t = 2 shifts supply to P = 4 + Q, and the market moves to Q = 3, P = 7. Compare the ₹2 tax on onions: the same diagram, but there the tax <i>creates</i> a DWL, whereas here it <i>removes</i> one. For a <b>positive</b> externality, a <b>Pigouvian subsidy</b> equal to the marginal external benefit raises output to the social optimum (vaccination drives, scholarships, solar subsidies).</p></div>
+
+<div class="box example"><span class="box-h">Worked example: the Coase theorem</span>
+<p>A factory's dumping causes fishermen ₹70,000 of damage a year. A filter that stops it costs the factory ₹40,000. Efficient outcome: install the filter (40 &lt; 70).</p>
+<ul>
+<li><b>Fishermen own the right to a clean lake:</b> the factory must either pay ₹70,000 in compensation or spend ₹40,000 on the filter. It installs the filter.</li>
+<li><b>The factory has the right to pollute:</b> the fishermen are willing to pay up to ₹70,000 for clean water, and the factory accepts anything above ₹40,000. They agree on a payment between 40 and 70 thousand and the filter is installed.</li>
+</ul>
+<p><b>Coase theorem:</b> if property rights are well defined and bargaining costs are low, private bargaining reaches the <b>efficient</b> outcome <b>whatever the initial allocation of rights</b>. The allocation of rights affects only the <b>distribution</b> (who pays). It fails with many affected parties (thousands of residents near a plant), high transaction costs, unclear rights or asymmetric information, and the poor may be unable to "pay" for clean air (CORE &sect;12.2&ndash;12.3).</p></div>
+
+<div class="box derivation"><span class="box-h">Derivation: cap and trade minimises abatement cost</span>
+<p>Two firms must together cut emissions by 40 tonnes. Marginal abatement costs: \(MAC_1 = A_1\), \(MAC_2 = 3A_2\).</p>
+<div class="steps">
+<p class="step">Total cost \(TC = \int_0^{A_1} a\,da + \int_0^{A_2} 3a\,da = \tfrac12A_1^2 + \tfrac32A_2^2\), subject to \(A_1 + A_2 = 40\).</p>
+<p class="step">Minimising: \(\dfrac{d}{dA_1}\big[\tfrac12A_1^2 + \tfrac32(40 - A_1)^2\big] = A_1 - 3(40 - A_1) = 0\) &rArr; \(\boxed{MAC_1 = MAC_2}\) &rArr; \(A_1 = 30\), \(A_2 = 10\).</p>
+<p class="step">Cost = ½(900) + 1.5(100) = 450 + 150 = <b>600</b>. A uniform rule (20 each) costs ½(400) + 1.5(400) = 200 + 600 = <b>800</b>.</p>
+<p class="step">With tradable permits, each firm abates until its MAC equals the permit price. The market price settles at <b>30</b> where the cap is met. The low-cost firm does more of the cutting and sells permits to the high-cost firm. A carbon tax of 30 per tonne would give the same allocation.</p>
+</div></div>
+{{fig:mac_trade|Cap and trade. At a permit price of 30, firm 1 abates 30 and firm 2 abates 10, equalising marginal abatement costs. Under a uniform 20-each rule, firm 2's MAC (60) is far above firm 1's (20), which is wasteful.}}
+<div class="tbl-wrap"><table>
+<tr><th>Case</th><th>Best tool</th><th>Why</th></tr>
+<tr><td>Traffic congestion at peak hours</td><td>Tax (congestion charge)</td><td>Damage per car is measurable; many drivers</td></tr>
+<tr><td>Vaccination campaign</td><td>Subsidy</td><td>Positive externality; free provision</td></tr>
+<tr><td>Factory smoke reaching thousands of residents</td><td>Tradable permits or regulation</td><td>Too many parties for Coase bargaining</td></tr>
+<tr><td>A loud neighbour</td><td>Coase bargaining</td><td>Two parties, rights clear, cheap to negotiate</td></tr>
+<tr><td>Data privacy</td><td>Regulation</td><td>Harms hard to measure; information asymmetry</td></tr>
+</table></div>
+<p>At a global scale the tools are the same: <b>carbon taxes</b> (Pigouvian), <b>emissions trading</b> (the EU ETS; India's Carbon Credit Trading Scheme, notified in 2023), <b>subsidies</b> for solar and wind whose learning benefits spill over, and <b>international agreements</b> (the Montreal Protocol worked for ozone; the Paris Agreement relies on voluntary national pledges). <i>The tools are the same; the hard part is getting everyone to use them.</i></p>
+
+<h2>Types of goods, public goods and the commons</h2>
+<div class="tbl-wrap"><table>
+<tr><th></th><th><b>Rival</b> (one person's use leaves less for others)</th><th><b>Non-rival</b> (my use does not reduce yours)</th></tr>
+<tr><th><b>Excludable</b> (non-payers can be stopped)</th><td><b>Private goods</b>: onions, mess coupons, a phone.<br><i>Markets work well (First Welfare Theorem).</i></td><td><b>Club goods</b>: streaming subscription, toll road, paid coaching app.<br><i>Markets can supply them, but pricing shuts out people who would gain at no cost.</i></td></tr>
+<tr><th><b>Non-excludable</b> (cannot stop anyone using it)</th><td><b>Common-pool resources</b>: Hyderabad's lakes, groundwater, fish stocks, campus Wi-Fi on exam night.<br><i>Problem: overuse, the tragedy of the commons.</i></td><td><b>Public goods</b>: street lighting, open-source software, national defence.<br><i>Problem: free-riding, so markets under-provide them.</i></td></tr>
+</table></div>
+
+<h3>Public goods and free-riding</h3>
+<div class="box derivation"><span class="box-h">Derivation: the efficient quantity of a public good (Samuelson condition)</span>
+<div class="steps">
+<p class="step">Because the good is non-rival, every unit benefits <i>all</i> users at once. The social marginal benefit is the <b>vertical sum</b> of individual marginal benefits: \(MSB(Q) = \sum_i MB_i(Q)\). (For private goods we sum demand curves <i>horizontally</i>.)</p>
+<p class="step">Efficiency: \(\boxed{\sum_i MB_i = MC}\).</p>
+<p class="step">Example: three residents value street lights at \(MB_1 = 60 - Q\), \(MB_2 = 40 - Q\), \(MB_3 = 20 - Q\); MC = 75 per light. \(\sum MB = 120 - 3Q = 75\) &rArr; \(Q^* = 15\).</p>
+<p class="step">Private provision: even resident 1, who values lights most, would buy only where \(60 - Q = 75\), i.e. none. And because the good is non-excludable, each resident hopes the others will pay and <b>free-rides</b>. Result: <b>under-provision</b>, often zero.</p>
+</div>
+<p>Solutions: tax-financed public provision; community norms with peer punishment of free-riders (CORE &sect;4.7 shows experimentally that punishment sustains contributions); making the good excludable (turning it into a club good).</p></div>
+
+<h3>The tragedy of the commons</h3>
+<p>A shared lake with one fish stock: each user keeps the whole gain from fishing more but shares the cost (fewer fish for everyone), so each over-uses and <b>everyone ends worse off</b>. It is a negative externality with no owner to charge for it, and a many-player prisoners' dilemma.</p>
+<div class="box derivation"><span class="box-h">Derivation: open access vs the efficient number of boats</span>
+<div class="steps">
+<p class="step">With \(N\) boats, total catch value is \(N\cdot AP(N)\) with \(AP = 100 - N\) (₹ thousand per boat, falling because the boats share a fixed stock). Each boat costs 20.</p>
+<p class="step"><b>Open access:</b> a new boat enters as long as <i>its own</i> catch covers its cost: \(AP(N) \ge 20\) &rArr; entry until \(100 - N = 20\) &rArr; \(N_{open} = 80\). Total rent = \(80(20 - 20) = 0\): the resource's value is completely dissipated.</p>
+<p class="step"><b>Efficient:</b> maximise total rent \(R = N(100 - N) - 20N\). \(dR/dN = 100 - 2N - 20 = 0\) &rArr; \(N^* = 40\). Equivalently set the <b>marginal product</b> \(MP = 100 - 2N\) equal to cost. Rent = \(40(60 - 20) = 1600\).</p>
+<p class="step">Why the gap: the entrant compares its <i>average</i> catch with cost and ignores that it lowers every other boat's catch by \(|dAP/dN| = 1\) each. That is an external cost of \(N\) per entrant. Open access gives <b>twice</b> the efficient effort here.</p>
+</div></div>
+{{fig:commons|Open-access fishery. Boats enter until the average catch equals cost (N = 80, zero rent). The efficient fleet sets the marginal product equal to cost (N* = 40), earning a rent of 1600.}}
+<div class="tbl-wrap"><table>
+<tr><th></th><th>State</th><th>Market</th><th>Community</th></tr>
+<tr><td>How</td><td>Government sets and enforces the rules, or runs the resource itself</td><td>Create ownership or tradable rights, so someone bears the full cost</td><td>Users make and enforce their own rules</td></tr>
+<tr><td>Lake example</td><td>Lake authority bans untreated inflows and fines polluters</td><td>Lease the lake to an operator who earns from clean boating and fishing; or user fees</td><td>A lake group monitors inflows, sets use rules and shares upkeep</td></tr>
+<tr><td>Watch out</td><td>Needs funds and enforcement; agencies can overlap or be captured</td><td>May shut out the poor; hard to price flood control and biodiversity</td><td>Works best for small, close-knit groups; struggles with outsiders</td></tr>
+</table></div>
+<p>Elinor Ostrom (Nobel 2009) documented many successful community-managed commons, such as irrigation systems in Nepal and forest panchayats in India's hills. She showed that the "tragedy" is not inevitable when users can communicate, monitor and sanction one another.</p>
+
+<h3>Why climate change is harder</h3>
+<ul>
+<li><b>No world government</b>: no one can enforce rules across countries, so agreements rely on voluntary compliance.</li>
+<li><b>Free-riding by countries</b>: every country gains from others' cuts, so each is tempted to wait (CORE &sect;4.14).</li>
+<li><b>Costs now, benefits later</b>: cuts pay off decades away, mostly for people not yet born.</li>
+<li><b>Unequal responsibility</b>: countries differ in who caused the problem, who is hurt most and who can afford to act. This is India's "common but differentiated responsibilities" position.</li>
+<li><b>Uncertainty and tipping points</b>: damage is hard to measure, and some changes may be irreversible.</li>
+</ul>
+
+<h2>Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>CS = area under demand above price; PS = area above supply below price. A competitive equilibrium maximises CS + PS.</li>
+<li>Tax DWL = ½τΔQ = ½τ²·bd/(b+d). Price ceilings and floors create shortages or surpluses and DWL, plus rationing problems.</li>
+<li>Pareto efficiency: no free improvements. Efficient &ne; fair.</li>
+<li>First Welfare Theorem: competition + no externalities + full information + private goods &rArr; Pareto efficiency. Second: any efficient allocation is reachable via redistribution plus markets.</li>
+<li>Externalities: market Q where MPB = MPC; optimum where MSB = MSC. Fixes: Pigouvian tax t = MEC(Q*), Coase bargaining, cap and trade (equalises MACs).</li>
+<li>Public goods: \(\sum MB_i = MC\), so free-riding leads to under-provision. Commons: open access leads to over-use (AP = cost instead of MP = cost).</li>
+</ul></div>
+<details class="q"><summary>Demand P = 20 − Q, supply P = 4 + Q. Compute the equilibrium, CS, PS, and the effects of a ₹4 per-unit tax (prices, quantity, revenue, DWL).</summary><div class="ans"><p>Equilibrium: 20 &minus; Q = 4 + Q &rArr; Q = 8, P = 12. CS = ½(8)(8) = 32, PS = 32, TS = 64. Tax 4: 20 &minus; Q = 8 + Q &rArr; Q = 6, buyers pay 14, sellers get 10. CS = ½(6)(6) = 18, PS = 18, revenue = 24, total 60, DWL = 4 (= ½ &times; 4 &times; 2 ✓).</p></div></details>
+<details class="q"><summary>In the same market a price ceiling of ₹8 is imposed. Find the shortage and the DWL (assume efficient rationing).</summary><div class="ans"><p>Qs = 8 &minus; 4 = 4, Qd = 20 &minus; 8 = 12: shortage 8. Trade 4. PS = ½(8 &minus; 4)(4) = 8. CS = area between demand and 8 over 0&ndash;4 = ((12 + 8)/2)(4) = 40. Total 48 vs 64: DWL = 16 = ½(16 &minus; 8)(8 &minus; 4) ✓.</p></div></details>
+<details class="q"><summary>State the First Welfare Theorem and give one real example for the failure of each assumption.</summary><div class="ans"><p>Competitive equilibria are Pareto efficient if there is (1) perfect competition (failure: a pharmaceutical patent monopoly), (2) no externalities (failure: stubble burning and Delhi's air), (3) full information (failure: used-car "lemons", health insurance), (4) private goods with clear property rights (failure: groundwater over-extraction, street lighting).</p></div></details>
+<details class="q"><summary>Explain why the Coase theorem says the allocation of property rights does not matter for efficiency. Why might it still matter in practice?</summary><div class="ans"><p>With costless bargaining the parties will always strike the deal that maximises joint surplus, and the rights only decide who pays whom. In practice transaction costs, many affected parties, unclear rights, information problems and wealth constraints (the poor cannot pay polluters) prevent efficient bargains, and the distribution of rights is itself a fairness question.</p></div></details>
+<details class="q"><summary>Exit question from Class 1: give an example where a market outcome is efficient but you would call it unfair.</summary><div class="ans"><p>Sample answer: during a flood, bottled water sells at a very high competitive price; every trade is voluntary and the allocation may be efficient, but poorer families go without. Or: perfect price discrimination is efficient but leaves consumers no surplus. Efficiency concerns the size of the pie, fairness its division.</p></div></details>

@@ -1,0 +1,310 @@
+<p class="kicker">Lecture 5</p>
+<h1>Inflation, the Phillips Curve and Monetary Policy</h1>
+<p class="lede">What inflation is, why it matters, what causes it (too much demand or a fight over who gets what), how it is linked to unemployment, and how central banks such as the RBI use the policy interest rate to control it.</p>
+
+<div class="box readings"><span class="box-h">Readings for this chapter</span>
+<ul>
+<li>Mitchell, Wray &amp; Watts, <i>Macroeconomics</i>, Ch. 17 (Unemployment and Inflation) and Ch. 18 (The Phillips Curve and Beyond).</li>
+<li>CORE <i>The Economy: South Asia</i>, Unit 15: &sect;15.1&ndash;15.7 (inflation, conflicting claims, Phillips curve, supply shocks) and &sect;15.8&ndash;15.11 (<a href="https://books.core-econ.org/the-economy-south-asia/book/text/15.html#158-monetary-policy">monetary policy</a>, exchange-rate channel, demand shocks, inflation targeting). Unit 14 &sect;14.1&ndash;14.5 for the multiplier model.</li>
+</ul></div>
+
+<h2>Key concepts and measurement</h2>
+<div class="box key"><span class="box-h">Key ideas: definitions</span>
+<ul>
+<li><span class="term">Inflation</span>: a <b>persistent</b> (continuing) increase in the general price level. A one-off price rise is <i>not</i> inflation (Mitchell et al. &sect;17.2).</li>
+<li><span class="term">Zero inflation</span>: the price level is constant from year to year.</li>
+<li><span class="term">Deflation</span>: a <i>fall</i> in the general price level (inflation is negative).</li>
+<li><span class="term">Disinflation</span>: a fall in the <i>rate</i> of inflation. Prices still rise, only more slowly (e.g. 8% &rarr; 5%).</li>
+<li><span class="term">Hyperinflation</span>: extreme, accelerating inflation (the course uses &gt;40&ndash;50%; per month in some definitions). Examples: Weimar Germany in the 1920s, Zimbabwe in the 2000s.</li>
+<li><span class="term">Real interest rate</span> = nominal interest rate &minus; inflation rate (the <b>Fisher equation</b>).</li>
+</ul></div>
+
+<h3>Measuring inflation</h3>
+<p>The price level is measured by a price index, usually the <b>Consumer Price Index (CPI)</b>: the cost of a fixed basket of goods in year \(t\) relative to its cost in a base year, times 100. The inflation rate between two years is the percentage change in the index:</p>
+$$\pi_t = \frac{P_t - P_{t-1}}{P_{t-1}} \times 100\%.$$
+<p>If the CPI rises from 150 to 159, inflation is \((159-150)/150 = 6\%\). Mitchell et al. also distinguish a <b>stable</b> inflation rate (prices rise 10% every month), an <b>accelerating</b> rate (10%, 11%, 12%&hellip;) and a <b>decelerating</b> rate (10%, 9%, 8%&hellip;, which is disinflation).</p>
+
+<h3>The Fisher equation</h3>
+<div class="box derivation"><span class="box-h">Derivation: real and nominal interest rates</span>
+<div class="steps">
+<p class="step">Lend ₹1 today at nominal rate \(i\). Next year you receive \(₹(1+i)\).</p>
+<p class="step">Prices rise by \(\pi\), so ₹1 of goods today costs \(₹(1+\pi)\) next year. The goods your repayment can buy are \(\dfrac{1+i}{1+\pi}\) units of today's goods.</p>
+<p class="step">The real return \(r\) is defined by \(1 + r = \dfrac{1+i}{1+\pi}\), i.e. \((1+r)(1+\pi) = 1+i\).</p>
+<p class="step">Expanding: \(1 + r + \pi + r\pi = 1 + i\). When \(r\) and \(\pi\) are small, \(r\pi\) is negligible (e.g. \(0.04 \times 0.06 = 0.0024\)), so
+$$\boxed{\,r \approx i - \pi\,}$$</p>
+<p class="step">Decisions are made <i>before</i> inflation is known, so they use <b>expected</b> inflation: \(r = i - \pi^e\) (the ex-ante real rate; CORE &sect;15.8).</p>
+</div></div>
+<div class="box example"><span class="box-h">Worked example (CORE &sect;15.1)</span>
+<p>A loan carries a nominal rate of 10% and inflation is 6%. Real rate \(\approx 10 - 6 = 4\%\). Exact: \(1.10/1.06 - 1 = 3.77\%\). If inflation rises to 12%, the real rate is \(-2\%\): the lender is repaid in rupees that buy less than the rupees lent.</p></div>
+
+<h2>What's wrong with inflation, and with deflation?</h2>
+<h3>Costs of inflation</h3>
+<ul>
+<li><b>Fixed nominal incomes lose value.</b> A pensioner on ₹20,000 a month has real income \(20{,}000/P\). With 10% inflation, after one year it buys only \(20{,}000/1.1 \approx ₹18{,}182\) of last year's goods.</li>
+<li><b>Redistribution between debtors and creditors.</b> Unexpected inflation lowers the <i>real</i> value of a fixed nominal debt, \(D/P\). This helps borrowers and hurts lenders (see the box below).</li>
+<li><b>Uncertainty.</b> High inflation is usually also <i>volatile</i>, which makes long-term contracts and investment planning risky.</li>
+<li><b>Confusing price signals.</b> When all prices rise quickly, producers find it hard to tell whether a rise in <i>their</i> price is a change in <b>relative</b> price (a signal to produce more) or just general inflation, so resources are misallocated.</li>
+<li><b>Menu costs.</b> Firms must reprint price lists, relabel and renegotiate more often. Related <b>shoe-leather costs</b> come from people holding less cash and making more trips to the bank.</li>
+</ul>
+<div class="box derivation"><span class="box-h">Derivation: who gains from unexpected inflation?</span>
+<p>A borrower agrees a nominal rate \(i\) expecting inflation \(\pi^e\), so the expected real rate is \(r^e = i - \pi^e\). The <i>realised</i> real rate is \(r = i - \pi\). The difference is
+$$r - r^e = -(\pi - \pi^e).$$
+If inflation turns out higher than expected (\(\pi &gt; \pi^e\)), the realised real rate is <i>lower</i> than agreed. The lender's real wealth is transferred to the borrower. Example: \(i = 8\%\), \(\pi^e = 2\%\) (expected real rate 6%), actual \(\pi = 6\%\): realised real rate 2%. On a ₹1,00,000 loan, about ₹4,000 of real value moves from lender to borrower in one year.</p></div>
+
+<h3>Costs of deflation</h3>
+<p>Deflation can be <b>even more damaging</b> than moderate inflation:</p>
+<ol>
+<li><b>Postponed spending.</b> If prices are expected to fall, households delay buying (especially durables like cars and appliances) because they will be cheaper later. This acts like a <b>negative aggregate demand shock</b>, lowering output, which can push prices down further.</li>
+<li><b>Rising real debt burden.</b> The real value of debt \(D/P\) <i>rises</i> when \(P\) falls. Indebted households cut consumption to get back to their <b>target wealth</b> (CORE Unit 14), reinforcing the fall in demand.</li>
+<li><b>Monetary policy gets stuck.</b> Since \(r = i - \pi\), with \(\pi &lt; 0\) the real rate is <i>above</i> the nominal rate. Nominal rates cannot go much below zero (the <b>zero lower bound</b>, CORE &sect;15.8), so the central bank cannot bring the real rate down enough to revive spending. Japan's long deflation from the 1990s is the classic case.</li>
+</ol>
+
+<h2>Demand-pull inflation and the quantity theory of money</h2>
+<p><b>Demand-side (demand-pull) explanations</b> assume the economy is <b>already at full capacity</b>, including full employment. Then extra spending cannot raise output, so it raises prices. Sources of excess demand listed in the lecture:</p>
+<ul>
+<li>a large increase in <b>government expenditure</b>;</li>
+<li>an abrupt change in behaviour that <b>raises consumption and reduces saving</b>;</li>
+<li><b>easier credit</b> from the banking system to the government or households, typically due to <b>monetary expansion</b> by the central bank.</li>
+</ul>
+<p>Keynes (<i>How to Pay for the War</i>, 1940) called the excess of planned spending over the output available at full capacity the <span class="term">inflationary gap</span>.</p>
+
+<h3>The equation of exchange</h3>
+$$M V = P Y$$
+<p>\(M\) = money stock, \(V\) = <b>velocity</b> (the average number of times each rupee is spent on final output in a year), \(P\) = price level, \(Y\) = real output. \(PY\) is nominal GDP. As written this is an <b>identity</b>: velocity is <i>defined</i> as \(V = PY/M\), so it is always true and explains nothing on its own (Mitchell et al. &sect;17.4).</p>
+<div class="box example"><span class="box-h">Velocity example (Mitchell et al. Box 17.1)</span>
+<p>An economy has ₹100 of money and two people. A buys ₹100 of goods from B, then B buys ₹100 of goods from A. Total spending is ₹200 with only ₹100 of money, so each rupee was used twice: \(V = 200/100 = 2\).</p></div>
+
+<div class="box derivation"><span class="box-h">Derivation: from identity to the quantity theory, \(\pi = \mu - g\)</span>
+<div class="steps">
+<p class="step">Take natural logs: \(\ln M + \ln V = \ln P + \ln Y\).</p>
+<p class="step">Differentiate with respect to time. The growth rate of a variable is \(d\ln X/dt = \dot X/X\), written \(\hat X\):
+$$\hat M + \hat V = \hat P + \hat Y.$$
+(So: money growth + velocity growth = inflation + real growth.)</p>
+<p class="step"><b>Quantity theory assumptions (classical).</b> (a) \(V\) is constant, set by payment habits, so \(\hat V = 0\). (b) \(Y\) is fixed at full employment by real forces (labour market and technology), so \(\hat Y = g\) is independent of money. This separation of real from nominal is the <b>classical dichotomy</b>.</p>
+<p class="step">Then \(\hat P = \pi\) and
+$$\boxed{\,\pi = \hat M - g = \mu - g\,}$$
+Inflation equals money growth minus real output growth. With \(Y\) also constant, doubling \(M\) doubles \(P\). Causation runs from money to prices: "inflation is always and everywhere a monetary phenomenon" (Friedman, Monetarism).</p>
+</div>
+<p><b>Example:</b> money grows 12% a year and real GDP 7% a year, with stable velocity: predicted inflation = 12 &minus; 7 = 5%.</p></div>
+
+<div class="box exam"><span class="box-h">Critiques you should be able to state (Mitchell et al.)</span>
+<ol>
+<li><b>Velocity is not constant.</b> US M2 velocity swung between about 1.5 and 2.2 between 1960 and 2015, so there is no stable proportional link between \(M\) and \(P\).</li>
+<li><b>Economies are rarely at full employment.</b> With spare capacity, firms meet extra spending by producing more (\(Y\) rises), not by raising prices.</li>
+<li><b>Causation may run the other way.</b> Banks create deposits when they lend, so money responds to demand for credit (endogenous money): rising wages and prices lead firms to borrow more, raising \(M\).</li>
+</ol></div>
+
+<h2>Cost-push inflation and inflation as social conflict</h2>
+<p><b>Supply-side (cost-push) explanations</b>: inflation starts when costs rise, for example</p>
+<ul>
+<li>higher prices of <b>raw materials</b> (oil) or of <b>wage goods</b> such as food, which push up wage demands;</li>
+<li>an <b>autonomous push</b> by firms to raise their profit margin (mark-up), or by unionised workers to raise wages.</li>
+</ul>
+<p>The process then evolves as a <span class="term">wage&ndash;price spiral</span> (workers push first) or a <span class="term">price&ndash;wage spiral</span> (firms push first). Its course depends on the <b>relative bargaining power</b> of firms (capitalists) and workers. On this view inflation is essentially <b>social conflict over the shares of the value produced</b> (Kalecki, Lerner, Rowthorn; Mitchell et al. &sect;17.3; CORE &sect;15.2).</p>
+
+<h3>Mark-up pricing</h3>
+<div class="box derivation"><span class="box-h">Derivation: prices, wages and productivity</span>
+<div class="steps">
+<p class="step">Let \(W\) be the money wage, \(\lambda = Y/N\) labour productivity (output per worker). Unit labour cost is \(W/\lambda\).</p>
+<p class="step">Firms with price-setting power add a mark-up \(\mu\) to unit cost: \(P = (1+\mu)\dfrac{W}{\lambda}\).</p>
+<p class="step">Take logs and growth rates: \(\hat P = \widehat{(1+\mu)} + \hat W - \hat\lambda\). With a constant mark-up,
+$$\boxed{\,\pi = \hat W - \hat\lambda\,}$$
+Wages can grow as fast as productivity without causing inflation. This is the basis of incomes policies that tie wage growth to productivity growth.</p>
+<p class="step">The <b>wage share</b> in output is \(\omega = \dfrac{WN}{PY} = \dfrac{W}{P\lambda} = \dfrac{1}{1+\mu}\). A higher mark-up means a lower wage share. The mark-up <i>is</i> the distribution of income between profits and wages.</p>
+</div></div>
+
+<h3>A simple conflicting-claims model</h3>
+<div class="box derivation"><span class="box-h">Derivation: incompatible claims generate steady inflation</span>
+<p>Workers want a wage share \(\omega_w\). Firms, through their target mark-up, want to leave workers only \(\omega_f = 1/(1+\mu_f)\). Claims are <b>incompatible</b> when \(\omega_w &gt; \omega_f\): together they claim more than 100% of output.</p>
+<div class="steps">
+<p class="step"><b>Wage setting.</b> Workers push money wages up faster the further the actual share \(\omega\) is below their target, with bargaining strength \(\theta_w &gt; 0\): \(\hat W = \theta_w(\omega_w - \omega)\).</p>
+<p class="step"><b>Price setting.</b> Firms raise prices faster the further the actual share exceeds what their mark-up allows, with strength \(\theta_f &gt; 0\): \(\hat P = \theta_f(\omega - \omega_f)\).</p>
+<p class="step">The wage share changes as \(\hat\omega = \hat W - \hat P - \hat\lambda\). Assume \(\hat\lambda = 0\) for simplicity. In a <b>steady state</b> the share is constant, \(\hat\omega = 0\), so \(\hat W = \hat P\):
+$$\theta_w(\omega_w - \omega^*) = \theta_f(\omega^* - \omega_f).$$</p>
+<p class="step">Solve for the distribution:
+$$\omega^* = \frac{\theta_w\,\omega_w + \theta_f\,\omega_f}{\theta_w + \theta_f},$$
+a weighted average of the two targets, weighted by bargaining power.</p>
+<p class="step">Substitute back to get inflation:
+$$\boxed{\,\pi^* = \theta_f(\omega^* - \omega_f) = \frac{\theta_w\,\theta_f}{\theta_w + \theta_f}\,(\omega_w - \omega_f)\,}$$</p>
+</div>
+<p><b>Interpretation.</b> (i) Inflation is positive only if claims are incompatible (\(\omega_w &gt; \omega_f\)); its size is proportional to this <b>aspiration gap</b>. (ii) Neither side gets its target. The actual share lies between them, closer to the stronger side. (iii) Stronger unions (higher \(\theta_w\)) raise both the wage share and inflation. (iv) Anything that lowers bargaining power, such as unemployment, reduces inflation. That is the link to the Phillips curve.</p>
+<p><b>Example:</b> \(\omega_w = 0.65\), \(\omega_f = 0.60\), \(\theta_w = \theta_f = 1\). Then \(\omega^* = 0.625\) and \(\pi^* = \tfrac12(0.05) = 2.5\%\) per period. If unions strengthen to \(\theta_w = 3\): \(\omega^* = (1.95 + 0.6)/4 = 0.6375\), \(\pi^* = \tfrac34(0.05) = 3.75\%\).</p></div>
+
+<h3>The CORE version: wage-setting, price-setting and the bargaining gap</h3>
+<p>CORE (&sect;15.2&ndash;15.3, building on Unit 9) puts the same idea in a labour-market diagram:</p>
+<ul>
+<li>The <b>wage-setting curve (WS)</b> gives the real wage employers must pay to get workers to work hard. It <b>rises with employment</b>: with fewer unemployed, losing your job costs less, so a higher wage is needed.</li>
+<li>The <b>price-setting curve (PS)</b> gives the real wage that remains once firms set their profit-maximising mark-up. It is <b>flat</b> (it depends on productivity and the degree of competition).</li>
+<li>Labour-market equilibrium is where WS = PS. The corresponding unemployment rate is the <b>inflation-stabilising rate</b> \(u^*\).</li>
+</ul>
+{{fig:ws_ps|CORE's conflicting-claims model. At employment N₁ above equilibrium, the real wage workers need (B on WS) exceeds what firms' mark-up leaves (on PS). Firms raise money wages, then raise prices to restore the mark-up, then wages rise again: a wage–price spiral.}}
+<div class="box key"><span class="box-h">Key result: the bargaining gap</span>
+$$\text{bargaining gap (\%)} = \frac{w_{WS} - w_{PS}}{w_{PS}}\times 100$$
+<p>Example (CORE &sect;15.3): WS wage 101, PS wage 100 &rArr; gap 1%. Money wages rise 1% and prices then rise 1% to restore the mark-up, so inflation is 1% a period for as long as the gap persists. With expectations built in (CORE &sect;15.6):</p>
+$$\boxed{\,\text{inflation} = \text{expected inflation} + \text{bargaining gap}\,}$$
+<p>Below \(u^*\) the gap is positive and inflation <b>rises</b>; at \(u^*\) the gap is zero and inflation is <b>constant</b>; above \(u^*\) the gap is negative and inflation <b>falls</b>.</p></div>
+
+<h3>Supply shocks</h3>
+<p>A rise in the world price of an imported input (oil) is a loss of real income to the nation: there is less output left to share between domestic wages and profits (CORE &sect;15.7; Mitchell et al. &sect;17.3). In WS&ndash;PS terms, the <b>PS curve shifts down</b>. At the old unemployment rate a positive bargaining gap opens, so inflation rises <i>and</i>, if policy tightens, unemployment rises. This is <b>stagflation</b>, as after the 1973 OPEC oil shock (US inflation rose from 6.2% to 9.1% and unemployment from 4.9% to 8.5% between 1973 and 1975). The question is <b>who bears the loss</b>. If each side tries to pass it on to the other, a spiral follows.</p>
+
+<h3>Policy responses to a wage&ndash;price spiral</h3>
+<ul>
+<li><b>Accommodate:</b> keep interest rates and fiscal policy unchanged. Banks keep lending, money growth follows the spiral, and inflation persists. Note that money is the <i>fuel</i> here, not the <i>spark</i>.</li>
+<li><b>Discipline with unemployment</b> (the NAIRU strategy): tighten monetary and fiscal policy. Higher unemployment weakens workers' bargaining power and the spiral is "choked off", at the cost of lost output and jobs.</li>
+<li><b>Incomes policies:</b> negotiated or imposed guidelines tying wage and price growth to productivity (US wage&ndash;price guideposts in 1962, the Nixon freezes in 1971&ndash;74, the Scandinavian model of centralised bargaining). These worked best where tripartite bargaining institutions were strong.</li>
+</ul>
+
+<h2>The Phillips curve</h2>
+<p><b>Bill Phillips (1958)</b> plotted British data for 1861&ndash;1957 and found an <b>inverse, non-linear relationship between unemployment and the rate of change of money wages</b>. Later economists restated it as a relationship between <b>price inflation</b> and unemployment.</p>
+<p><b>Intuition:</b> as the economy expands and unemployment falls, demand for labour outstrips supply. Wages are bid up and passed into prices through a wage&ndash;price spiral. Inflationary pressure actually started once unemployment fell below a <i>positive</i> threshold, not zero. This threshold later became known as the <b>natural rate of unemployment</b>.</p>
+{{fig:pc_basic|The original Phillips curve, \(\pi = \alpha + \beta/u\): convex, because wages rise quickly when labour is scarce but fall only slowly when unemployment is high. Samuelson and Solow (1960) read it as a "menu": a government could choose A (low unemployment, high inflation) or B.}}
+
+<div class="box derivation"><span class="box-h">Derivation: Phillips curve algebra (Mitchell et al. &sect;18.2)</span>
+<div class="steps">
+<p class="step">Original <b>wage</b> Phillips curve (non-linear): \(\hat W_t = \alpha_0 + \beta\,u_t^{-1}\), with \(\beta &gt; 0\) and \(\alpha_0 &lt; 0\). As \(u \to \infty\), wage inflation approaches \(\alpha_0\).</p>
+<p class="step">Use the mark-up result \(\pi = \hat W - \hat\lambda\). Write productivity growth as \(\gamma\):
+$$\pi_t = \alpha_0 - \gamma + \beta u_t^{-1} = \alpha + \beta u_t^{-1},\qquad \alpha = \alpha_0 - \gamma.$$</p>
+<p class="step">Linear version: \(\hat W_t = \alpha_0 - \beta u_t\), so the <b>price</b> Phillips curve is
+$$\pi_t = \alpha - \beta u_t,\qquad \alpha = \alpha_0 - \gamma &gt; 0.$$
+Inflation is higher when unemployment is lower <i>and</i> when productivity growth is lower.</p>
+</div></div>
+
+<h3>Instability and stagflation</h3>
+<p>US data fit a stable downward-sloping curve for 1948&ndash;69. But in <b>1970&ndash;80</b> high inflation and high unemployment occurred <i>together</i>. This <span class="term">stagflation</span> violated the supposed trade-off, and after 1981 no stable relationship was visible at all. Explanations: (1) the curve <b>shifted</b> because inflation expectations rose (Friedman, next section); (2) <b>supply shocks</b> (OPEC oil prices quadrupled in 1973) shifted the PS curve; (3) conflict over income shares intensified as productivity growth slowed (Mitchell et al. &sect;17.3). Lerner had already noted in 1951 that high inflation and high unemployment could co-exist.</p>
+
+<h2>Expectations and the Phillips curve</h2>
+<p><b>Milton Friedman (1968)</b> and Edmund Phelps argued from a monetarist standpoint that the inflation&ndash;unemployment trade-off is only <b>short-run</b>. The key assumptions:</p>
+<ul>
+<li>Workers care about the <b>real wage</b> \(W/P\), not the money wage.</li>
+<li>In an inflationary episode, <b>money wages rise less than prices</b>, so the real wage falls and firms (who know prices) hire more.</li>
+<li>Through <b>imperfect information</b> (money illusion), workers initially see only their higher money wage and supply the same or more labour.</li>
+<li>Soon workers realise that their real wage has fallen, revise their <b>expected inflation</b> upwards and cut labour supply, so unemployment returns to its natural rate.</li>
+</ul>
+
+<h3>The mechanism, stage by stage</h3>
+{{fig:pc_eapc|Expectations-augmented Phillips curves. Each short-run curve (SRPC) is drawn for a given expected inflation rate. Trying to hold unemployment at u₁ below u* produces A → B → C → D → E: ever-higher inflation with no lasting fall in unemployment. The long-run Phillips curve (LRPC) is vertical at u*.}}
+<ol>
+<li><b>Stage 1 (point A).</b> Actual inflation = expected inflation (2%); unemployment is at the natural rate \(u^*\).</li>
+<li><b>Stage 2 (A &rarr; B).</b> The government tries to exploit the trade-off with expansionary policy to cut unemployment to \(u_1\). Inflation rises to 5%. Workers see higher money wages and work more; firms see a lower real wage and hire more.</li>
+<li><b>Stage 3 (B &rarr; C).</b> Workers learn that actual inflation is 5%, revise \(\pi^e\) up to 5% and demand higher money wages. The real wage rises back and employment falls: unemployment returns to \(u^*\) but inflation stays at 5%. The economy is now on a <b>new, higher SRPC</b>.</li>
+<li>Repeating the attempt gives C &rarr; D &rarr; E. <b>In the long run the trade-off disappears</b>: the LRPC is vertical at \(u^*\). Holding \(u &lt; u^*\) requires <b>ever-accelerating inflation</b>; hence the <i>accelerationist hypothesis</i>.</li>
+</ol>
+
+<div class="box derivation"><span class="box-h">Derivation: expectations-augmented Phillips curve and the natural rate</span>
+<div class="steps">
+<p class="step">Add expected inflation to wage bargaining (Mitchell et al. eq. 18.5): \(\hat W_t = \alpha_0 - \beta u_t + \phi\,\pi^e_t\), \(0 \le \phi \le 1\). Here \(\phi\) is the share of expected inflation that workers build into wage claims.</p>
+<p class="step">Price inflation (subtract productivity growth): the <b>EAPC</b>
+$$\pi_t = \alpha - \beta u_t + \phi\,\pi^e_t.$$
+A rise in \(\pi^e\) shifts the short-run curve up by \(\phi\,\Delta\pi^e\).</p>
+<p class="step"><b>Long run</b> means expectations are correct: \(\pi^e_t = \pi_t = \pi\). Substituting: \(\pi(1-\phi) = \alpha - \beta u\), so
+$$\pi = \frac{\alpha}{1-\phi} - \frac{\beta}{1-\phi}\,u.$$
+The long-run slope \(-\beta/(1-\phi)\) is <b>steeper</b> than the short-run slope \(-\beta\).</p>
+<p class="step">If \(0 &lt; \phi &lt; 1\) (the Keynesian position) a steeper long-run trade-off still exists. If \(\phi = 1\) (the monetarist position), \(\pi(1-1) = 0 = \alpha - \beta u\), so the only possible long-run unemployment rate is
+$$\boxed{\,u^* = \frac{\alpha}{\beta}\,}$$
+The LRPC is vertical. \(u^*\) depends only on structural factors: productivity growth (through \(\alpha\)) and wage responsiveness \(\beta\). Higher productivity growth lowers \(\alpha\) and so lowers \(u^*\).</p>
+<p class="step">With \(\phi = 1\) we can rewrite the EAPC around \(u^*\) (since \(\alpha = \beta u^*\)):
+$$\pi_t - \pi^e_t = -\beta\,(u_t - u^*).$$
+Inflation exceeds expectations only when unemployment is below the natural rate.</p>
+</div></div>
+
+<h3>How are expectations formed?</h3>
+<p><b>Adaptive expectations</b> (Friedman): \(\pi^e_{t+1} = \pi^e_t + \lambda(\pi_t - \pi^e_t)\), \(0 &lt; \lambda \le 1\). People correct a fraction \(\lambda\) of last period's forecast error. With \(\lambda = 1\), \(\pi^e_t = \pi_{t-1}\) (expect last year's inflation), and the EAPC becomes
+$$\pi_t - \pi_{t-1} = -\beta(u_t - u^*) \quad\Rightarrow\quad \Delta\pi_t = -\beta(u_t - u^*).$$
+<p>This is the <b>accelerationist</b> Phillips curve: it is the <i>change</i> in inflation, not its level, that depends on unemployment. That is why \(u^*\) is also called the <span class="term">NAIRU</span> (non-accelerating-inflation rate of unemployment); CORE calls it the <b>inflation-stabilising rate of unemployment</b>.</p>
+<div class="box example"><span class="box-h">Worked example: accelerating inflation</span>
+<p>\(u^* = 5\%\), \(\beta = 1\), inflation starts at 2%. The government holds unemployment at 3% from year 1, so \(\Delta\pi = -1\times(3-5) = +2\) points every year.</p>
+<div class="tbl-wrap"><table>
+<tr><th>Year</th><th class="num">u (%)</th><th class="num">Expected π = last year's π</th><th class="num">Actual π (%)</th></tr>
+<tr><td>0</td><td class="num">5</td><td class="num">2</td><td class="num">2</td></tr>
+<tr><td>1</td><td class="num">3</td><td class="num">2</td><td class="num">4</td></tr>
+<tr><td>2</td><td class="num">3</td><td class="num">4</td><td class="num">6</td></tr>
+<tr><td>3</td><td class="num">3</td><td class="num">6</td><td class="num">8</td></tr>
+<tr><td>4</td><td class="num">5</td><td class="num">8</td><td class="num">8 (stable, but high)</td></tr>
+</table></div>
+<p>Getting back to 2% inflation needs a period of \(u &gt; u^*\): e.g. \(u = 7\%\) for 3 years brings inflation down 2 points a year. This lost output is the <b>cost of disinflation</b>.</p></div>
+<p><b>Rational expectations</b> (New Classical economics, 1970s): people use all available information, including knowledge of the model and of policy, so forecast errors are purely random. A <i>predictable</i> policy cannot fool anyone even in the short run: the economy stays on the vertical LRPC (policy ineffectiveness).</p>
+
+<div class="box exam"><span class="box-h">Critiques (Mitchell et al. &sect;18.3&ndash;18.4)</span>
+<ul>
+<li><b>Quit rates are pro-cyclical.</b> Friedman's story implies workers quit more in recessions, when they wrongly think real-wage offers are too low. In fact quits <i>rise</i> in booms (Thurow).</li>
+<li><b>Hysteresis.</b> Estimates of the NAIRU tend to <i>follow</i> actual unemployment, e.g. jumping after the 1974 recession. Long spells of unemployment erode skills and attachment to work, so the "natural" rate itself depends on demand history and is not independent of policy.</li>
+<li>Rational expectations demand implausible knowledge and ignore genuine uncertainty.</li>
+</ul></div>
+
+<h2>The scope of monetary policy</h2>
+<ul>
+<li><b>Original idea:</b> the central bank (CB) changes the <b>money stock</b> through <b>open market operations</b>: buying government bonds injects money and selling them withdraws it.</li>
+<li><b>From the 1980s:</b> most CBs instead set a short-term <b>policy interest rate</b> (in India the <b>repo rate</b>, at which the RBI lends to banks overnight) and supply whatever reserves are needed at that rate.</li>
+<li><b>Uses:</b> to <b>boost demand</b> and counter recessions, and, in contemporary practice, mainly to <b>control inflation</b>.</li>
+<li><b>Inflation targeting:</b> many CBs (from New Zealand in 1990, then the UK, Canada and others; 28 countries by CORE's count) have an explicit inflation target, often 2% in rich countries. Some give inflation an exclusive mandate, largely giving up the goal of boosting output and employment. The period from the 1980s to 2008 of low, stable inflation is called the <b>Great Moderation</b> (CORE &sect;15.11).</li>
+</ul>
+
+<h3>The transmission mechanism</h3>
+<p>How does a change in the policy rate reach inflation? Through several channels (CORE Fig. 15.14):</p>
+{{flow:transmission}}
+<ol>
+<li><b>Market interest rates:</b> banks' lending and deposit rates and bond yields follow the policy rate. Higher rates make borrowing for houses, cars and investment projects more expensive, so \(I(r)\) and part of \(C\) fall.</li>
+<li><b>Asset prices:</b> higher rates lower the present value of future income, so bond, share and house prices fall. Households feel poorer and consume less (wealth effect), and collateral shrinks.</li>
+<li><b>Expectations and confidence:</b> a credible CB that tightens signals that inflation will be controlled, which moderates wage and price setting.</li>
+<li><b>Exchange rate</b> (CORE &sect;15.9): higher domestic rates attract foreign capital and the currency <b>appreciates</b>. Exports become dearer and imports cheaper: net exports fall (less demand) and <b>import prices fall</b>, lowering inflation directly.</li>
+</ol>
+
+<h3>Monetary policy in the multiplier model</h3>
+<p>The slide's model is CORE's open-economy multiplier model (Unit 14 &sect;14.5). Aggregate demand is</p>
+$$AD = c_0 + c_1(1-t)Y + I(r) + G + X - mY,$$
+<p>with autonomous consumption \(c_0\), marginal propensity to consume \(c_1\), tax rate \(t\), investment depending negatively on the real interest rate \(I(r)\), government spending \(G\), exports \(X\) and marginal propensity to import \(m\).</p>
+<div class="box derivation"><span class="box-h">Derivation: equilibrium output and the multiplier</span>
+<div class="steps">
+<p class="step">Goods-market equilibrium: output equals planned spending, \(Y = AD\) (the 45&deg; line).</p>
+<p class="step">\(Y = c_0 + c_1(1-t)Y + I(r) + G + X - mY\). Collect the \(Y\) terms:
+$$Y\big[1 - c_1(1-t) + m\big] = c_0 + I(r) + G + X.$$</p>
+<p class="step">Solve:
+$$Y^* = \underbrace{\frac{1}{1 - c_1(1-t) + m}}_{k\ \text{(multiplier)}}\;\big[c_0 + I(r) + G + X\big].$$</p>
+<p class="step">Any change in autonomous spending changes output by \(k\) times as much: \(\Delta Y = k\,\Delta c_0\), \(k\,\Delta G\), or \(k\,\Delta I\). Taxes and imports are <b>leakages</b> that make \(k\) smaller. With no government or trade (\(t = m = 0\)), \(k = 1/(1-c_1)\).</p>
+<p class="step"><b>Monetary policy:</b> a cut in the policy rate lowers \(r\) and raises investment: \(\Delta Y = k\,[I(r') - I(r)]\). With a linear investment function \(I = \bar I - a r\): \(\Delta Y = -k\,a\,\Delta r\).</p>
+</div></div>
+<div class="box example"><span class="box-h">Worked example (CORE &sect;14.2, &sect;14.5)</span>
+<p>Basic model: \(c_1 = 0.6\) gives \(k = 1/(1-0.6) = 2.5\), which CORE calls unrealistically large. Adding \(t = 0.2\) and \(m = 0.1\): \(1 - 0.6(0.8) + 0.1 = 0.62\), so \(k = 1/0.62 \approx 1.6\).</p>
+<p><b>Recession and response.</b> Households' confidence falls and \(c_0\) drops by 10 (₹ thousand crore): \(\Delta Y = -1.6 \times 10 = -16\). If investment rises by 5 for every 1-point cut in \(r\) (\(a = 5\)), the RBI needs \(\Delta r = -\Delta Y_{\text{target}}/(k\,a) = -16/(1.6\times5) = -2\) points to fully offset the shock.</p></div>
+{{fig:multiplier|Using monetary policy to stabilise a recession (lecture slide). AD₀ = c₀ + I(r) + G + X + [c₁(1−t) − m]Y. A fall in autonomous consumption (c₀ → c₀′) shifts AD down: the economy moves from A to B and output falls from Y₀ to Y₁. Cutting the interest rate to r′ raises I(r′) and shifts AD back up to C.}}
+<p><b>Limits:</b> (i) the <b>zero lower bound</b>: if \(i\) is already near 0, the CB cannot cut further, so it may turn to quantitative easing (buying bonds to lower long-term rates); (ii) when firms and households are pessimistic, investment may respond weakly to lower rates (Keynes's "pushing on a string"); (iii) countries in a currency union (the Eurozone) have no national monetary policy (CORE &sect;15.8).</p>
+
+<h3>Demand shocks versus supply shocks: the policy dilemma</h3>
+<div class="tbl-wrap"><table>
+<tr><th></th><th>Demand shock (e.g. investment collapse)</th><th>Supply shock (e.g. oil price rise)</th></tr>
+<tr><td>Output / unemployment</td><td>Output &darr;, unemployment &uarr;</td><td>Output &darr;, unemployment &uarr;</td></tr>
+<tr><td>Inflation</td><td>&darr;</td><td>&uarr;</td></tr>
+<tr><td>Rate cut?</td><td>Helps both goals: no conflict</td><td>Raises demand but worsens inflation: a genuine trade-off</td></tr>
+</table></div>
+<p>CORE &sect;15.10 shows the US response to the 2001 slowdown: the Federal Reserve cut its rate from 6.24% to 1.13% while fiscal policy added tax cuts and spending. CORE stresses that the policy goal is <b>labour-market equilibrium</b> (inflation stable at target), not "full employment" at any cost.</p>
+
+<h2>India: the RBI and flexible inflation targeting</h2>
+<div class="box india"><span class="box-h">India focus</span>
+<ul>
+<li>In May 2016 the <b>RBI Act, 1934 was amended</b> to give <b>flexible inflation targeting (FIT)</b> a statutory basis. The amendment came into force on 27 June 2016, and the target was first notified in August 2016.</li>
+<li>Target: <b>4% CPI (headline) inflation, with a tolerance band of &plusmn;2%</b> (2&ndash;6%). Under Section 45ZA the Central Government sets the target in consultation with the RBI, for five years at a time. It was renewed for 2021&ndash;26, and news reports say it has been renewed for 2026&ndash;31.</li>
+<li>The policy rate (the repo rate) is set by a six-member <b>Monetary Policy Committee</b>: three RBI members and three external members.</li>
+<li>"Flexible" means the RBI also weighs growth: it aims to bring inflation back to target over time rather than at any cost, especially after supply shocks such as food-price spikes.</li>
+<li>Outcomes reported in the RBI's own 2025 review paper: CPI inflation averaged about <b>4.9% under FIT against about 6.8% before it</b>.</li>
+<li><b>Why supply shocks matter so much in India:</b> food has a large weight in the CPI basket, so monsoon failures and vegetable price spikes (onions, tomatoes, pulses) are classic cost-push shocks. Interest-rate policy acts on demand, so it can do little about the first-round effect. The RBI's concern is the <b>second-round effects</b>: higher food prices feeding into wage demands and inflation expectations, the wage&ndash;price spiral of &sect;1.4.</li>
+</ul></div>
+
+<h2>Summary and practice questions</h2>
+<div class="box key"><span class="box-h">Chapter summary</span>
+<ul>
+<li>Fisher: \(r \approx i - \pi^e\). Unexpected inflation transfers wealth from lenders to borrowers; deflation does the reverse and can trap the economy.</li>
+<li>Quantity theory: \(\hat M + \hat V = \pi + \hat Y\) &rArr; \(\pi = \mu - g\) only if \(V\) is stable and \(Y\) is at full employment.</li>
+<li>Cost-push / conflict: \(\pi = \hat W - \hat\lambda\) with a fixed mark-up; incompatible claims give \(\pi^* \propto (\omega_w - \omega_f)\). CORE: inflation = expected inflation + bargaining gap.</li>
+<li>Phillips curve: \(\pi = \alpha - \beta u\). Expectations-augmented: \(\pi = \alpha - \beta u + \phi\pi^e\). With \(\phi = 1\) the LRPC is vertical at \(u^* = \alpha/\beta\), and holding \(u &lt; u^*\) makes inflation accelerate.</li>
+<li>Monetary policy works through the policy rate: market rates, asset prices, expectations, exchange rate &rarr; AD. Multiplier \(k = 1/[1 - c_1(1-t) + m]\).</li>
+<li>India: FIT since 2016, 4% &plusmn; 2% CPI target, decided by the MPC.</li>
+</ul></div>
+
+<details class="q"><summary>Distinguish deflation from disinflation, with an example of each.</summary><div class="ans"><p>Deflation is a falling price level (inflation below zero, e.g. CPI 100 &rarr; 98, inflation &minus;2%). Disinflation is a falling <i>rate</i> of inflation while prices still rise, e.g. inflation falls from 7% to 4%. India saw disinflation between 2013–14 and 2015–16, when CPI inflation fell from about 9–10% to about 5%.</p></div></details>
+<details class="q"><summary>Nominal deposit rate 7%, inflation 5.5%. What is the real rate (approximate and exact)? What happens to savers if inflation unexpectedly rises to 9%?</summary><div class="ans"><p>Approx. \(7 - 5.5 = 1.5\%\). Exact \(1.07/1.055 - 1 = 1.42\%\). At 9% inflation the real rate is \(\approx -2\%\): depositors lose purchasing power, and borrowers gain.</p></div></details>
+<details class="q"><summary>Money supply grows at 15%, real GDP at 6%, and velocity falls by 2% a year. What inflation does the equation of exchange imply? Why might the quantity theory still be a poor guide?</summary><div class="ans"><p>\(\pi = \hat M + \hat V - \hat Y = 15 - 2 - 6 = 7\%\). But the identity holds by definition. If the economy has spare capacity, extra spending raises \(Y\) rather than \(P\); velocity is unstable; and money may be responding to demand for credit rather than driving prices.</p></div></details>
+<details class="q"><summary>In the conflicting-claims model, workers target a wage share of 0.70 and firms' mark-up implies 0.60. With \(\theta_w = 1\), \(\theta_f = 2\), find the steady-state wage share and inflation. What happens if firms gain more power?</summary><div class="ans"><p>\(\omega^* = (1\cdot0.70 + 2\cdot0.60)/3 = 0.633\). \(\pi^* = \frac{1\cdot2}{3}(0.10) = 6.67\%\). If \(\theta_f\) rises, \(\omega^*\) moves toward 0.60 and \(\pi^* = \frac{\theta_w\theta_f}{\theta_w+\theta_f}(0.1)\) rises toward \(\theta_w \times 0.1 = 10\%\) (it increases in \(\theta_f\)). Inflation rises and distribution shifts to profits.</p></div></details>
+<details class="q"><summary>Explain, with a diagram, why monetarists argue there is no long-run trade-off between inflation and unemployment.</summary><div class="ans"><p>Draw the expectations-augmented Phillips curve figure (§1.6). Start at A (u = u*, π = πᵉ). Expansionary policy moves the economy along the SRPC to B: actual inflation exceeds expected, real wages fall, firms hire more, and workers are fooled by higher money wages. As expectations adapt (πᵉ rises), the SRPC shifts up and unemployment returns to u* at C with higher inflation. Algebra: \(\pi = \alpha - \beta u + \phi\pi^e\); with \(\phi = 1\) and \(\pi = \pi^e\) in the long run, \(u = \alpha/\beta = u^*\) whatever the inflation rate, so the LRPC is vertical. Mention the critiques (hysteresis, pro-cyclical quits).</p></div></details>
+<details class="q"><summary>With \(\pi_t - \pi_{t-1} = -0.5(u_t - 6)\), inflation is currently 10%. How many point-years of excess unemployment are needed to bring inflation to 4%?</summary><div class="ans"><p>The required fall of 6 points equals \(0.5 \times \sum(u_t - 6)\), so \(\sum(u_t - 6) = 12\) point-years: e.g. unemployment of 10% for 3 years, or 8% for 6 years. (The "sacrifice ratio" here is 2 point-years of unemployment per point of disinflation.)</p></div></details>
+<details class="q"><summary>Compute the multiplier when \(c_1 = 0.8\), \(t = 0.25\), \(m = 0.2\). If a repo-rate cut raises investment by ₹40,000 crore, by how much does output rise?</summary><div class="ans"><p>\(1 - 0.8(0.75) + 0.2 = 0.6\), so \(k = 1.67\). \(\Delta Y = 1.67 \times 40{,}000 \approx ₹66{,}700\) crore.</p></div></details>
+<details class="q"><summary>Why is an oil-price shock harder for a central bank to deal with than a fall in investment?</summary><div class="ans"><p>An investment collapse lowers both output and inflation, so a rate cut helps on both counts. An oil shock lowers output but raises inflation (the PS curve shifts down and a bargaining gap opens). Tightening fights inflation but deepens the slump, while easing supports output but risks a wage&ndash;price spiral and higher expectations. That is the stagflation dilemma of the 1970s.</p></div></details>
